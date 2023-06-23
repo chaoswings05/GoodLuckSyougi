@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KomaScript : MonoBehaviour
+public class OuMove : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +15,8 @@ public class KomaScript : MonoBehaviour
     {
         
     }
+
+    //選択タイルの取得
+    //駒の選択
+    //駒の移動
 }

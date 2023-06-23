@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 897960157507618890}
   - component: {fileID: 8738176901007524618}
   m_Layer: 0
-  m_Name: koma_3
+  m_Name: koma_3_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
