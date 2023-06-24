@@ -19,6 +19,7 @@ public class KomaManager : MonoBehaviour
         {
             if (koma.Position == pos)
             {
+                Debug.Log(koma);
                 return koma;
             }
         }
