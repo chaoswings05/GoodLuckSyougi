@@ -22,15 +22,18 @@ MonoBehaviour:
   - name: "\u5C48\u5F37"
     rarity: 1
     obj: {fileID: 3445573742419576890, guid: a97524d077579324ba0f4a83f61da2f9, type: 3}
-  - name: 
+  - name: "\u7B4B\u8089"
     rarity: 2
     obj: {fileID: 195823403356419283, guid: 738ff0d0b3b66d74da8c6da8960dc2a2, type: 3}
-  - name: 
+  - name: "\u5BCC\u8C6A"
     rarity: 2
     obj: {fileID: 195823403356419283, guid: 738ff0d0b3b66d74da8c6da8960dc2a2, type: 3}
-  - name: 
+  - name: "\u7832\u53F0"
     rarity: 2
     obj: {fileID: 195823403356419283, guid: 738ff0d0b3b66d74da8c6da8960dc2a2, type: 3}
-  - name: 
+  - name: "\u5351\u602F"
+    rarity: 2
+    obj: {fileID: 195823403356419283, guid: 738ff0d0b3b66d74da8c6da8960dc2a2, type: 3}
+  - name: "\u4FF3\u512A"
     rarity: 2
     obj: {fileID: 195823403356419283, guid: 738ff0d0b3b66d74da8c6da8960dc2a2, type: 3}
