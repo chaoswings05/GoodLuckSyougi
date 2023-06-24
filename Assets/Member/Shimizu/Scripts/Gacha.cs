@@ -7,6 +7,9 @@ public class Gacha : MonoBehaviour
     private float[] item2;
 
     private int[] item;
+
+    [SerializeField]
+    GachaItemSpawn gachaItemSpawn;
     //
     [Header("各レアリティの重み")]
     [SerializeField]
@@ -78,9 +81,9 @@ public class Gacha : MonoBehaviour
     }
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.K))
         {
-            GachaMethod();
+            gachaItemSpawn.GachaGacha();
         }
     }
     //ガチャを引くメソッド

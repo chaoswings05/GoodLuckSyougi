@@ -12,18 +12,8 @@ public class GachaItemSpawn : MonoBehaviour
     private List<GameObject> gachaItem = new List<GameObject>();
 
     private int count = 0;
-    private void Start()
-    {
-        
-    }
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.K))
-        {
-            GachaGacha();
-        }
-    }
-    private void GachaGacha()
+
+    public void GachaGacha()
     {
         //レアリティだけ渡してここでランダムとか
         PieceChoice(gacha.GachaMethod());
