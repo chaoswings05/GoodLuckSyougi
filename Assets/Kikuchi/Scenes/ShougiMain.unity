@@ -123,6 +123,180 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &79523940 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196221269581, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &79523943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79523940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &89484444 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196228082357, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &89484447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89484444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &119438200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2666397153950687866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &119438203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119438200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1001 &139703540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -264,6 +438,296 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150084356}
   m_CullTransparentMesh: 1
+--- !u!1 &171915366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196246322767, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &171915369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171915366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &241240838 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 391539794937729485, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &241240841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241240838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &294125603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196440638986, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &294125606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294125603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &297044285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 424536672601109550, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &297044288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297044285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &333848051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2410190378267988048, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &333848054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333848051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &335032693
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +804,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335032693}
   m_CullTransparentMesh: 1
+--- !u!1 &360386955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4344091680109167866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &360386958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360386955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &396328591
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +1174,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478508715}
   m_CullTransparentMesh: 1
+--- !u!1 &483010287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &483010289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483010287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7828d899da524b4c82fd566a77dbffa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  komas: []
+--- !u!1 &485123803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 18592658155400921, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &485123806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485123803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &503671426 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6509701467736633599, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &503671429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503671426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &516149305
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +1384,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516149305}
   m_CullTransparentMesh: 1
+--- !u!1 &529826680 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5674523453877402642, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &529826683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529826680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &531882302
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +1518,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 531882302}
   m_CullTransparentMesh: 1
+--- !u!1 &532924785 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196604628824, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &532924788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532924785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &533194453
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,7 +1740,6 @@ GameObject:
   - component: {fileID: 561498237}
   - component: {fileID: 561498236}
   - component: {fileID: 561498235}
-  - component: {fileID: 561498239}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1059,18 +1830,296 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &561498239
+--- !u!1 &621084659 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3906537068778086612, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &621084662
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561498234}
+  m_GameObject: {fileID: 621084659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06d587da3fcbffd4fba0f922a7ec1700, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &625767267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962195689575754, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &625767270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625767267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &728474699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6994050989639197731, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &728474702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728474699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &733211236 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962195735350349, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &733211239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733211236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &770688412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7066124994435283297, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &770688415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770688412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &792009053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +2196,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792009053}
   m_CullTransparentMesh: 1
+--- !u!1 &818827072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6546780838043588474, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &818827075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818827072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &863994892 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2612841586822444010, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
@@ -1164,6 +2271,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17589afd6ea43a40a29a8a4132cd8af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &894305857 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962195957899368, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &894305860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894305857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &943844367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962196009159206, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &943844370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943844367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &953587446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +2463,180 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953587446}
   m_CullTransparentMesh: 1
+--- !u!1 &1033032850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1602327319510953309, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1033032853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033032850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1035994061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4046499420601153924, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1035994064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035994061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1198040510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962195117294487, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1198040513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198040510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1256250714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,26 +2681,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b97158139487ec42a2169de368bac93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
 --- !u!1 &1266734134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1349,7 +2726,299 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 863994896}
+  komaManager: {fileID: 483010289}
+  baseMap: {fileID: 1256250716}
   playerSelected: 0
+--- !u!1 &1318916855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8310598500256203299, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1318916858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318916855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1384550535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8952354625088051354, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1384550538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384550535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1503972070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962195499232463, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1503972073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503972070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1595103256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5211771106723609587, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1595103259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595103256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1646086249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6583324009166179111, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1646086252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646086249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1678646706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1418,6 +3087,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1679318086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194604571247, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1679318089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679318086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1701111388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,6 +3221,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701111388}
   m_CullTransparentMesh: 1
+--- !u!1 &1716676591 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194567201222, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1716676594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716676591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1717738866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +3431,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745033527}
   m_CullTransparentMesh: 1
+--- !u!1 &1756412333 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194678472580, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1756412336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756412333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1757502990
 GameObject:
   m_ObjectHideFlags: 0
@@ -1722,6 +3565,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757502990}
   m_CullTransparentMesh: 1
+--- !u!1 &1766772883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5048946519398465817, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1766772886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766772883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1770630333
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,7 +3634,6 @@ GameObject:
   - component: {fileID: 1770630334}
   - component: {fileID: 1770630336}
   - component: {fileID: 1770630335}
-  - component: {fileID: 1770630337}
   m_Layer: 5
   m_Name: ShogiBoard
   m_TagString: Untagged
@@ -1800,20 +3700,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770630333}
   m_CullTransparentMesh: 1
---- !u!114 &1770630337
+--- !u!1 &1771413672 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194697143937, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1771413675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770630333}
+  m_GameObject: {fileID: 1771413672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb1bcce6cd28cc54bb39523251246a2f, type: 3}
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapManager: {fileID: 1266734134}
-  mapScript: {fileID: 0}
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &1836544237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1998,6 +3942,296 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838501014}
   m_CullTransparentMesh: 1
+--- !u!1 &1858930139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194708194290, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1858930142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858930139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1942664649 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194792109024, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1942664652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942664649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &1996548262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194855661199, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1996548265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996548262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &2003103202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194849106891, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2003103205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003103202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1 &2069012972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7881962194919507909, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2069012975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069012972}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
 --- !u!1 &2098521687
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,464 +4308,118 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2098521687}
   m_CullTransparentMesh: 1
---- !u!1001 &1911816610033866948
+--- !u!1 &2125645730 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4915066662290567168, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 7881962196147562025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2125645733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125645730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  positionInt: {x: 0, y: 0}
+  p1komaOu: koma_0
+  p1komaHisya: koma_1
+  p1komaKaku: koma_2
+  p1komaKin: koma_3_1
+  p1komaKin2: koma_3_2
+  p1komaGin: koma_4_1
+  p1komaGin2: koma_4_2
+  p1komaKeima: koma_5_1
+  p1komaKeima2: koma_5_2
+  p1komaKyousya: koma_6_1
+  p1komaKyousya2: koma_6_2
+  p1komaHohyou1: koma_7_1
+  p1komaHohyou2: koma_7_2
+  p1komaHohyou3: koma_7_3
+  p1komaHohyou4: koma_7_4
+  p1komaHohyou5: koma_7_5
+  p1komaHohyou6: koma_7_6
+  p1komaHohyou7: koma_7_7
+  p1komaHohyou8: koma_7_8
+  p1komaHohyou9: koma_7_9
+  p2komaOu: koma_8
+  p2komaHisya: koma_9
+  p2komaKaku: koma_10
+  p2komaKin: koma_11_1
+  p2komaKin2: koma_11_2
+  p2komaGin: koma_12_1
+  p2komaGin2: koma_12_2
+  p2komaKeima: koma_13_1
+  p2komaKeima2: koma_13_2
+  p2komaKyousya: koma_14_1
+  p2komaKyousya2: koma_14_2
+  p2komaHohyou1: koma_15_1
+  p2komaHohyou2: koma_15_2
+  p2komaHohyou3: koma_15_3
+  p2komaHohyou4: koma_15_4
+  p2komaHohyou5: koma_15_5
+  p2komaHohyou6: koma_15_6
+  p2komaHohyou7: koma_15_7
+  p2komaHohyou8: koma_15_8
+  p2komaHohyou9: koma_15_9
+--- !u!1001 &7881962196147562025
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1911816608554957308, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608554957308, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608568201762, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608568201772, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608568201772, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608581957799, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608581957799, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608597490407, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608597490407, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608640887920, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608640887920, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608704512154, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608704512154, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608797796524, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608797796524, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608835125794, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608835125794, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608941751556, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608941751556, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816608941751674, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609141373224, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609141373226, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609141373226, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609174220323, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609174220323, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609209939232, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609209939232, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609209939238, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609211773026, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609211773036, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609211773036, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609266674957, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609266674959, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609266674959, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609317494041, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609317494041, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609317494047, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609346358207, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609346358207, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609357504873, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609357504875, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609357504875, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609372518508, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609372518510, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609372518510, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609431471234, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609431471244, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609431471244, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609460191019, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609460191029, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609460191029, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609517188976, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609517188976, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609530373845, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609530373845, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924779, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_Name
-      value: P1AllKoma
+      value: KomaManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924779, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.14593056
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.65766114
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.04015278
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609551924788, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1911816609601769909, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609601769911, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609601769911, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609774344417, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609774344417, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609774344423, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609778075189, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609778075189, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609833897953, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609833897953, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609897372751, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609897372751, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609937072290, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609937072300, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609937072300, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609962387616, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609962387618, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609962387618, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609980740696, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609980740698, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816609980740698, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610000256390, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610000256390, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610152526359, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610152526359, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610163946699, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610163946709, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610163946709, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610248433285, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610248433287, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610248433287, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610259614410, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610259614410, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610318372610, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610318372610, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610465230529, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610465230529, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610481533600, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610481533602, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610481533602, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610517019553, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610517019553, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610517019559, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_TagString
-      value: P1Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610622197618, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayer
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1911816610622197618, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -1212319043
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 150490e66cbf5d84c83e1a79b921bb17, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}

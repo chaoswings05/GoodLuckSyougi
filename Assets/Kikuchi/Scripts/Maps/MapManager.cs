@@ -5,9 +5,17 @@ using UnityEngine;
 public class MapManager : MonoBehaviour
 {
     [SerializeField] CursorController cursor;
+    [SerializeField] KomaManager komaManager;
+    [SerializeField] BaseMap baseMap;
 
     [HideInInspector]
     public bool playerSelected = false;
+
+
+    private void Start()
+    {
+        baseMap.CreateBaseMap();
+    }
 
     private void Update()
     {
@@ -20,8 +28,18 @@ public class MapManager : MonoBehaviour
             {
                 cursor.SetPosition(hit2D.transform);
                 TileObj tileobj = hit2D.collider.GetComponent<TileObj>();
+                //選択タイルの座標
                 Debug.Log(tileobj.positionInt);
-
+                //キャラの座標
+                Koma koma = komaManager.GetKoma(tileobj.positionInt);
+                if (koma)
+                {
+                    Debug.Log("いる");
+                }
+                else
+                {
+                    Debug.Log("いない");
+                }
             }
 
 
