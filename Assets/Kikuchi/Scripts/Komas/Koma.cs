@@ -131,9 +131,9 @@ public class Koma : MonoBehaviour
 
         CreateKomaObj(p2komaOu, 5, 9);
 
-        CreateKomaObj(p2komaKaku, 2, 8);
+        CreateKomaObj(p2komaKaku, 8, 8);
 
-        CreateKomaObj(p2komaHisya, 8, 8);
+        CreateKomaObj(p2komaHisya, 2, 8);
 
         CreateKomaObj(p2komaKin, 4, 9);
         CreateKomaObj(p2komaKin2, 6, 9);

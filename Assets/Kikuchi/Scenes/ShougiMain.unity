@@ -2706,7 +2706,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266734134}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 14, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2726,9 +2726,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: {fileID: 863994896}
-  komaManager: {fileID: 483010289}
   baseMap: {fileID: 1256250716}
-  playerSelected: 0
+  komaManager: {fileID: 483010289}
+  gameManager: {fileID: 2055835355}
 --- !u!1 &1318916855 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8310598500256203299, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
@@ -4174,6 +4174,54 @@ MonoBehaviour:
   p2komaHohyou7: koma_15_7
   p2komaHohyou8: koma_15_8
   p2komaHohyou9: koma_15_9
+--- !u!1 &2055835354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2055835356}
+  - component: {fileID: 2055835355}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2055835355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055835354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a5feb4d0dd1f4f88f9b4f39f4eb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movableTiles: []
+  phase: 0
+  komaManager: {fileID: 483010289}
+  mapManager: {fileID: 1266734137}
+--- !u!4 &2055835356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055835354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069012972 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7881962194919507909, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
@@ -4373,9 +4421,161 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 18592658155400921, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 20711099078156573, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 377692950075136767, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 391539794937729485, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 424536672601109550, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 499176798501022289, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 533859238063233448, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1202841578402452958, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1330386420854952867, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1405598246865097772, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1481319539251048253, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 1602327319510953309, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 2410190378267988048, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 2666397153950687866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3049718203013486871, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081682841843509971, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564972293370531871, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3874608889507823012, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 3906537068778086612, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4046499420601153924, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4194262287414892435, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4344091680109167866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4649557692547899698, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 4915066662290567168, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 5048946519398465817, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 5211771106723609587, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436141568249622213, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 5674523453877402642, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 6509701467736633599, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 6546780838043588474, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583324009166179111, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993513514368714850, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 6994050989639197731, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7066124994435283297, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364203723773029205, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7602379098342013256, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 7881962194697143937, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_Name
+      value: koma_0
+      objectReference: {fileID: 0}
     - target: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_Name
       value: KomaManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_RootOrder
@@ -4420,6 +4620,22 @@ PrefabInstance:
     - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247727846523725600, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8310598500256203299, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8845484811883086521, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
+      objectReference: {fileID: 0}
+    - target: {fileID: 8952354625088051354, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_TagString
+      value: P2Koma
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}

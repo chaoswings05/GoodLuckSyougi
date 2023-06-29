@@ -26,6 +26,7 @@ public class BaseMap : MonoBehaviour
         {
             for (int y = 0; y < mapHeight; y++)
             {
+
                 TileObj tileObj ;
                 GameObject map = (GameObject)Resources.Load("MapTrout");
                 Vector3 objPos = new Vector3(basex + per1xy * x + 1, basey + per1xy * y + 1, 5);
