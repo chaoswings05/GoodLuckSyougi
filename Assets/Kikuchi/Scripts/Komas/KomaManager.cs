@@ -45,6 +45,7 @@ public class KomaManager : MonoBehaviour
         {
             if (koma != null && koma.Position == pos && koma.tag == "P2Koma")
             {
+                Debug.Log(koma);
                 return koma;
             }
         }

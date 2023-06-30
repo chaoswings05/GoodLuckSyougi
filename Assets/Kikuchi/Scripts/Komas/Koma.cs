@@ -13,6 +13,8 @@ public class Koma : MonoBehaviour
     int masuPosy;
     float basex;
     float basey;
+
+    private Vector3 posFix;
     [SerializeField] Vector2Int positionInt;
 
     public Vector2Int Position { get => positionInt;}
@@ -101,6 +103,7 @@ public class Koma : MonoBehaviour
 
     void Start()
     {
+        posFix = new Vector3(0.06f, 0.05f, 0);
         CreateKomaObj(p1komaOu, 5, 1);
 
         CreateKomaObj(p1komaKaku, 2, 2);
@@ -166,7 +169,7 @@ public class Koma : MonoBehaviour
 
         GameObject obj = GameObject.Find(name);
         Vector3 objPos = new Vector3(basex + per1xy * x, basey + per1xy * y, 2);
-        obj.transform.position = objPos;
+        obj.transform.position = objPos += posFix;
     }
 
     public void KomaFirstSet()
@@ -184,7 +187,7 @@ public class Koma : MonoBehaviour
 
     public void Move(Vector2Int newPos)
     {
-        transform.position = new Vector2(basex + per1xy * newPos.x, basey + per1xy * newPos.y);
+        transform.position = new Vector3(basex + per1xy * newPos.x, basey + per1xy * newPos.y, 2) + posFix;
         positionInt = newPos;
     }
 

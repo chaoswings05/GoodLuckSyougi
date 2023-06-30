@@ -6,6 +6,7 @@ TagManager:
   tags:
   - P1Koma
   - P2Koma
+  - p2Koma
   layers:
   - Default
   - TransparentFX
@@ -48,4 +49,7 @@ TagManager:
     locked: 0
   - name: Koma
     uniqueID: 3082648253
+    locked: 0
+  - name: Text
+    uniqueID: 2853259317
     locked: 0

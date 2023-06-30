@@ -28,9 +28,12 @@ public class MapManager : MonoBehaviour
         tileObjs = baseMap.CreateBaseMap();
     }
 
-    public void FirstPos(int x, int y)
+    public void PosCursor(int player)
     {
-        cursor.gameObject.transform.position = new Vector2(basex + per1xy * x, basey + per1xy * y);
+        if(player == 1)
+        cursor.gameObject.transform.position = new Vector2(0.076f, -3.64f);
+        else if(player == 2)
+        cursor.gameObject.transform.position = new Vector2(0.076f, 3.78f);
     }
 
     public TileObj GetClickTileObj() //クリックしたタイルを取得する関数

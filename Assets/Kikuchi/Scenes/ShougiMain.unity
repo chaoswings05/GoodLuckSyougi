@@ -123,4519 +123,610 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &79523940 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196221269581, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &79523943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 79523940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &89484444 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196228082357, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &89484447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 89484444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &119438200 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2666397153950687866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &119438203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 119438200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1001 &139703540
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2612841586822444010, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_Name
-      value: Cursor
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444011, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_SortingLayer
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444011, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_SortingLayerID
-      value: -31965229
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2612841586822444020, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
---- !u!1 &150084356
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 150084357}
-  - component: {fileID: 150084359}
-  - component: {fileID: 150084358}
-  m_Layer: 5
-  m_Name: HoliLine6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &150084357
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150084356}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 600}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &150084358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150084356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &150084359
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 150084356}
-  m_CullTransparentMesh: 1
---- !u!1 &171915366 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196246322767, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &171915369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171915366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &241240838 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 391539794937729485, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &241240841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 241240838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &294125603 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196440638986, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &294125606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294125603}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &297044285 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 424536672601109550, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &297044288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 297044285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &333848051 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2410190378267988048, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &333848054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333848051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &335032693
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 335032694}
-  - component: {fileID: 335032696}
-  - component: {fileID: 335032695}
-  m_Layer: 5
-  m_Name: VerLine6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &335032694
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335032693}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 13
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 600, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &335032695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335032693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &335032696
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 335032693}
-  m_CullTransparentMesh: 1
---- !u!1 &360386955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4344091680109167866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &360386958
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360386955}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &396328591
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 396328594}
-  - component: {fileID: 396328592}
-  - component: {fileID: 396328593}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!20 &396328592
+--- !u!20 &396328592 stripped
 Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 2933338719882774051, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+  m_PrefabInstance: {fileID: 2933338719590840499}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396328591}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!81 &396328593
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396328591}
-  m_Enabled: 1
---- !u!4 &396328594
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 396328591}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.07, y: 0.06, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &400107128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 400107129}
-  - component: {fileID: 400107131}
-  - component: {fileID: 400107130}
-  m_Layer: 5
-  m_Name: HoliLine5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &400107129
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400107128}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 500}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &400107130
+--- !u!114 &483010289 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 254518084118428962, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+  m_PrefabInstance: {fileID: 254518083769637843}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400107128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &400107131
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400107128}
-  m_CullTransparentMesh: 1
---- !u!1 &400793516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 400793517}
-  - component: {fileID: 400793519}
-  - component: {fileID: 400793518}
-  m_Layer: 5
-  m_Name: HoliLine4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &400793517
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400793516}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 400}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &400793518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400793516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &400793519
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 400793516}
-  m_CullTransparentMesh: 1
---- !u!1 &478508715
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 478508716}
-  - component: {fileID: 478508718}
-  - component: {fileID: 478508717}
-  m_Layer: 5
-  m_Name: HoliLine7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &478508716
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478508715}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 700}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &478508717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478508715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &478508718
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 478508715}
-  m_CullTransparentMesh: 1
---- !u!1 &483010287 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &483010289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 483010287}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a7828d899da524b4c82fd566a77dbffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  komas: []
---- !u!1 &485123803 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 18592658155400921, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &485123806
+--- !u!114 &863994896 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5908490264165887707, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+  m_PrefabInstance: {fileID: 5908490263336692427}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485123803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &503671426 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6509701467736633599, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &503671429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503671426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &516149305
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 516149306}
-  - component: {fileID: 516149308}
-  - component: {fileID: 516149307}
-  m_Layer: 5
-  m_Name: VerLine8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &516149306
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516149305}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 800, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &516149307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516149305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &516149308
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 516149305}
-  m_CullTransparentMesh: 1
---- !u!1 &529826680 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5674523453877402642, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &529826683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529826680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &531882302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 531882303}
-  - component: {fileID: 531882305}
-  - component: {fileID: 531882304}
-  m_Layer: 5
-  m_Name: HoliLine8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &531882303
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531882302}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 800}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &531882304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531882302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &531882305
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 531882302}
-  m_CullTransparentMesh: 1
---- !u!1 &532924785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196604628824, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &532924788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 532924785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &533194453
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 533194454}
-  - component: {fileID: 533194456}
-  - component: {fileID: 533194455}
-  m_Layer: 5
-  m_Name: VerLine1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &533194454
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533194453}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &533194455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533194453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &533194456
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 533194453}
-  m_CullTransparentMesh: 1
---- !u!1 &551846869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 551846870}
-  - component: {fileID: 551846872}
-  - component: {fileID: 551846871}
-  m_Layer: 5
-  m_Name: HoliLine3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &551846870
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551846869}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 300}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &551846871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551846869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &551846872
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 551846869}
-  m_CullTransparentMesh: 1
---- !u!1 &561498234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 561498238}
-  - component: {fileID: 561498237}
-  - component: {fileID: 561498236}
-  - component: {fileID: 561498235}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &561498235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561498234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &561498236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561498234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 540
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 1
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &561498237
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561498234}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 1
-  m_Camera: {fileID: 396328592}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &561498238
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561498234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1701111389}
-  - {fileID: 1770630334}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!1 &621084659 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3906537068778086612, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &621084662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 621084659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &625767267 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962195689575754, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &625767270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625767267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &728474699 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6994050989639197731, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &728474702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728474699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &733211236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962195735350349, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &733211239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733211236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &770688412 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7066124994435283297, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &770688415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770688412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &792009053
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 792009054}
-  - component: {fileID: 792009056}
-  - component: {fileID: 792009055}
-  m_Layer: 5
-  m_Name: VerLine3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &792009054
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792009053}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &792009055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792009053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &792009056
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792009053}
-  m_CullTransparentMesh: 1
---- !u!1 &818827072 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6546780838043588474, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &818827075
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 818827072}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &863994892 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2612841586822444010, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
-  m_PrefabInstance: {fileID: 139703540}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &863994896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863994892}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a17589afd6ea43a40a29a8a4132cd8af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &894305857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962195957899368, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &894305860
+--- !u!114 &1196132936 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3553959764285430097, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+  m_PrefabInstance: {fileID: 3553959763325227801}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894305857}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &943844367 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962196009159206, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &943844370
+--- !u!114 &1256250716 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 5423664070990351389, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+  m_PrefabInstance: {fileID: 5423664071965479233}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943844367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &953587446
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 953587447}
-  - component: {fileID: 953587449}
-  - component: {fileID: 953587448}
-  m_Layer: 5
-  m_Name: HoliLine2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &953587447
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953587446}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 200}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &953587448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953587446}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &953587449
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953587446}
-  m_CullTransparentMesh: 1
---- !u!1 &1033032850 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1602327319510953309, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1033032853
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033032850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1035994061 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4046499420601153924, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1035994064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035994061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1198040510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962195117294487, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1198040513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198040510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1256250714
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1256250715}
-  - component: {fileID: 1256250716}
-  m_Layer: 0
-  m_Name: Map
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1256250715
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256250714}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1256250716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1256250714}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0b97158139487ec42a2169de368bac93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1266734134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1266734136}
-  - component: {fileID: 1266734137}
-  m_Layer: 0
-  m_Name: MapManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1266734136
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266734134}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1266734137
+--- !u!114 &1266734137 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 9119850875510365125, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+  m_PrefabInstance: {fileID: 9119850874260443132}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1266734134}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f96b1ff3a67cc4442b77fe197c549759, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cursor: {fileID: 863994896}
-  baseMap: {fileID: 1256250716}
-  komaManager: {fileID: 483010289}
-  gameManager: {fileID: 2055835355}
---- !u!1 &1318916855 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8310598500256203299, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1318916858
+--- !u!114 &2055835355 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+  m_PrefabInstance: {fileID: 4486424736793006966}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1318916855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1384550535 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8952354625088051354, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1384550538
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384550535}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1503972070 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962195499232463, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1503972073
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503972070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1595103256 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5211771106723609587, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1595103259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595103256}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1646086249 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6583324009166179111, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1646086252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646086249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1678646706
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1678646709}
-  - component: {fileID: 1678646708}
-  - component: {fileID: 1678646707}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1678646707
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678646706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &1678646708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678646706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1678646709
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1678646706}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.575, y: 11.09, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1679318086 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194604571247, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1679318089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679318086}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1701111388
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1701111389}
-  - component: {fileID: 1701111391}
-  - component: {fileID: 1701111390}
-  m_Layer: 5
-  m_Name: Image
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1701111389
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701111388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 561498238}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.5, y: -0.5}
-  m_SizeDelta: {x: -1, y: -1}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1701111390
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701111388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6792453, b: 0.3068669, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1701111391
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701111388}
-  m_CullTransparentMesh: 1
---- !u!1 &1716676591 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194567201222, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1716676594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716676591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1717738866
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1717738867}
-  - component: {fileID: 1717738869}
-  - component: {fileID: 1717738868}
-  m_Layer: 5
-  m_Name: HoliLine1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1717738867
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717738866}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 900, y: 4}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1717738868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717738866}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1717738869
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1717738866}
-  m_CullTransparentMesh: 1
---- !u!1 &1745033527
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1745033528}
-  - component: {fileID: 1745033530}
-  - component: {fileID: 1745033529}
-  m_Layer: 5
-  m_Name: VerLine4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1745033528
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745033527}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1745033529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745033527}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1745033530
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1745033527}
-  m_CullTransparentMesh: 1
---- !u!1 &1756412333 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194678472580, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1756412336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756412333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1757502990
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1757502991}
-  - component: {fileID: 1757502993}
-  - component: {fileID: 1757502992}
-  m_Layer: 5
-  m_Name: VerLine5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1757502991
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757502990}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1757502992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757502990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1757502993
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1757502990}
-  m_CullTransparentMesh: 1
---- !u!1 &1766772883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5048946519398465817, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1766772886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1766772883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1770630333
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1770630334}
-  - component: {fileID: 1770630336}
-  - component: {fileID: 1770630335}
-  m_Layer: 5
-  m_Name: ShogiBoard
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1770630334
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770630333}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1836544238}
-  m_Father: {fileID: 561498238}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 1000}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1770630335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770630333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6784314, g: 0.43477443, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1770630336
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1770630333}
-  m_CullTransparentMesh: 1
---- !u!1 &1771413672 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194697143937, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1771413675
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771413672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1836544237
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1836544238}
-  - component: {fileID: 1836544241}
-  - component: {fileID: 1836544240}
-  - component: {fileID: 1836544239}
-  m_Layer: 5
-  m_Name: Waku
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1836544238
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836544237}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1717738867}
-  - {fileID: 953587447}
-  - {fileID: 551846870}
-  - {fileID: 400793517}
-  - {fileID: 400107129}
-  - {fileID: 150084357}
-  - {fileID: 478508716}
-  - {fileID: 531882303}
-  - {fileID: 533194454}
-  - {fileID: 2098521688}
-  - {fileID: 792009054}
-  - {fileID: 1745033528}
-  - {fileID: 1757502991}
-  - {fileID: 335032694}
-  - {fileID: 1838501015}
-  - {fileID: 516149306}
-  m_Father: {fileID: 1770630334}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 500, y: -500}
-  m_SizeDelta: {x: 900, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1836544239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836544237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
-  m_EffectDistance: {x: 4, y: 4}
-  m_UseGraphicAlpha: 1
---- !u!114 &1836544240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836544237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.6784314, g: 0.43477443, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1836544241
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836544237}
-  m_CullTransparentMesh: 1
---- !u!1 &1838501014
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1838501015}
-  - component: {fileID: 1838501017}
-  - component: {fileID: 1838501016}
-  m_Layer: 5
-  m_Name: VerLine7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1838501015
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838501014}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 700, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1838501016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838501014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1838501017
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1838501014}
-  m_CullTransparentMesh: 1
---- !u!1 &1858930139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194708194290, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1858930142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858930139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1942664649 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194792109024, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1942664652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942664649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &1996548262 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194855661199, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1996548265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1996548262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &2003103202 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194849106891, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2003103205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003103202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &2055835354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2055835356}
-  - component: {fileID: 2055835355}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2055835355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055835354}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b9a5feb4d0dd1f4f88f9b4f39f4eb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movableTiles: []
-  phase: 0
-  komaManager: {fileID: 483010289}
-  mapManager: {fileID: 1266734137}
---- !u!4 &2055835356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055835354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2069012972 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7881962194919507909, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2069012975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2069012972}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1 &2098521687
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2098521688}
-  - component: {fileID: 2098521690}
-  - component: {fileID: 2098521689}
-  m_Layer: 5
-  m_Name: VerLine2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &2098521688
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098521687}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1836544238}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 0}
-  m_SizeDelta: {x: 4, y: 900}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2098521689
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098521687}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &2098521690
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098521687}
-  m_CullTransparentMesh: 1
---- !u!1 &2125645730 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4915066662290567168, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-  m_PrefabInstance: {fileID: 7881962196147562025}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2125645733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125645730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a348138ee9ccb343b3119a031a15f81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positionInt: {x: 0, y: 0}
-  p1komaOu: koma_0
-  p1komaHisya: koma_1
-  p1komaKaku: koma_2
-  p1komaKin: koma_3_1
-  p1komaKin2: koma_3_2
-  p1komaGin: koma_4_1
-  p1komaGin2: koma_4_2
-  p1komaKeima: koma_5_1
-  p1komaKeima2: koma_5_2
-  p1komaKyousya: koma_6_1
-  p1komaKyousya2: koma_6_2
-  p1komaHohyou1: koma_7_1
-  p1komaHohyou2: koma_7_2
-  p1komaHohyou3: koma_7_3
-  p1komaHohyou4: koma_7_4
-  p1komaHohyou5: koma_7_5
-  p1komaHohyou6: koma_7_6
-  p1komaHohyou7: koma_7_7
-  p1komaHohyou8: koma_7_8
-  p1komaHohyou9: koma_7_9
-  p2komaOu: koma_8
-  p2komaHisya: koma_9
-  p2komaKaku: koma_10
-  p2komaKin: koma_11_1
-  p2komaKin2: koma_11_2
-  p2komaGin: koma_12_1
-  p2komaGin2: koma_12_2
-  p2komaKeima: koma_13_1
-  p2komaKeima2: koma_13_2
-  p2komaKyousya: koma_14_1
-  p2komaKyousya2: koma_14_2
-  p2komaHohyou1: koma_15_1
-  p2komaHohyou2: koma_15_2
-  p2komaHohyou3: koma_15_3
-  p2komaHohyou4: koma_15_4
-  p2komaHohyou5: koma_15_5
-  p2komaHohyou6: koma_15_6
-  p2komaHohyou7: koma_15_7
-  p2komaHohyou8: koma_15_8
-  p2komaHohyou9: koma_15_9
---- !u!1001 &7881962196147562025
+--- !u!1001 &254518083769637843
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 18592658155400921, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 20711099078156573, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 377692950075136767, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 391539794937729485, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 424536672601109550, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 499176798501022289, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 533859238063233448, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1202841578402452958, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1330386420854952867, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1405598246865097772, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1481319539251048253, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602327319510953309, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 2410190378267988048, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 2666397153950687866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 3049718203013486871, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 3081682841843509971, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 3564972293370531871, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 3874608889507823012, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 3906537068778086612, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 4046499420601153924, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 4194262287414892435, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 4344091680109167866, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 4649557692547899698, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 4915066662290567168, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 5048946519398465817, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 5211771106723609587, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 5436141568249622213, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 5674523453877402642, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 6509701467736633599, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 6546780838043588474, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 6583324009166179111, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 6993513514368714850, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 6994050989639197731, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066124994435283297, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 7364203723773029205, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 7602379098342013256, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 7881962194697143937, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_Name
-      value: koma_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_Name
-      value: KomaManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853446, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.14593056
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.65766114
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.04015278
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7881962196620853465, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+    - target: {fileID: 254518084118428961, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8247727846523725600, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 8310598500256203299, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 8845484811883086521, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
-      objectReference: {fileID: 0}
-    - target: {fileID: 8952354625088051354, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
-      propertyPath: m_TagString
-      value: P2Koma
+    - target: {fileID: 254518084118428988, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+      propertyPath: m_Name
+      value: KomaManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28bee2e88b75221438d50cd7d0f5ea6b, type: 3}
+--- !u!1001 &2933338719590840499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774049, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2933338719882774076, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+      propertyPath: m_Name
+      value: Main Camera
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6cac005754671264dbdbe868fbf30676, type: 3}
+--- !u!1001 &3553959763325227801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3553959762779429731, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_Name
+      value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429732, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 396328592}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
+--- !u!1001 &4486424736793006966
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598316, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: TurnText
+      value: 
+      objectReference: {fileID: 1196132936}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: mapManager
+      value: 
+      objectReference: {fileID: 1266734137}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: komaManager
+      value: 
+      objectReference: {fileID: 483010289}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+--- !u!1001 &5423664071965479233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5423664070990351387, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+      propertyPath: m_Name
+      value: Map
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
+--- !u!1001 &5908490263336692427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5908490264165887687, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_Name
+      value: Cursor
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887704, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887705, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5908490264165887705, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
+--- !u!1001 &8501064621122476912
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8501064619579360962, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.575
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 11.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501064619579360965, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a99a19bbd09660641af8727f4072d7b7, type: 3}
+--- !u!1001 &9119850874260443132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119850875510365125, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: cursor
+      value: 
+      objectReference: {fileID: 863994896}
+    - target: {fileID: 9119850875510365125, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: baseMap
+      value: 
+      objectReference: {fileID: 1256250716}
+    - target: {fileID: 9119850875510365125, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2055835355}
+    - target: {fileID: 9119850875510365125, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: komaManager
+      value: 
+      objectReference: {fileID: 483010289}
+    - target: {fileID: 9119850875510365130, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
+      propertyPath: m_Name
+      value: MapManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}

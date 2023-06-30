@@ -55,7 +55,6 @@ public class GManager : MonoBehaviour
         switch (phase)
         {
             case Phase.Player1KomaSelection:
-
                 Player1KomaSelection();
 
                 break;
@@ -65,7 +64,6 @@ public class GManager : MonoBehaviour
 
                 break;
             case Phase.Player2KomaSelection:
-
                 Player2KomaSelection();
 
                 break;
@@ -77,7 +75,7 @@ public class GManager : MonoBehaviour
         }
     }
 
-    bool IsClickCharacter1(TileObj clickTileObj)
+    bool IsClickKoma1(TileObj clickTileObj)
     {
         //駒を取得して移動範囲を表示
         Koma koma = null;
@@ -94,7 +92,7 @@ public class GManager : MonoBehaviour
         return false;
     }
 
-    bool IsClickCharacter2(TileObj clickTileObj)
+    bool IsClickKoma2(TileObj clickTileObj)
     {
         //駒を取得して移動範囲を表示
         Koma koma = null;
@@ -115,8 +113,8 @@ public class GManager : MonoBehaviour
     {
         //駒を取得して移動範囲を表示
         Koma koma = null;
-        koma = komaManager.GetKoma(clickTileObj.positionInt);
-        if (koma != null && koma.tag == "P1Koma")
+        koma = komaManager.GetP1Koma(clickTileObj.positionInt);
+        if (koma != null)
         {
             return true;
         }
@@ -127,8 +125,8 @@ public class GManager : MonoBehaviour
     {
         //駒を取得して移動範囲を表示
         Koma koma = null;
-        koma = komaManager.GetKoma(clickTileObj.positionInt);
-        if (koma != null && koma.tag == "P2Koma")
+        koma = komaManager.GetP2Koma(clickTileObj.positionInt);
+        if (koma != null )
         {
             return true;
         }
@@ -141,10 +139,14 @@ public class GManager : MonoBehaviour
         //クリックしたタイルを取得
         //その上に駒がいるなら
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        if (IsClickCharacter1(clickTileObj))
+        if(clickTileObj != null)
         {
-            phase = Phase.Player1KomaMoveSelection;
+            if (IsClickKoma1(clickTileObj))
+            {
+                phase = Phase.Player1KomaMoveSelection;
+            }
         }
+        
     }
 
     void Player2KomaSelection()
@@ -152,9 +154,13 @@ public class GManager : MonoBehaviour
         //クリックしたタイルを取得
         //その上に駒がいるなら
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        if (IsClickCharacter2(clickTileObj))
+        if (clickTileObj != null)
         {
-            phase = Phase.Player2KomaMoveSelection;
+            if (IsClickKoma2(clickTileObj))
+            {
+                phase = Phase.Player2KomaMoveSelection;
+            }
+            
         }
     }
 
@@ -163,45 +169,52 @@ public class GManager : MonoBehaviour
 
         //クリックした場所が移動範囲なら移動させて敵のフェーズへ
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        //1pの駒がいるなら
-        if(IsClickCharacter1(clickTileObj))
+        
+        if (clickTileObj) //クリックした場所にタイルが存在するなら
         {
-            return;
-        }
-        else if (OnTileP2Check(clickTileObj))
-        {
-            if (movableTiles.Contains(clickTileObj)) //クリックした場所に相手の駒がいて移動範囲内なら
+            if (IsClickKoma1(clickTileObj))//1pの駒がいるなら
             {
-                Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt);//その座標の駒を取得
-                if (enemyKoma.name == "koma_8")//取得した敵駒が王なら
+                return;
+            }
+            else if (OnTileP2Check(clickTileObj))
+            {
+                if (movableTiles.Contains(clickTileObj)) //クリックした場所に相手の駒がいて移動範囲内なら
                 {
-                    Destroy(enemyKoma.gameObject);
-                    selectedKoma.Move(clickTileObj.positionInt);
-                    Player1Win();
+                    Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt);//その座標の駒を取得
+                    if (enemyKoma.name == "koma_8")//取得した敵駒が王ならプレイヤー１の勝ちにする。
+                    {
+                        Destroy(enemyKoma.gameObject);
+                        selectedKoma.Move(clickTileObj.positionInt);
+                        Player1Win();
+                    }
+                    else//取得した駒が王以外なら移動してフェーズを変える。
+                    {
+                        Destroy(enemyKoma.gameObject);
+                        selectedKoma.Move(clickTileObj.positionInt);
+                    }
+                    mapManager.PosCursor(2);
+                    TurnText.GetComponent<Text>().text = "後手の手番" ;
+                    phase = Phase.Player2KomaSelection;
                 }
-                else
+                mapManager.ResetMovablePanels(movableTiles);
+                selectedKoma = null;
+            }
+            else
+            {
+                //クリックしたタイルが移動範囲に含まれるなら
+                if (movableTiles.Contains(clickTileObj))
                 {
-                    Destroy(enemyKoma.gameObject);
+                    //selectedKomaをタイルまで移動させる。
                     selectedKoma.Move(clickTileObj.positionInt);
+                    mapManager.PosCursor(2);
+                    TurnText.GetComponent<Text>().text = "後手の手番";
+                    phase = Phase.Player2KomaSelection;
+                    
                 }
+                mapManager.ResetMovablePanels(movableTiles);
+                selectedKoma = null;
 
-                phase = Phase.Player2KomaSelection;
             }
-            mapManager.ResetMovablePanels(movableTiles);
-            selectedKoma = null;
-        }
-        else
-        {
-            //クリックしたタイルが移動範囲に含まれるなら
-            if (movableTiles.Contains(clickTileObj))
-            {
-                //selectedKomaをタイルまで移動させる。
-                selectedKoma.Move(clickTileObj.positionInt);
-                mapManager.FirstPos(5,9);
-                phase = Phase.Player2KomaSelection;
-            }
-            mapManager.ResetMovablePanels(movableTiles);
-            selectedKoma = null;
             
         }
 
@@ -212,33 +225,36 @@ public class GManager : MonoBehaviour
 
         //クリックした場所が移動範囲なら移動させて敵のフェーズへ
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        //1pの駒がいるなら
-        if (IsClickCharacter2(clickTileObj))
+
+        if(clickTileObj != null)
         {
-            return;
-        }
-        else if (OnTileP1Check(clickTileObj))
-        {
-            if(movableTiles.Contains(clickTileObj)) //クリックした場所に相手の駒がいて移動範囲内なら
+            if (IsClickKoma2(clickTileObj))//p2の駒がいるなら
             {
-                Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);
-                if (enemyKoma.name == "koma_0")//取得した敵駒が王なら
-                {
-                    Destroy(enemyKoma.gameObject);
-                    selectedKoma.Move(clickTileObj.positionInt);
-                    Player2Win();
-                    Debug.Log("P2Win");
-                }
-                else
-                {
-                    Destroy(enemyKoma.gameObject);
-                    selectedKoma.Move(clickTileObj.positionInt);
-                }
-                phase = Phase.Player1KomaSelection;
+                return;
             }
-            mapManager.ResetMovablePanels(movableTiles);
-            selectedKoma = null;
-        }
+            else if (OnTileP1Check(clickTileObj))
+            {
+                if(movableTiles.Contains(clickTileObj)) //クリックした場所に相手の駒がいて移動範囲内なら
+                {
+                    Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);
+                    if (enemyKoma.name == "koma_0")//取得した敵駒が王なら
+                    {
+                        Destroy(enemyKoma.gameObject);
+                        selectedKoma.Move(clickTileObj.positionInt);
+                        Player2Win();
+                    }
+                    else
+                    {
+                        Destroy(enemyKoma.gameObject);
+                        selectedKoma.Move(clickTileObj.positionInt);
+                    }
+                    mapManager.PosCursor(1);
+                    TurnText.GetComponent<Text>().text = "先手の手番";
+                    phase = Phase.Player1KomaSelection;
+                }
+                mapManager.ResetMovablePanels(movableTiles);
+                selectedKoma = null;
+            }
         else
         {
             //クリックしたタイルが移動範囲に含まれるなら
@@ -246,11 +262,14 @@ public class GManager : MonoBehaviour
             {
                 //selectedKomaをタイルまで移動させる。
                 selectedKoma.Move(clickTileObj.positionInt);
-                phase = Phase.Player1KomaSelection;
+                mapManager.PosCursor(1);
+                    TurnText.GetComponent<Text>().text = "先手の手番";
+                    phase = Phase.Player1KomaSelection;
             }
-            mapManager.ResetMovablePanels(movableTiles);
-            selectedKoma = null;
+                mapManager.ResetMovablePanels(movableTiles);
+                selectedKoma = null;
 
+            }
         }
 
     }
