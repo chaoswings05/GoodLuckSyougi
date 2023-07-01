@@ -169,7 +169,6 @@ public class Koma : MonoBehaviour
 
         GameObject obj = GameObject.Find(name);
         Vector3 objPos = new Vector3(basex + per1xy * x, basey + per1xy * y, 2);
-        obj.transform.position = objPos += posFix;
     }
 
     public void KomaFirstSet()

@@ -183,13 +183,13 @@ public class GManager : MonoBehaviour
                     Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt);//その座標の駒を取得
                     if (enemyKoma.name == "koma_8")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                     {
-                        Destroy(enemyKoma.gameObject);
+                        komaManager.DeleteKoma(enemyKoma.name);
                         selectedKoma.Move(clickTileObj.positionInt);
                         Player1Win();
                     }
                     else//取得した駒が王以外なら移動してフェーズを変える。
                     {
-                        Destroy(enemyKoma.gameObject);
+                        komaManager.DeleteKoma(enemyKoma.name);
                         selectedKoma.Move(clickTileObj.positionInt);
                     }
                     mapManager.PosCursor(2);
@@ -239,13 +239,13 @@ public class GManager : MonoBehaviour
                     Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);
                     if (enemyKoma.name == "koma_0")//取得した敵駒が王なら
                     {
-                        Destroy(enemyKoma.gameObject);
+                        komaManager.DeleteKoma(enemyKoma.name);
                         selectedKoma.Move(clickTileObj.positionInt);
                         Player2Win();
                     }
                     else
                     {
-                        Destroy(enemyKoma.gameObject);
+                        komaManager.DeleteKoma(enemyKoma.name);
                         selectedKoma.Move(clickTileObj.positionInt);
                     }
                     mapManager.PosCursor(1);
