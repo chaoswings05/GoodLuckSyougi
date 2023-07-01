@@ -657,11 +657,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4622400718514892441, guid: e1343f323e4e33a45bb4c65a57cfe280, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 500
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4622400718514892441, guid: e1343f323e4e33a45bb4c65a57cfe280, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -135.28
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 4622400718514892441, guid: e1343f323e4e33a45bb4c65a57cfe280, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -782,6 +782,8 @@ GameObject:
   - component: {fileID: 1516602699}
   - component: {fileID: 1516602700}
   - component: {fileID: 1516602701}
+  - component: {fileID: 1516602703}
+  - component: {fileID: 1516602702}
   m_Layer: 5
   m_Name: PlayerHand
   m_TagString: Untagged
@@ -807,8 +809,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 270.56}
+  m_AnchoredPosition: {x: 0, y: 100.05524}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516602699
 MonoBehaviour:
@@ -845,7 +847,7 @@ MonoBehaviour:
   m_CellSize: {x: 100, y: 100}
   m_Spacing: {x: 20, y: 15}
   m_Constraint: 1
-  m_ConstraintCount: 6
+  m_ConstraintCount: 4
 --- !u!114 &1516602701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -860,6 +862,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataBase: {fileID: 11400000, guid: 00e46b0998f6d6948992d8983101e217, type: 2}
   gacha: {fileID: 994101534}
+--- !u!114 &1516602702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516602697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: b8698d28508d0654f9db99ba3d616c29, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1516602703
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516602697}
+  m_CullTransparentMesh: 1
 --- !u!1 &1596917196
 GameObject:
   m_ObjectHideFlags: 0
