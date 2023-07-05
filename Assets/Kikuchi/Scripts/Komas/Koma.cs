@@ -15,7 +15,7 @@ public class Koma : MonoBehaviour
     float basey;
 
     private Vector3 posFix;
-    [SerializeField] Vector2Int positionInt;
+    public  Vector2Int positionInt;
 
     public Vector2Int Position { get => positionInt;}
 
@@ -159,30 +159,24 @@ public class Koma : MonoBehaviour
         CreateKomaObj(p2komaHohyou7, 7, 7);
         CreateKomaObj(p2komaHohyou8, 8, 7);
         CreateKomaObj(p2komaHohyou9, 9, 7);
-        KomaFirstSet();
     }
 
     void CreateKomaObj(string name, int x, int y)//駒を初期配置に置く。
     {
+
         basex = -3.708f - per1xy; //0に当たる場所。今回は左端の値
         basey = -3.7146f - per1xy; //0に当たる場所。今回は下の値
 
         GameObject obj = GameObject.Find(name);
         Vector3 objPos = new Vector3(basex + per1xy * x, basey + per1xy * y, 2);
+        posx = transform.position.x;
+        posy = transform.position.y;
+        roundx = (posx - basex) / per1xy;
+        roundy = (posy - basey) / per1xy;
+        Vector2Int pos = new Vector2Int((int)roundx, (int)roundy);//ポジション正規化
+        positionInt = pos;
     }
 
-    public void KomaFirstSet()
-    {
-        
-         posx = transform.position.x;
-         posy = transform.position.y;
-         float basex = -3.708f - per1xy; //0に当たる場所。今回は左端の値
-         float basey = -3.7146f - per1xy; //0に当たる場所。今回は下の値
-         roundx = (posx - basex) / per1xy;
-         roundy = (posy - basey) / per1xy;
-         Vector2Int pos = new Vector2Int((int)roundx, (int)roundy);//ポジション正規化
-         positionInt = pos;
-    }
 
     public void Move(Vector2Int newPos)
     {

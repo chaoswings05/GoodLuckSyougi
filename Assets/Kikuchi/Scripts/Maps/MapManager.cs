@@ -13,12 +13,15 @@ public class MapManager : MonoBehaviour
 
     // 生成したマップを管理する。
     List<TileObj> tileObjs = new List<TileObj>();
+    
 
     Koma onTileKoma = null;
 
     float per1xy = 0.928f;//1マスあたりの移動値 (駒が動く座標範囲の全体の大きさ/一コマの移動距離)
     float basex = -3.708f; //0に当たる場所。今回は左端の値
     float basey = -3.7146f;//0に当たる場所。今回は下の値
+    int mapWidth = 9;
+    int mapHeight = 9;
 
 
     private void Start()
@@ -44,12 +47,89 @@ public class MapManager : MonoBehaviour
         if (hit2D && hit2D.collider)
         {
             cursor.SetPosition(hit2D.transform);
+            TileObj check = hit2D.collider.GetComponent<TileObj>();
+            Debug.Log(check.positionInt);
             return hit2D.collider.GetComponent<TileObj>();
         }
 
         return null;
     }
 
+    public void ShowSetPanels(Koma koma , List<TileObj> setTiles)
+    {
+        Debug.Log(koma.name);
+        Vector2Int onTilePos = new Vector2Int(1, 1);
+        for (int x = 1; x <= mapWidth; x++)
+        {
+            for (int y = 1; y <= mapHeight; y++)
+            {
+                onTilePos.x = x;
+                onTilePos.y = y;
+                onTileKoma = komaManager.GetKoma(onTilePos);
+                if (onTileKoma == null)
+                {
+                    setTiles.Add(tileObjs.Find(tile => tile.positionInt == onTilePos));
+                    
+                }
+
+            }
+            onTilePos = new Vector2Int(1, 1);
+        }
+
+        for (int x = 1; x <= mapWidth; x++)
+        {
+            for (int y = 1; y <= mapHeight; y++)
+            {
+                onTilePos.x = x;
+                onTilePos.y = y;
+                onTileKoma = komaManager.GetKoma(onTilePos);
+                if (onTileKoma != null)
+                {
+                    if (koma.name.Contains("koma_7") && onTileKoma.name.Contains("koma_7"))
+                    {
+                        for (int i = 0; i < 9; i++)
+                        {
+                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y + i)));
+                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y - i)));
+
+                        }
+                    }
+                    else if (koma.name.Contains("koma_15") && onTileKoma.name.Contains("koma_15"))
+                    {
+                        for (int i = 0; i < 9; i++)
+                        {
+                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y + i)));
+                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y - i)));
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+        foreach (var tile in setTiles)
+        {
+            if (tile != null)
+            {
+                tile.ShowMovablePanel(true);
+            }
+
+        }
+    }
+
+    public void ResetSetPanels(List<TileObj> setTiles) //移動範囲をリセットする
+    {
+        foreach (var tile in setTiles)
+        {
+            if (tile != null)
+            {
+                tile.ShowMovablePanel(false);
+            }
+
+        }
+        setTiles.Clear();
+    }
     public void ShowMovablePanels(Koma koma , List<TileObj> movableTiles) //移動範囲を表示する
     {
         //centerposから上下左右のタイルを探す。
@@ -166,25 +246,26 @@ public class MapManager : MonoBehaviour
 
         }
 
-        if (koma.name == ("koma_1")) //飛車の動き
+        
+
+
+        if (koma.name == "koma_1" || koma.name == "koma_9") //飛車の動き
         {
 
             for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
             {
                 Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(0, i));
-                onTileEnemyKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(0, i));
-                if (onTileKoma == null && onTileEnemyKoma == null)
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(0, i));
+                if (onTileKoma == null)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                 }
-                else if (onTileEnemyKoma)
+                else if (onTileKoma.tag != koma.tag)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                     break;
                 }
-                else if (onTileKoma)
+                else if (onTileKoma.tag == koma.tag)
                 {
                     break;
                 }
@@ -193,19 +274,17 @@ public class MapManager : MonoBehaviour
             for (int i = 1; i < 9; i++) //下の値最大まで取る。null対処はmuvableTile関数で行う。
             {
                 Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(0, -i));
-                onTileEnemyKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(0, -i));
-                if (onTileKoma == null && onTileEnemyKoma == null)
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(0, -i));
+                if (onTileKoma == null)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                 }
-                else if (onTileEnemyKoma)
+                else if (onTileKoma.tag != koma.tag)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                     break;
                 }
-                else if (onTileKoma)
+                else if (onTileKoma.tag == koma.tag)
                 {
                     break;
                 }
@@ -214,19 +293,17 @@ public class MapManager : MonoBehaviour
             for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
             {
                 Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(i, 0));
-                onTileEnemyKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(i, 0));
-                if (onTileKoma == null && onTileEnemyKoma == null)
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(i, 0));
+                if (onTileKoma == null)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
                 }
-                else if (onTileEnemyKoma)
+                else if (onTileKoma.tag != koma.tag)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
                     break;
                 }
-                else if (onTileKoma)
+                else if (onTileKoma.tag == koma.tag)
                 {
                     break;
                 }
@@ -235,19 +312,17 @@ public class MapManager : MonoBehaviour
             for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
             {
                 Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(-i, 0));
-                onTileEnemyKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(-i, 0));
-                if (onTileKoma == null && onTileEnemyKoma == null)
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(-i, 0));
+                if (onTileKoma == null )
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
                 }
-                else if (onTileEnemyKoma)
+                else if (onTileKoma.tag != koma.tag)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
                     break;
                 }
-                else if (onTileKoma)
+                else if (onTileKoma.tag == koma.tag)
                 {
                     break;
                 }
@@ -255,97 +330,7 @@ public class MapManager : MonoBehaviour
 
         }
 
-
-        if (koma.name == ("koma_9")) //飛車の動き
-        {
-
-            for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
-            {
-                Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(0, i));
-                onTileEnemyKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(0, i));
-                if (onTileKoma == null && onTileEnemyKoma == null)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
-                }
-                else if (onTileEnemyKoma)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
-                    break;
-                }
-                else if (onTileKoma)
-                {
-                    break;
-                }
-            }
-
-            for (int i = 1; i < 9; i++) //下の値最大まで取る。null対処はmuvableTile関数で行う。
-            {
-                Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(0, -i));
-                onTileEnemyKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(0, -i));
-                if (onTileKoma == null && onTileEnemyKoma == null)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
-                }
-                else if (onTileEnemyKoma)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
-                    break;
-                }
-                else if (onTileKoma)
-                {
-                    break;
-                }
-            }
-
-            for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
-            {
-                Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(i, 0));
-                onTileEnemyKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(i, 0));
-                if (onTileKoma == null && onTileEnemyKoma == null)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
-                }
-                else if (onTileEnemyKoma)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
-                    break;
-                }
-                else if (onTileKoma)
-                {
-                    break;
-                }
-            }
-
-            for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
-            {
-                Koma onTileKoma = null;
-                Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(-i, 0));
-                onTileEnemyKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(-i, 0));
-                if (onTileKoma == null && onTileEnemyKoma == null)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
-                }
-                else if (onTileEnemyKoma)
-                {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
-                    break;
-                }
-                else if (onTileKoma)
-                {
-                    break;
-                }
-            }
-
-        }
-
-        if (koma.name == ("koma_2")) //角の動き koma.name == ("koma_10")
+        if (koma.name == ("koma_2") || koma.name == ("koma_10"))
         {
 
             for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
@@ -735,12 +720,12 @@ public class MapManager : MonoBehaviour
             for (int i = 1; i < 9; i++) //上の値最大まで取る。null対処はmuvableTile関数で行う。
             {
                 Koma onTileKoma = null;
-                onTileKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(0, i));
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(0, i));
                 if (onTileKoma == null)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                 }
-                else if (onTileKoma)
+                else if (onTileKoma.tag != koma.tag)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                     break;
@@ -757,18 +742,17 @@ public class MapManager : MonoBehaviour
             {
                 Koma onTileKoma = null;
                 Koma onTileEnemyKoma = null;
-                onTileKoma = komaManager.GetP2Koma(koma.Position + new Vector2Int(0, -i));
-                onTileKoma = komaManager.GetP1Koma(koma.Position + new Vector2Int(0, -i));
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(0, -i));
                 if (onTileKoma == null && onTileEnemyKoma == null)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                 }
-                else if (onTileEnemyKoma)
+                else if (onTileKoma.tag != koma.tag)
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                     break;
                 }
-                else if (onTileKoma)
+                else
                 {
                     break;
                 }
