@@ -54,14 +54,23 @@ public class GManager : MonoBehaviour
 
     public void Gacha()
     {
-        GameObject gachaKoma = null;
+        GameObject gachaObj = null;
         if (phase == Phase.Player1MotiKomaMoveSelection)
         {
             mapManager.ResetSetPanels(setTiles);
             phase = Phase.Player1Gacha;
+            gachaObj = testGacha;
+            Koma gachaKoma = testGacha.GetComponent<Koma>();
             //ガチャを引いて引いた駒を取得する。
-            komaManager.IncreaceGachaKoma(testGacha, "P1Koma");
-            //phase = Phase.Player1KomaSelection;
+            if(gachaKoma != null)
+            {
+                komaManager.IncreaceGachaKoma(gachaKoma, "P1Koma");
+                phase = Phase.Player1KomaSelection;
+            }
+            else
+            {
+                Debug.Log("ガチャ駒に「Koma」スクリプトをアタッチしてください");
+            }
 
         }
         if (phase == Phase.Player2MotiKomaMoveSelection)
@@ -69,7 +78,8 @@ public class GManager : MonoBehaviour
             mapManager.ResetSetPanels(setTiles);
             phase = Phase.Player2Gacha;
             //ガチャを引いて引いた駒を取得する。
-            gachaKoma = testGacha;
+            gachaObj = testGacha;
+            Koma gachaKoma = testGacha.GetComponent<Koma>();
             komaManager.IncreaceGachaKoma(gachaKoma, "P2Koma");
             phase = Phase.Player2KomaSelection;
         }
@@ -288,8 +298,8 @@ public class GManager : MonoBehaviour
         {
             if (clickTileObj.tag != "TehudaTile" && setTiles.Contains(clickTileObj))//クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
             {
-                komaManager.DeleteTehudaTile(selectedKoma.Position);
                 komaManager.Motikomas.Remove(selectedKoma);
+                komaManager.DeleteTehudaTile(selectedKoma.Position);
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
                 phase = Phase.Player2KomaSelection;
@@ -305,6 +315,7 @@ public class GManager : MonoBehaviour
             }
             else
             {
+                Debug.Log("Error");
                 return;
             }
         }

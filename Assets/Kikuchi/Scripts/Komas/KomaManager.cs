@@ -116,14 +116,12 @@ public class KomaManager : MonoBehaviour
         }
     }
 
-    public void IncreaceGachaKoma(GameObject gachaKoma ,string playerTag)
+    public void IncreaceGachaKoma(Koma gachaKoma ,string playerTag)
     {
 
-        gachaKoma.tag = playerTag;//駒のタグ変更
-        gachaKoma.AddComponent<Koma>();
-        Koma gKoma = gachaKoma.GetComponent<Koma>();
-        Motikomas.Add(gKoma);
-        MotiKomaSet(gKoma);//手札駒の場所にタイルを生成して駒を取得できるようにしておく
+        gachaKoma.gameObject.tag = playerTag;//駒のタグ変更
+        Motikomas.Add(gachaKoma);
+
         if (playerTag == "P1Koma")
         {
             gachaKoma.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
@@ -152,6 +150,8 @@ public class KomaManager : MonoBehaviour
                 p2KomaPosY -= 1;
             }
         }
+
+        MotiKomaSet(gachaKoma);//手札駒の場所にタイルを生成して駒を取得できるようにしておく
         
     }
 
@@ -209,7 +209,7 @@ public class KomaManager : MonoBehaviour
     {
         p1Koma.tag = "P2Koma";
         p1Koma.gameObject.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
-        p1Koma.gameObject.transform.rotation = Quaternion.Euler(0, 0, 180);
+        p1Koma.gameObject.transform.rotation =  Quaternion.Euler(0, 0, 180);
         if (p2KomaPosX > 6)
         {
             p2KomaPosX -= 1;
@@ -258,6 +258,7 @@ public class KomaManager : MonoBehaviour
     public void MotiKomaSet(Koma setKoma)//手札タイルの生成
     {
         GameObject tehudaTile = (GameObject)Resources.Load("MapTrout");//リソースからタイルを持ってくる。
+        tehudaTile = Instantiate(tehudaTile, setKoma.gameObject.transform.position, Quaternion.identity);
         tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos;//タイルが持つマスの位置管理の値を0,0(将棋盤の外の値)にする。
         tehudaTile.name = "tehuda";
         tehudaTile.tag = "TehudaTile";
@@ -272,12 +273,10 @@ public class KomaManager : MonoBehaviour
             tehudaPos.x++;
             tehudaPos.y = 0;
         }
-        tehudaTile = Instantiate(tehudaTile, setKoma.gameObject.transform.position, Quaternion.identity);
-        
-        
-        
-        
+
+                
     }
+
 
     public void DeleteTehudaTile(Vector2Int tilePosition)
     {

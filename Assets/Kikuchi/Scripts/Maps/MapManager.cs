@@ -73,7 +73,6 @@ public class MapManager : MonoBehaviour
                 }
 
             }
-            onTilePos = new Vector2Int(1, 1);
         }
 
         for (int x = 1; x <= mapWidth; x++)
@@ -756,6 +755,42 @@ public class MapManager : MonoBehaviour
                 {
                     break;
                 }
+            }
+
+        }
+
+        if (koma.name.Contains("Seiken")) //ƒKƒ`ƒƒ‹î¹Œ•‚Ì“®‚«
+        {
+
+            for (int i = 1; i < 9; i++) //ã‚Ì’lÅ‘å‚Ü‚ÅŽæ‚éB
+            {
+                Koma onTileKoma = null;
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(0, i));
+                if (onTileKoma == null)
+                {
+                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                }
+                else if (onTileKoma.tag != koma.tag)
+                {
+                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                }
+                else break;
+                
+            }
+            for (int i = 1; i < 9; i++)
+            {
+                Koma onTileKoma = null;
+                onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(0, -i));
+                if (onTileKoma == null)
+                {
+                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
+                }
+                else if (onTileKoma.tag != koma.tag)
+                {
+                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
+
+                }
+                else break;
             }
 
         }
