@@ -38,6 +38,8 @@ public class GManager : MonoBehaviour
     [Header("\nガチャを引くためのボタンをアタッチしてください。")]
     [SerializeField]
     Button button;
+    [SerializeField]
+    GameObject testGacha;
 
     private bool gameFinish;
 
@@ -52,17 +54,24 @@ public class GManager : MonoBehaviour
 
     public void Gacha()
     {
-        if(phase == Phase.Player1MotiKomaMoveSelection)
+        GameObject gachaKoma = null;
+        if (phase == Phase.Player1MotiKomaMoveSelection)
         {
             mapManager.ResetSetPanels(setTiles);
             phase = Phase.Player1Gacha;
-            //ガチャゴマ追加メソッド
+            //ガチャを引いて引いた駒を取得する。
+            komaManager.IncreaceGachaKoma(testGacha, "P1Koma");
+            //phase = Phase.Player1KomaSelection;
+
         }
         if (phase == Phase.Player2MotiKomaMoveSelection)
         {
             mapManager.ResetSetPanels(setTiles);
             phase = Phase.Player2Gacha;
-            //ガチャゴマ追加メソッド
+            //ガチャを引いて引いた駒を取得する。
+            gachaKoma = testGacha;
+            komaManager.IncreaceGachaKoma(gachaKoma, "P2Koma");
+            phase = Phase.Player2KomaSelection;
         }
 
     }

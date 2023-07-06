@@ -15,6 +15,7 @@ public class Koma : MonoBehaviour
     float basey;
 
     private Vector3 posFix;
+
     public  Vector2Int positionInt;
 
     public Vector2Int Position { get => positionInt;}

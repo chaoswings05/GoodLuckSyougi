@@ -116,6 +116,45 @@ public class KomaManager : MonoBehaviour
         }
     }
 
+    public void IncreaceGachaKoma(GameObject gachaKoma ,string playerTag)
+    {
+
+        gachaKoma.tag = playerTag;//駒のタグ変更
+        gachaKoma.AddComponent<Koma>();
+        Koma gKoma = gachaKoma.GetComponent<Koma>();
+        Motikomas.Add(gKoma);
+        MotiKomaSet(gKoma);//手札駒の場所にタイルを生成して駒を取得できるようにしておく
+        if (playerTag == "P1Koma")
+        {
+            gachaKoma.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
+            gachaKoma.transform.rotation = Quaternion.Euler(0, 0, 0);
+            if (p1KomaPosX < -6)
+            {
+                p1KomaPosX += 1;
+            }
+            else
+            {
+                p1KomaPosX = -8.4f;
+                p1KomaPosY -= 1;
+            }
+        }
+        if(playerTag == "P2Koma")
+        {
+            gachaKoma.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
+            gachaKoma.transform.rotation = Quaternion.Euler(0, 0, 180);
+            if (p2KomaPosX > 6)
+            {
+                p2KomaPosX -= 1;
+            }
+            else
+            {
+                p2KomaPosX = 8.4f;
+                p2KomaPosY -= 1;
+            }
+        }
+        
+    }
+
     public void IncreaceP1Koma(Koma p2Koma)
     {
         
@@ -219,9 +258,10 @@ public class KomaManager : MonoBehaviour
     public void MotiKomaSet(Koma setKoma)//手札タイルの生成
     {
         GameObject tehudaTile = (GameObject)Resources.Load("MapTrout");//リソースからタイルを持ってくる。
+        tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos;//タイルが持つマスの位置管理の値を0,0(将棋盤の外の値)にする。
         tehudaTile.name = "tehuda";
         tehudaTile.tag = "TehudaTile";
-        tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos;//タイルが持つマスの位置管理の値を0,0(将棋盤の外の値)にする。
+        tehudaTiles.Add(tehudaTile.GetComponent<TileObj>());
         setKoma.positionInt = tehudaPos;
         if (tehudaPos.y < 19)
         {
@@ -232,8 +272,9 @@ public class KomaManager : MonoBehaviour
             tehudaPos.x++;
             tehudaPos.y = 0;
         }
-        tehudaTile = Instantiate(tehudaTile, setKoma.transform.position, Quaternion.identity);
-        tehudaTiles.Add(tehudaTile.GetComponent<TileObj>());
+        tehudaTile = Instantiate(tehudaTile, setKoma.gameObject.transform.position, Quaternion.identity);
+        
+        
         
         
     }

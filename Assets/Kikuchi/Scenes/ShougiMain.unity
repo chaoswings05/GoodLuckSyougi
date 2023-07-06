@@ -144,6 +144,90 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7828d899da524b4c82fd566a77dbffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &662901525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662901527}
+  - component: {fileID: 662901526}
+  m_Layer: 0
+  m_Name: koma_Gacha
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &662901526
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662901525}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &662901527
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662901525}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.13, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &863994896 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5908490264165887707, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
@@ -420,6 +504,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5696046034858979467, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: m_Name
+      value: koma_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: positionInt.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: positionInt.y
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5696046034989184972, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: m_Name
       value: koma_0
@@ -560,7 +656,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3553959762779429735, guid: fa811839f12afa64ca9c58306e306db7, type: 3}
       propertyPath: m_AnchorMax.x
@@ -645,7 +741,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4486424737506598314, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -700,6 +796,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1196132936}
     - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: testGacha
+      value: 
+      objectReference: {fileID: 662901525}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
       propertyPath: mapManager
       value: 
       objectReference: {fileID: 1266734137}
@@ -718,7 +818,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5423664070990351386, guid: 382d76de0e676af42bfc4949dceade94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -897,7 +997,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9119850875510365124, guid: b53fcf9499f415141a3becfd9c38b985, type: 3}
       propertyPath: m_LocalPosition.x
