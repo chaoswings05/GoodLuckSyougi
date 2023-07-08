@@ -11,7 +11,12 @@ public class Koma : MonoBehaviour
     float roundy;
     int masuPosx;
     int masuPosy;
-    [SerializeField] Vector2Int positionInt;
+    float basex;
+    float basey;
+
+    private Vector3 posFix;
+
+    public  Vector2Int positionInt;
 
     public Vector2Int Position { get => positionInt;}
 
@@ -99,6 +104,7 @@ public class Koma : MonoBehaviour
 
     void Start()
     {
+        posFix = new Vector3(0.06f, 0.05f, 0);
         CreateKomaObj(p1komaOu, 5, 1);
 
         CreateKomaObj(p1komaKaku, 2, 2);
@@ -129,9 +135,9 @@ public class Koma : MonoBehaviour
 
         CreateKomaObj(p2komaOu, 5, 9);
 
-        CreateKomaObj(p2komaKaku, 2, 8);
+        CreateKomaObj(p2komaKaku, 8, 8);
 
-        CreateKomaObj(p2komaHisya, 8, 8);
+        CreateKomaObj(p2komaHisya, 2, 8);
 
         CreateKomaObj(p2komaKin, 4, 9);
         CreateKomaObj(p2komaKin2, 6, 9);
@@ -154,31 +160,29 @@ public class Koma : MonoBehaviour
         CreateKomaObj(p2komaHohyou7, 7, 7);
         CreateKomaObj(p2komaHohyou8, 8, 7);
         CreateKomaObj(p2komaHohyou9, 9, 7);
-        KomaFirstSet();
     }
 
     void CreateKomaObj(string name, int x, int y)//駒を初期配置に置く。
     {
-        float per1xy = 0.928f;//1マスあたりの移動値 (駒が動く座標範囲の全体の大きさ/一コマの移動距離)
-        float basex = -3.708f - per1xy; //0に当たる場所。今回は左端の値
-        float basey = -3.7146f - per1xy; //0に当たる場所。今回は下の値
+
+        basex = -3.708f - per1xy; //0に当たる場所。今回は左端の値
+        basey = -3.7146f - per1xy; //0に当たる場所。今回は下の値
 
         GameObject obj = GameObject.Find(name);
         Vector3 objPos = new Vector3(basex + per1xy * x, basey + per1xy * y, 2);
-        obj.transform.position = objPos;
+        posx = transform.position.x;
+        posy = transform.position.y;
+        roundx = (posx - basex) / per1xy;
+        roundy = (posy - basey) / per1xy;
+        Vector2Int pos = new Vector2Int((int)roundx, (int)roundy);//ポジション正規化
+        positionInt = pos;
     }
 
-    public void KomaFirstSet()
+
+    public void Move(Vector2Int newPos)
     {
-        
-         posx = transform.position.x;
-         posy = transform.position.y;
-         float basex = -3.708f - per1xy; //0に当たる場所。今回は左端の値
-         float basey = -3.7146f - per1xy; //0に当たる場所。今回は下の値
-         roundx = (posx - basex) / per1xy;
-         roundy = (posy - basey) / per1xy;
-         Vector2Int pos = new Vector2Int((int)roundx, (int)roundy);//ポジション正規化
-         positionInt = pos;
+        transform.position = new Vector3(basex + per1xy * newPos.x, basey + per1xy * newPos.y, 2) + posFix;
+        positionInt = newPos;
     }
 
 
