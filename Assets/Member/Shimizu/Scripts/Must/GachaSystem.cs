@@ -13,6 +13,8 @@ public class GachaSystem : MonoBehaviour
     [SerializeField]
     AudioClip audioClip;
     AudioSource audioSource;
+
+    private bool once = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,14 +34,23 @@ public class GachaSystem : MonoBehaviour
     //ƒKƒ`ƒƒ‚Ìƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚Æ‚«
     public void GachaButtonDown()
     {
+        if(once)
+        {
+            once = false;
+            audioSource.PlayOneShot(audioClip);
+            StartCoroutine(DelayEffect());
+        }
         
-        audioSource.PlayOneShot(audioClip);
-        StartCoroutine(DelayEffect());
     }
     IEnumerator DelayEffect()
     {
         yield return new WaitForSeconds(1f);
         gachaItem.SetActive(true);
         particle.Play();
+        yield return new WaitForSeconds(2f);
+        GachaImage.SetActive(false);
+        gachaItem.SetActive(false);
+        once = false;
+
     }
 }
