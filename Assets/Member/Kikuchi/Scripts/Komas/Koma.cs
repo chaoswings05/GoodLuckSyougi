@@ -4,13 +4,9 @@ using UnityEngine;
 
 public class Koma : MonoBehaviour
 {
+    public int owner = 0;
+    public string PieceName = "";
     float per1xy = 0.928f; //1マスあたりの移動値 (駒が動く座標範囲の全体の大きさ/一コマの移動距離)
-    float posx;
-    float posy;
-    float roundx;
-    float roundy;
-    int masuPosx;
-    int masuPosy;
     [HideInInspector] public float basex;
     [HideInInspector] public float basey;
 

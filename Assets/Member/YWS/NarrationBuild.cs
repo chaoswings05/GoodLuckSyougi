@@ -9,8 +9,8 @@ public class NarrationBuild : MonoBehaviour
     [Header("縦の数字")] public AudioClip[] ColumnNum;
     [Header("前の手番で相手が動かした駒と同じマスに駒を動かしたらこれを入れる")] public AudioClip SamePlace;
     [Header("動かした駒の名前")] public AudioClip[] PieceName;
-    [Header("今動かしたこの駒は最初左の駒なのか右の駒なのか")] public AudioClip[] LeftOrRight;
     [Header("駒が成ったらこれを入れる")] public AudioClip PieceReversed;
+    private Vector2Int PreviousTurnPos = Vector2Int.zero;
 
     private Dictionary<string, int> PieceNameDictionary = new Dictionary<string, int>()
     {
@@ -38,18 +38,12 @@ public class NarrationBuild : MonoBehaviour
         {"筋肉",21},
     };
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            WordCombine(1,6,7,false,"と金","",true);
+            WordCombine(1,new Vector2Int(6,7),"と金",true);
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -58,29 +52,21 @@ public class NarrationBuild : MonoBehaviour
         }
     }
 
-    public void WordCombine(int PlayerNum, int Rampant, int Column, bool IsSamePlace, string Name, string OriginalPlace, bool IsPieceTurn)
+    public void WordCombine(int PlayerNum, Vector2Int movedPos, string Name, bool IsPieceTurn)
     {
         SoundManager.Instance.Narration.Add(Player[PlayerNum-1]);
 
-        SoundManager.Instance.Narration.Add(RampantNum[Rampant-1]);
+        SoundManager.Instance.Narration.Add(RampantNum[10-movedPos.x-1]);
 
-        SoundManager.Instance.Narration.Add(ColumnNum[Column-1]);
+        SoundManager.Instance.Narration.Add(ColumnNum[10-movedPos.y-1]);
 
-        if (IsSamePlace)
+        if (movedPos == PreviousTurnPos)
         {
             SoundManager.Instance.Narration.Add(SamePlace);
         }
+        PreviousTurnPos = movedPos;
 
         SoundManager.Instance.Narration.Add(PieceName[PieceNameDictionary[Name]]);
-
-        if (OriginalPlace == "左")
-        {
-            SoundManager.Instance.Narration.Add(LeftOrRight[0]);
-        }
-        else if (OriginalPlace == "右")
-        {
-            SoundManager.Instance.Narration.Add(LeftOrRight[1]);
-        }
 
         if (IsPieceTurn)
         {

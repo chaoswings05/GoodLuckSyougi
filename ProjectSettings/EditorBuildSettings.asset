@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Kim/Scene/Title.unity
-    guid: 2e4c8fb9409baf948b71fe4ab5295ec9
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Kim/Scene/Result.unity
-    guid: 4d3637ed6c8b78d459df345483b22734
+    path: Assets/Member/Kikuchi/Scenes/ShougiMain.unity
+    guid: aa57cd88d59294649ad394b72851d3fa
   m_configObjects: {}

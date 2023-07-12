@@ -34,6 +34,7 @@ public class GManager : MonoBehaviour
     [SerializeField] private MapManager mapManager;
     [SerializeField, Header("ガチャを引くためのボタンをアタッチしてください。")] private Button button;
     [SerializeField] private GameObject testGacha;
+    [SerializeField] private NarrationBuild narration = null;
 
     private bool isGachaed;
 
@@ -274,6 +275,9 @@ public class GManager : MonoBehaviour
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
+                SoundManager.Instance.PlaySE(0);
+                narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                SoundManager.Instance.PlayNarration();
                 phase = Phase.Player2KomaSelection;
                 mapManager.ResetSetPanels(setTiles);
                 selectedKoma = null;
@@ -309,6 +313,9 @@ public class GManager : MonoBehaviour
                 komaManager.Motikomas.Remove(selectedKoma);
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
+                SoundManager.Instance.PlaySE(0);
+                narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                SoundManager.Instance.PlayNarration();
                 phase = Phase.Player1KomaSelection;
                 mapManager.ResetSetPanels(setTiles);
                 selectedKoma = null;
@@ -408,6 +415,9 @@ public class GManager : MonoBehaviour
                     TurnPlayerUIMove(2);
                     isGachaed = false;
                     selectedKoma.Move(clickTileObj.positionInt);
+                    SoundManager.Instance.PlaySE(0);
+                    narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                    SoundManager.Instance.PlayNarration();
                     phase = Phase.Player2KomaSelection;
                 }
                 mapManager.ResetMovablePanels(movableTiles);
@@ -464,6 +474,9 @@ public class GManager : MonoBehaviour
                         }
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
+                    SoundManager.Instance.PlaySE(0);
+                    narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                    SoundManager.Instance.PlayNarration();
                     mapManager.PosCursor(2);
                     TurnPlayerUIMove(2);
                     isGachaed = false;
@@ -554,6 +567,9 @@ public class GManager : MonoBehaviour
                     TurnPlayerUIMove(1);
                     isGachaed = false;
                     selectedKoma.Move(clickTileObj.positionInt);
+                    SoundManager.Instance.PlaySE(0);
+                    narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                    SoundManager.Instance.PlayNarration();
                     phase = Phase.Player1KomaSelection;
                 }
                 mapManager.ResetMovablePanels(movableTiles);
@@ -610,6 +626,9 @@ public class GManager : MonoBehaviour
                         }
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
+                    SoundManager.Instance.PlaySE(0);
+                    narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                    SoundManager.Instance.PlayNarration();
                     mapManager.PosCursor(2);
                     TurnPlayerUIMove(1);
                     isGachaed = false;

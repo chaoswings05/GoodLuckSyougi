@@ -201,6 +201,8 @@ public class SoundManager : MonoBehaviour
         if (NarrationPlayingNum >= Narration.Count)
         {
             IsNarrationPlaying = false;
+            SoundManager.Instance.Narration = new List<AudioClip>();
+            NarrationPlayingNum = 0;
             return;
         }
 
