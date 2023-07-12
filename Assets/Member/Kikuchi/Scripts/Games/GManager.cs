@@ -5,45 +5,36 @@ using UnityEngine.UI;
 
 public class GManager : MonoBehaviour
 {
-    // ƒtƒF[ƒY‚ÌŠÇ—
+    // ãƒ•ã‚§ãƒ¼ã‚ºã®ç®¡ç†
     enum Phase
     {
-        Player1KomaSelection, //‹î‘I‘ğ
-        Player1KomaMoveSelection,//‹îˆÚ“®
+        Player1KomaSelection, //P1é§’é¸æŠ
+        Player1KomaMoveSelection, //P1é§’ç§»å‹•
         Player2KomaSelection,
         Player2KomaMoveSelection,
         Player1MotiKomaMoveSelection,
         Player2MotiKomaMoveSelection,
         Player1Gacha,
         Player2Gacha,
-
+        GameEnd,
     }
 
-
-    //‘I‘ğ‚µ‚½ƒLƒƒƒ‰‚Ì•Û
-
+    //é¸æŠã—ãŸã‚­ãƒ£ãƒ©ã®ä¿æŒ
     Koma selectedKoma;
 
-
-    //‘I‘ğƒLƒƒƒ‰‚ÌˆÚ“®‰Â”\”ÍˆÍ‚Ì•Û
+    //é¸æŠã‚­ãƒ£ãƒ©ã®ç§»å‹•å¯èƒ½ç¯„å›²ã®ä¿æŒ
     public List<TileObj> movableTiles = new List<TileObj>();
     public List<TileObj> setTiles = new List<TileObj>();
 
-    [SerializeField] private Text TurnText;
+    [SerializeField] private GameObject P1TurnUI;
+    [SerializeField] private GameObject P2TurnUI;
 
-    [SerializeField]
-    Phase phase;
-    [SerializeField]
-    KomaManager komaManager;
-    [SerializeField]
-    MapManager mapManager;
-    [Header("\nƒKƒ`ƒƒ‚ğˆø‚­‚½‚ß‚Ìƒ{ƒ^ƒ“‚ğƒAƒ^ƒbƒ`‚µ‚Ä‚­‚¾‚³‚¢B")]
-    [SerializeField]
-    Button button;
-    [SerializeField]
-    GameObject testGacha;
+    [SerializeField] private Phase phase;
+    [SerializeField] private KomaManager komaManager;
+    [SerializeField] private MapManager mapManager;
+    [SerializeField, Header("ã‚¬ãƒãƒ£ã‚’å¼•ããŸã‚ã®ãƒœã‚¿ãƒ³ã‚’ã‚¢ã‚¿ãƒƒãƒã—ã¦ãã ã•ã„ã€‚")] private Button button;
+    [SerializeField] private GameObject testGacha;
 
-    private bool gameFinish;
     private bool isGachaed;
 
     void Start()
@@ -51,11 +42,11 @@ public class GManager : MonoBehaviour
         phase = Phase.Player1KomaSelection;
     }
 
-    //ƒLƒƒƒ‰‘I‘ğ
-    //ƒLƒƒƒ‰ˆÚ“®
-    //ƒvƒŒƒCƒ„[‚ªƒNƒŠƒbƒN‚µ‚½‚çˆ—
+    //ã‚­ãƒ£ãƒ©é¸æŠ
+    //ã‚­ãƒ£ãƒ©ç§»å‹•
+    //ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚‰å‡¦ç†
 
-    public void Gacha()//‚¿‹î‘I‘ğ‚ÉƒKƒ`ƒƒƒ{ƒ^ƒ“‚ª‰Ÿ‚³‚ê‚½‚çŒÄ‚Î‚ê‚éB
+    public void Gacha() //æŒã¡é§’é¸æŠæ™‚ã«ã‚¬ãƒãƒ£ãƒœã‚¿ãƒ³ãŒæŠ¼ã•ã‚ŒãŸã‚‰å‘¼ã°ã‚Œã‚‹ã€‚
     {
         GameObject gachaObj = null;
         if (phase == Phase.Player1MotiKomaMoveSelection)
@@ -64,16 +55,16 @@ public class GManager : MonoBehaviour
             phase = Phase.Player1Gacha;
             gachaObj = testGacha;
             Koma gachaKoma = testGacha.GetComponent<Koma>();
-            //ƒKƒ`ƒƒ‚ğˆø‚¢‚Äˆø‚¢‚½‹î‚ğæ“¾‚·‚éB
+            //ã‚¬ãƒãƒ£ã‚’å¼•ã„ã¦å¼•ã„ãŸé§’ã‚’å–å¾—ã™ã‚‹ã€‚
             if(gachaKoma != null)
             {
-                komaManager.IncreaceGachaKoma(gachaKoma, "P1Koma");//ˆø‚¢‚½‹î‚ğ‚¿‹î‚É‚·‚éB
+                komaManager.IncreaceGachaKoma(gachaKoma, "P1Koma");//å¼•ã„ãŸé§’ã‚’æŒã¡é§’ã«ã™ã‚‹ã€‚
                 phase = Phase.Player1KomaSelection;
                 isGachaed = true;
             }
             else
             {
-                Debug.Log("ƒKƒ`ƒƒ‹î‚ÉuKomavƒXƒNƒŠƒvƒg‚ğƒAƒ^ƒbƒ`‚µ‚Ä‚­‚¾‚³‚¢");
+                Debug.Log("ã‚¬ãƒãƒ£é§’ã«ã€ŒKomaã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ã‚¢ã‚¿ãƒƒãƒã—ã¦ãã ã•ã„");
             }
 
         }
@@ -81,26 +72,25 @@ public class GManager : MonoBehaviour
         {
             mapManager.ResetSetPanels(setTiles);
             phase = Phase.Player2Gacha;
-            //ƒKƒ`ƒƒ‚ğˆø‚¢‚Äˆø‚¢‚½‹î‚ğæ“¾‚·‚éB
+            //ã‚¬ãƒãƒ£ã‚’å¼•ã„ã¦å¼•ã„ãŸé§’ã‚’å–å¾—ã™ã‚‹ã€‚
             gachaObj = testGacha;
             Koma gachaKoma = testGacha.GetComponent<Koma>();
             if (gachaKoma != null)
             {
-                komaManager.IncreaceGachaKoma(gachaKoma, "P2Koma");//ˆø‚¢‚½‹î‚ğ‚¿‹î‚É‚·‚éB
+                komaManager.IncreaceGachaKoma(gachaKoma, "P2Koma");//å¼•ã„ãŸé§’ã‚’æŒã¡é§’ã«ã™ã‚‹ã€‚
                 phase = Phase.Player2KomaSelection;
                 isGachaed = true;
             }
             else
             {
-                Debug.Log("ƒKƒ`ƒƒ‹î‚ÉuKomavƒXƒNƒŠƒvƒg‚ğƒAƒ^ƒbƒ`‚µ‚Ä‚­‚¾‚³‚¢");
-            }
-            
+                Debug.Log("ã‚¬ãƒãƒ£é§’ã«ã€ŒKomaã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’ã‚¢ã‚¿ãƒƒãƒã—ã¦ãã ã•ã„");
+            }   
         }
-
     }
+
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && gameFinish == false)
+        if (Input.GetMouseButtonDown(0) && phase != Phase.GameEnd)
         {
             PlayerClickAction();
         }
@@ -112,66 +102,41 @@ public class GManager : MonoBehaviour
         {
             case Phase.Player1KomaSelection:
                 Player1KomaSelection();
-
                 break;
+
             case Phase.Player1KomaMoveSelection:
-
                 Player1KomaMoveSelection();
-
                 break;
+
             case Phase.Player2KomaSelection:
                 Player2KomaSelection();
-
                 break;
+
             case Phase.Player2KomaMoveSelection:
-
                 Player2KomaMoveSelection();
-
                 break;
+
             case Phase.Player1MotiKomaMoveSelection:
                 P1MotiKomaMoveSelection();
-
                 break;
+
             case Phase.Player2MotiKomaMoveSelection:
                 P2MotiKomaMoveSelection();
-
                 break;
-
         }
-    }
-
-    bool IsClickKoma(TileObj clickTileObj)
-    {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
-        Koma koma = null;
-        koma = komaManager.GetKoma(clickTileObj.positionInt);
-        if (koma != null)//‹î‚ª‚ ‚é‚È‚ç
-        {
-            if (koma.tag == "P1Koma") 
-            {
-                selectedKoma = koma;
-                mapManager.ResetMovablePanels(movableTiles);
-                //ˆÚ“®”ÍˆÍ‚ğ•\¦
-                mapManager.ShowMovablePanels(selectedKoma, movableTiles);
-                phase = Phase.Player1KomaMoveSelection;
-                return true;
-            }
-            
-        }
-        return false;
     }
 
     bool IsClickKoma1(TileObj clickTileObj)
     {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
+        //é§’ã‚’å–å¾—ã—ã¦ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
         Koma koma = null;
         koma = komaManager.GetP1Koma(clickTileObj.positionInt);
-        if (koma != null)//‹î‚ª‚ ‚é‚È‚ç
+        if (koma != null)//é§’ãŒã‚ã‚‹ãªã‚‰
         {
             selectedKoma = koma;
             mapManager.ResetSetPanels(setTiles);
             mapManager.ResetMovablePanels(movableTiles);
-            //ˆÚ“®”ÍˆÍ‚ğ•\¦
+            //ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
             mapManager.ShowMovablePanels(selectedKoma, movableTiles);
             phase = Phase.Player1KomaMoveSelection;
             return true;
@@ -179,10 +144,9 @@ public class GManager : MonoBehaviour
         return false;
     }
 
-
     bool IsClickKoma2(TileObj clickTileObj)
     {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
+        //é§’ã‚’å–å¾—ã—ã¦ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
         Koma koma = null;
         koma = komaManager.GetP2Koma(clickTileObj.positionInt);
         if (koma != null)
@@ -190,7 +154,7 @@ public class GManager : MonoBehaviour
             selectedKoma = koma;
             mapManager.ResetSetPanels(setTiles);
             mapManager.ResetMovablePanels(movableTiles);
-            //ˆÚ“®”ÍˆÍ‚ğ•\¦
+            //ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
             mapManager.ShowMovablePanels(selectedKoma, movableTiles);
             phase = Phase.Player2KomaMoveSelection;
             return true; 
@@ -200,10 +164,10 @@ public class GManager : MonoBehaviour
 
     bool IsClickP1MotiKoma(TileObj clickTileObj)
     {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
+        //é§’ã‚’å–å¾—ã—ã¦ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
         Koma koma = null;
-        koma = komaManager.GetP1MotiKoma(clickTileObj.positionInt);//ƒŠƒXƒg‚ğì‚Á‚ÄèD‹î‚ğ‚»‚±‚É“ü‚ê‚éB
-        if (koma != null)//‹î‚ª‚ ‚é‚È‚ç
+        koma = komaManager.GetP1MotiKoma(clickTileObj.positionInt);//ãƒªã‚¹ãƒˆã‚’ä½œã£ã¦æ‰‹æœ­é§’ã‚’ãã“ã«å…¥ã‚Œã‚‹ã€‚
+        if (koma != null)//é§’ãŒã‚ã‚‹ãªã‚‰
         {
             selectedKoma = koma;
             mapManager.ResetMovablePanels(movableTiles);
@@ -217,10 +181,10 @@ public class GManager : MonoBehaviour
 
     bool IsClickP2MotiKoma(TileObj clickTileObj)
     {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
+        //é§’ã‚’å–å¾—ã—ã¦ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
         Koma koma = null;
-        koma = komaManager.GetP2MotiKoma(clickTileObj.positionInt);//ƒŠƒXƒg‚ğì‚Á‚ÄèD‹î‚ğ‚»‚±‚É“ü‚ê‚éB
-        if (koma != null)//‹î‚ª‚ ‚é‚È‚ç
+        koma = komaManager.GetP2MotiKoma(clickTileObj.positionInt);//ãƒªã‚¹ãƒˆã‚’ä½œã£ã¦æ‰‹æœ­é§’ã‚’ãã“ã«å…¥ã‚Œã‚‹ã€‚
+        if (koma != null)//é§’ãŒã‚ã‚‹ãªã‚‰
         {
             selectedKoma = koma;
             mapManager.ResetMovablePanels(movableTiles);
@@ -234,7 +198,7 @@ public class GManager : MonoBehaviour
 
     bool OnTileP1Check(TileObj clickTileObj)
     {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
+        //é§’ã‚’å–å¾—ã—ã¦ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
         Koma koma = null;
         koma = komaManager.GetP1Koma(clickTileObj.positionInt);
         if (koma != null)
@@ -246,7 +210,7 @@ public class GManager : MonoBehaviour
 
     bool OnTileP2Check(TileObj clickTileObj)
     {
-        //‹î‚ğæ“¾‚µ‚ÄˆÚ“®”ÍˆÍ‚ğ•\¦
+        //é§’ã‚’å–å¾—ã—ã¦ç§»å‹•ç¯„å›²ã‚’è¡¨ç¤º
         Koma koma = null;
         koma = komaManager.GetP2Koma(clickTileObj.positionInt);
         if (koma != null )
@@ -256,16 +220,14 @@ public class GManager : MonoBehaviour
         return false;
     }
 
-
     void Player1KomaSelection()
     {
-        //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ğæ“¾
-        //‚»‚Ìã‚É‹î‚ª‚¢‚é‚È‚ç
+        //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ã‚’å–å¾—
         TileObj clickTileObj = mapManager.GetClickTileObj();
+        //ãã®ä¸Šã«é§’ãŒã„ã‚‹ãªã‚‰
         if(clickTileObj != null)
         {
-    
-            if (IsClickP1MotiKoma(clickTileObj)) //‚¿‹îæ“¾ƒƒ\ƒbƒh‚ğì‚Á‚ÄƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ªèDƒ^ƒCƒ‹‚©’²‚×‚éB
+            if (IsClickP1MotiKoma(clickTileObj)) //æŒã¡é§’å–å¾—ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ä½œã£ã¦ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ãŒæ‰‹æœ­ã‚¿ã‚¤ãƒ«ã‹èª¿ã¹ã‚‹ã€‚
             {
                 Debug.Log("aaa");
                 phase = Phase.Player1MotiKomaMoveSelection;
@@ -276,17 +238,16 @@ public class GManager : MonoBehaviour
                 phase = Phase.Player1KomaMoveSelection;
             }
         }
-        
     }
 
     void Player2KomaSelection()
     {
-        //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ğæ“¾
-        //‚»‚Ìã‚É‹î‚ª‚¢‚é‚È‚ç
+        //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ã‚’å–å¾—
         TileObj clickTileObj = mapManager.GetClickTileObj();
+        //ãã®ä¸Šã«é§’ãŒã„ã‚‹ãªã‚‰
         if (clickTileObj != null)
         {
-            if (IsClickP2MotiKoma(clickTileObj)) //‚¿‹îæ“¾ƒƒ\ƒbƒh‚ğì‚Á‚ÄƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ªèDƒ^ƒCƒ‹‚©’²‚×‚éB
+            if (IsClickP2MotiKoma(clickTileObj)) //æŒã¡é§’å–å¾—ãƒ¡ã‚½ãƒƒãƒ‰ã‚’ä½œã£ã¦ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ãŒæ‰‹æœ­ã‚¿ã‚¤ãƒ«ã‹èª¿ã¹ã‚‹ã€‚
             {
                 Debug.Log("aaa");
                 phase = Phase.Player2MotiKomaMoveSelection;
@@ -296,19 +257,18 @@ public class GManager : MonoBehaviour
                 Debug.Log("www");
                 phase = Phase.Player2KomaMoveSelection;
             }
-
         }
     }
 
     void P1MotiKomaMoveSelection()
     {
-        //‚¿‹î‚ğ‘I‘ğ‚µ‚½ó‘Ô‚Å‚à‚¤ˆê“xƒNƒŠƒbƒN‚µ‚½‚Æ‚«‚±‚ÌŠÖ”‚É—ˆ‚éB
+        //æŒã¡é§’ã‚’é¸æŠã—ãŸçŠ¶æ…‹ã§ã‚‚ã†ä¸€åº¦ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ãã“ã®é–¢æ•°ã«æ¥ã‚‹ã€‚
         // TODO
-        //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ğæ“¾
+        //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ã‚’å–å¾—
         TileObj clickTileObj = mapManager.GetClickTileObj();
         if (clickTileObj)
         {
-            if (clickTileObj.tag != "TehudaTile" && setTiles.Contains(clickTileObj))//ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ªèDƒ^ƒCƒ‹‚¶‚á‚È‚¢‚È‚çƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚Æ“¯‚¶ƒ|ƒWƒVƒ‡ƒ“‚Ì‹î‚ª‚¢‚é‚©‚ğ‹î‚ÌƒŠƒXƒg‚ğg‚Á‚ÄQÆ
+            if (clickTileObj.tag != "TehudaTile" && setTiles.Contains(clickTileObj)) //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ãŒæ‰‹æœ­ã‚¿ã‚¤ãƒ«ã˜ã‚ƒãªã„ãªã‚‰ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ã¨åŒã˜ãƒã‚¸ã‚·ãƒ§ãƒ³ã®é§’ãŒã„ã‚‹ã‹ã‚’é§’ã®ãƒªã‚¹ãƒˆã‚’ä½¿ã£ã¦å‚ç…§
             {
                 komaManager.Motikomas.Remove(selectedKoma);
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
@@ -318,8 +278,7 @@ public class GManager : MonoBehaviour
                 mapManager.ResetSetPanels(setTiles);
                 selectedKoma = null;
                 isGachaed = false;
-                TurnText.GetComponent<Text>().text = "Œãè‚Ìè”Ô";
-
+                TurnPlayerUIMove(2);
             }
             else if(IsClickKoma1(clickTileObj))
             {
@@ -333,16 +292,15 @@ public class GManager : MonoBehaviour
                 return;
             }
         }
-
     }
 
     void P2MotiKomaMoveSelection()
     {
-        //‚¿‹î‚ğ‘I‘ğ‚µ‚½ó‘Ô‚Å‚à‚¤ˆê“xƒNƒŠƒbƒN‚µ‚½‚Æ‚«‚±‚ÌŠÖ”‚É—ˆ‚éB
+        //æŒã¡é§’ã‚’é¸æŠã—ãŸçŠ¶æ…‹ã§ã‚‚ã†ä¸€åº¦ã‚¯ãƒªãƒƒã‚¯ã—ãŸã¨ãã“ã®é–¢æ•°ã«æ¥ã‚‹ã€‚
         // TODO
-        //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ğæ“¾
+        //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ã‚’å–å¾—
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ªèDƒ^ƒCƒ‹‚¶‚á‚È‚¢‚È‚çƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚Æ“¯‚¶ƒ|ƒWƒVƒ‡ƒ“‚Ì‹î‚ª‚¢‚é‚©‚ğ‹î‚ÌƒŠƒXƒg‚ğg‚Á‚ÄQÆ
+        //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ãŒæ‰‹æœ­ã‚¿ã‚¤ãƒ«ã˜ã‚ƒãªã„ãªã‚‰ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ã¨åŒã˜ãƒã‚¸ã‚·ãƒ§ãƒ³ã®é§’ãŒã„ã‚‹ã‹ã‚’é§’ã®ãƒªã‚¹ãƒˆã‚’ä½¿ã£ã¦å‚ç…§
         if (clickTileObj)
         {
             if (clickTileObj.tag != "TehudaTile" && setTiles.Contains(clickTileObj))
@@ -355,8 +313,7 @@ public class GManager : MonoBehaviour
                 mapManager.ResetSetPanels(setTiles);
                 selectedKoma = null;
                 isGachaed = false;
-                TurnText.GetComponent<Text>().text = "æè‚Ìè”Ô";
-
+                TurnPlayerUIMove(1);
             }
             else if (IsClickKoma2(clickTileObj))
             {
@@ -370,35 +327,33 @@ public class GManager : MonoBehaviour
                 return;
             }
         }
-
     }
 
     void Player1KomaMoveSelection()
     {
-
         TileObj clickTileObj = mapManager.GetClickTileObj();
         
-        if (clickTileObj) //ƒNƒŠƒbƒN‚µ‚½êŠ‚Éƒ^ƒCƒ‹‚ª‘¶İ‚·‚é‚È‚ç
+        if (clickTileObj) //ã‚¯ãƒªãƒƒã‚¯ã—ãŸå ´æ‰€ã«ã‚¿ã‚¤ãƒ«ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰
         {
-            if (IsClickP1MotiKoma(clickTileObj))//‚¿‹î‚È‚ç‚¿‹îphase‚É
+            if (IsClickP1MotiKoma(clickTileObj)) //æŒã¡é§’ãªã‚‰æŒã¡é§’phaseã«
             {
                 mapManager.ResetMovablePanels(movableTiles);
                 phase = Phase.Player1MotiKomaMoveSelection;
                 return;
             }
-            if (IsClickKoma1(clickTileObj))//©‹î‚È‚ç‚È‚É‚à‚µ‚È‚¢
+            if (IsClickKoma1(clickTileObj)) //è‡ªé§’ãªã‚‰ãªã«ã‚‚ã—ãªã„
             {
                 return;
             }
-            else if (OnTileP2Check(clickTileObj))//‘Šè‚Ì‹î‚ª‹‚½‚ç
+            else if (OnTileP2Check(clickTileObj)) //ç›¸æ‰‹ã®é§’ãŒå±…ãŸã‚‰
             {
-                if (movableTiles.Contains(clickTileObj)) //ˆÚ“®”ÍˆÍ“à‚È‚ç
+                if (movableTiles.Contains(clickTileObj)) //ç§»å‹•ç¯„å›²å†…ãªã‚‰
                 {
                     int firstPos = selectedKoma.Position.y;
                     int lastPos = clickTileObj.positionInt.y;
                     int moveLength = lastPos - firstPos;
-                    Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt);//‚»‚ÌÀ•W‚Ì‹î‚ğæ“¾
-                    if (enemyKoma.name == "koma_8")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                    Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt); //ãã®åº§æ¨™ã®é§’ã‚’å–å¾—
+                    if (enemyKoma.name == "koma_8") //å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                     {
                         komaManager.DeleteKoma(enemyKoma.name);
                         selectedKoma.Move(clickTileObj.positionInt);
@@ -415,7 +370,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_8")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_8")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player1Win();
                                     }
@@ -432,7 +387,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_8")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_8")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player1Win();
                                     }
@@ -442,15 +397,15 @@ public class GManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("©•ª‚Ìƒ}ƒX‚ğ‘I‘ğ‚µ‚½‚Æ‚«‚Ì‚Í‚¸B");
+                            Debug.Log("è‡ªåˆ†ã®ãƒã‚¹ã‚’é¸æŠã—ãŸã¨ãã®ã¯ãšã€‚");
                         }
                     }
-                    else//æ“¾‚µ‚½‹î‚ª‰¤ˆÈŠO‚È‚çˆÚ“®‚µ‚ÄƒtƒF[ƒY‚ğ•Ï‚¦‚éB
+                    else//å–å¾—ã—ãŸé§’ãŒç‹ä»¥å¤–ãªã‚‰ç§»å‹•ã—ã¦ãƒ•ã‚§ãƒ¼ã‚ºã‚’å¤‰ãˆã‚‹ã€‚
                     {
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     mapManager.PosCursor(2);
-                    TurnText.GetComponent<Text>().text = "Œãè‚Ìè”Ô" ;
+                    TurnPlayerUIMove(2);
                     isGachaed = false;
                     selectedKoma.Move(clickTileObj.positionInt);
                     phase = Phase.Player2KomaSelection;
@@ -458,12 +413,12 @@ public class GManager : MonoBehaviour
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
             }
-            else//©•ªA‘Šè‚Ì‹î‚ª‚È‚¢
+            else//è‡ªåˆ†ã€ç›¸æ‰‹ã®é§’ãŒãªã„æ™‚
             {
-                //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ªˆÚ“®”ÍˆÍ‚ÉŠÜ‚Ü‚ê‚é‚È‚ç
+                //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ãŒç§»å‹•ç¯„å›²ã«å«ã¾ã‚Œã‚‹ãªã‚‰
                 if (movableTiles.Contains(clickTileObj))
                 {
-                    //selectedKoma‚ğƒ^ƒCƒ‹‚Ü‚ÅˆÚ“®‚³‚¹‚éB
+                    //selectedKomaã‚’ã‚¿ã‚¤ãƒ«ã¾ã§ç§»å‹•ã•ã›ã‚‹ã€‚
                     int firstPos = selectedKoma.Position.y;
                     int lastPos = clickTileObj.positionInt.y;
                     int moveLength = lastPos - firstPos;
@@ -478,7 +433,7 @@ public class GManager : MonoBehaviour
                                 if(enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_8")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_8")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player1Win();
                                     }
@@ -495,7 +450,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_8")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_8")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player1Win();
                                     }
@@ -505,51 +460,46 @@ public class GManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("©•ª‚Ìƒ}ƒX‚ğ‘I‘ğ‚µ‚½‚Æ‚«‚Ì‚Í‚¸B");
+                            Debug.Log("è‡ªåˆ†ã®ãƒã‚¹ã‚’é¸æŠã—ãŸã¨ãã®ã¯ãšã€‚");
                         }
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
                     mapManager.PosCursor(2);
-                    TurnText.GetComponent<Text>().text = "Œãè‚Ìè”Ô";
+                    TurnPlayerUIMove(2);
                     isGachaed = false;
                     phase = Phase.Player2KomaSelection;
-                    
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
-
-            }
-            
+            }   
         }
-
     }
 
     void Player2KomaMoveSelection()
     {
-
         TileObj clickTileObj = mapManager.GetClickTileObj();
 
-        if (clickTileObj) //ƒNƒŠƒbƒN‚µ‚½êŠ‚Éƒ^ƒCƒ‹‚ª‘¶İ‚·‚é‚È‚ç
+        if (clickTileObj) //ã‚¯ãƒªãƒƒã‚¯ã—ãŸå ´æ‰€ã«ã‚¿ã‚¤ãƒ«ãŒå­˜åœ¨ã™ã‚‹ãªã‚‰
         {
-            if (IsClickP2MotiKoma(clickTileObj))//‚¿‹î‚È‚ç‚¿‹îphase‚É
+            if (IsClickP2MotiKoma(clickTileObj))//æŒã¡é§’ãªã‚‰æŒã¡é§’phaseã«
             {
                 mapManager.ResetMovablePanels(movableTiles);
                 phase = Phase.Player2MotiKomaMoveSelection;
                 return;
             }
-            if (IsClickKoma2(clickTileObj))//©‹î‚È‚ç‚È‚É‚à‚µ‚È‚¢
+            if (IsClickKoma2(clickTileObj))//è‡ªé§’ãªã‚‰ãªã«ã‚‚ã—ãªã„
             {
                 return;
             }
-            else if (OnTileP1Check(clickTileObj))//‘Šè‚Ì‹î‚ª‹‚½‚ç
+            else if (OnTileP1Check(clickTileObj))//ç›¸æ‰‹ã®é§’ãŒå±…ãŸã‚‰
             {
-                if (movableTiles.Contains(clickTileObj)) //ˆÚ“®”ÍˆÍ“à‚È‚ç
+                if (movableTiles.Contains(clickTileObj)) //ç§»å‹•ç¯„å›²å†…ãªã‚‰
                 {
                     int firstPos = selectedKoma.Position.y;
                     int lastPos = clickTileObj.positionInt.y;
                     int moveLength = lastPos - firstPos;
-                    Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);//‚»‚ÌÀ•W‚Ì‹î‚ğæ“¾
-                    if (enemyKoma.name == "koma_0")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                    Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);//ãã®åº§æ¨™ã®é§’ã‚’å–å¾—
+                    if (enemyKoma.name == "koma_0")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                     {
                         komaManager.DeleteKoma(enemyKoma.name);
                         selectedKoma.Move(clickTileObj.positionInt);
@@ -566,7 +516,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_0")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_0")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player2Win();
                                     }
@@ -583,7 +533,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_0")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_0")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player2Win();
                                     }
@@ -593,15 +543,15 @@ public class GManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("©•ª‚Ìƒ}ƒX‚ğ‘I‘ğ‚µ‚½‚Æ‚«‚Ì‚Í‚¸B");
+                            Debug.Log("è‡ªåˆ†ã®ãƒã‚¹ã‚’é¸æŠã—ãŸã¨ãã®ã¯ãšã€‚");
                         }
                     }
-                    else//æ“¾‚µ‚½‹î‚ª‰¤ˆÈŠO‚È‚çˆÚ“®‚µ‚ÄƒtƒF[ƒY‚ğ•Ï‚¦‚éB
+                    else//å–å¾—ã—ãŸé§’ãŒç‹ä»¥å¤–ãªã‚‰ç§»å‹•ã—ã¦ãƒ•ã‚§ãƒ¼ã‚ºã‚’å¤‰ãˆã‚‹ã€‚
                     {
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     mapManager.PosCursor(2);
-                    TurnText.GetComponent<Text>().text = "Œãè‚Ìè”Ô";
+                    TurnPlayerUIMove(1);
                     isGachaed = false;
                     selectedKoma.Move(clickTileObj.positionInt);
                     phase = Phase.Player1KomaSelection;
@@ -609,12 +559,12 @@ public class GManager : MonoBehaviour
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
             }
-            else//©•ªA‘Šè‚Ì‹î‚ª‚È‚¢
+            else//è‡ªåˆ†ã€ç›¸æ‰‹ã®é§’ãŒãªã„æ™‚
             {
-                //ƒNƒŠƒbƒN‚µ‚½ƒ^ƒCƒ‹‚ªˆÚ“®”ÍˆÍ‚ÉŠÜ‚Ü‚ê‚é‚È‚ç
+                //ã‚¯ãƒªãƒƒã‚¯ã—ãŸã‚¿ã‚¤ãƒ«ãŒç§»å‹•ç¯„å›²ã«å«ã¾ã‚Œã‚‹ãªã‚‰
                 if (movableTiles.Contains(clickTileObj))
                 {
-                    //selectedKoma‚ğƒ^ƒCƒ‹‚Ü‚ÅˆÚ“®‚³‚¹‚éB
+                    //selectedKomaã‚’ã‚¿ã‚¤ãƒ«ã¾ã§ç§»å‹•ã•ã›ã‚‹ã€‚
                     int firstPos = selectedKoma.Position.y;
                     int lastPos = clickTileObj.positionInt.y;
                     int moveLength = lastPos - firstPos;
@@ -629,7 +579,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_0")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_0")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player2Win();
                                     }
@@ -646,7 +596,7 @@ public class GManager : MonoBehaviour
                                 if (enemyKoma != null)
                                 {
                                     komaManager.DeleteKoma(enemyKoma.name);
-                                    if (enemyKoma.name == "koma_0")//æ“¾‚µ‚½“G‹î‚ª‰¤‚È‚çƒvƒŒƒCƒ„[‚P‚ÌŸ‚¿‚É‚·‚éB
+                                    if (enemyKoma.name == "koma_0")//å–å¾—ã—ãŸæ•µé§’ãŒç‹ãªã‚‰ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ã®å‹ã¡ã«ã™ã‚‹ã€‚
                                     {
                                         Player2Win();
                                     }
@@ -656,35 +606,45 @@ public class GManager : MonoBehaviour
                         }
                         else
                         {
-                            Debug.Log("©•ª‚Ìƒ}ƒX‚ğ‘I‘ğ‚µ‚½‚Æ‚«‚Ì‚Í‚¸B");
+                            Debug.Log("è‡ªåˆ†ã®ãƒã‚¹ã‚’é¸æŠã—ãŸã¨ãã®ã¯ãšã€‚");
                         }
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
                     mapManager.PosCursor(2);
-                    TurnText.GetComponent<Text>().text = "Œãè‚Ìè”Ô";
+                    TurnPlayerUIMove(1);
                     isGachaed = false;
                     phase = Phase.Player1KomaSelection;
 
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
-
             }
-
         }
-
     }
 
-    private void Player1Win()//‚±‚±‚ÉƒvƒŒƒCƒ„[‚P‚ªŸ‚Á‚½‚Ìˆ—‚ğ‚¨Šè‚¢‚µ‚Ü‚·B
+    private void Player1Win() //ã“ã“ã«ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ï¼‘ãŒå‹ã£ãŸæ™‚ã®å‡¦ç†ã‚’ãŠé¡˜ã„ã—ã¾ã™ã€‚
     {
-        gameFinish = true;
+        phase = Phase.GameEnd;
         Debug.Log("p1Win");
     }
 
     private void Player2Win()
     {
-        gameFinish = true;
+        phase = Phase.GameEnd;
         Debug.Log("p2Win");
     }
 
+    private void TurnPlayerUIMove(int nextTurnPlayer)
+    {
+        if (nextTurnPlayer == 1)
+        {
+            P2TurnUI.SetActive(false);
+            P1TurnUI.SetActive(true);
+        }
+        else if (nextTurnPlayer == 2)
+        {
+            P1TurnUI.SetActive(false);
+            P2TurnUI.SetActive(true);
+        }
+    }
 }

@@ -23,6 +23,4 @@ public class CursorController : MonoBehaviour
     {
         transform.position = target.position;
     }
-    
-
 }

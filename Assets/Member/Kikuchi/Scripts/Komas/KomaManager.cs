@@ -4,28 +4,90 @@ using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.PlayerSettings;
 
-public class KomaManager : MonoBehaviour
+public class KomaManager : KomaName
 {
-    //”Õã‚Ì‹î‚·‚×‚Ä‚ğŠÇ—‚·‚éB
+    //ç›¤ä¸Šã®é§’ã™ã¹ã¦ã‚’ç®¡ç†ã™ã‚‹ã€‚
     public List<Koma> komas = new List<Koma>();
-    //è‚¿‚Ì‹î‚ğŠÇ—‚·‚éB
+    //æ‰‹æŒã¡ã®é§’ã‚’ç®¡ç†ã™ã‚‹ã€‚
     public List<Koma> Motikomas = new List<Koma>();
 
     public List<TileObj> tehudaTiles = new List<TileObj>();
 
     TileObj tehudaScript;
 
-    float p1KomaPosX = -8.4f;
-    float p1KomaPosY = 2;
-    float p2KomaPosX = 8.4f;
-    float p2KomaPosY = 2;
+    float p1KomaPosX = 5.5f;
+    float p1KomaPosY = -1.5f;
+    float p2KomaPosX = -5.3f;
+    float p2KomaPosY = 1.6f;
 
     public Vector2Int tehudaPos;
     void Start()
     {
         tehudaPos = new Vector2Int(10,0);
-        // ˆê’v‚·‚éƒf[ƒ^Œ^‚Ì‚Ìq—v‘f‚ğ‚·‚×‚Äæ“¾‚·‚é
+        // ä¸€è‡´ã™ã‚‹ãƒ‡ãƒ¼ã‚¿å‹ã®ã®å­è¦ç´ ã‚’ã™ã¹ã¦å–å¾—ã™ã‚‹
         GetComponentsInChildren(komas);
+
+        #region é§’ç”Ÿæˆ
+        //P1
+        CreateKomaObj(p1komaOu, 5, 1);
+        CreateKomaObj(p1komaKaku, 2, 2);
+        CreateKomaObj(p1komaHisya, 8, 2);
+        CreateKomaObj(p1komaKin, 4, 1);
+        CreateKomaObj(p1komaKin2, 6, 1);
+        CreateKomaObj(p1komaGin, 7, 1);
+        CreateKomaObj(p1komaGin2, 3, 1);
+        CreateKomaObj(p1komaKeima, 2, 1);
+        CreateKomaObj(p1komaKeima2, 8, 1);
+        CreateKomaObj(p1komaKyousya, 1, 1);
+        CreateKomaObj(p1komaKyousya2, 9, 1);
+        CreateKomaObj(p1komaHohyou1, 1, 3);
+        CreateKomaObj(p1komaHohyou2, 2, 3);
+        CreateKomaObj(p1komaHohyou3, 3, 3);
+        CreateKomaObj(p1komaHohyou4, 4, 3);
+        CreateKomaObj(p1komaHohyou5, 5, 3);
+        CreateKomaObj(p1komaHohyou6, 6, 3);
+        CreateKomaObj(p1komaHohyou7, 7, 3);
+        CreateKomaObj(p1komaHohyou8, 8, 3);
+        CreateKomaObj(p1komaHohyou9, 9, 3);
+        //P2
+        CreateKomaObj(p2komaOu, 5, 9);
+        CreateKomaObj(p2komaKaku, 8, 8);
+        CreateKomaObj(p2komaHisya, 2, 8);
+        CreateKomaObj(p2komaKin, 4, 9);
+        CreateKomaObj(p2komaKin2, 6, 9);
+        CreateKomaObj(p2komaGin, 7, 9);
+        CreateKomaObj(p2komaGin2, 3, 9);
+        CreateKomaObj(p2komaKeima, 2, 9);
+        CreateKomaObj(p2komaKeima2, 8, 9);
+        CreateKomaObj(p2komaKyousya, 1, 9);
+        CreateKomaObj(p2komaKyousya2, 9, 9);
+        CreateKomaObj(p2komaHohyou1, 1, 7);
+        CreateKomaObj(p2komaHohyou2, 2, 7);
+        CreateKomaObj(p2komaHohyou3, 3, 7);
+        CreateKomaObj(p2komaHohyou4, 4, 7);
+        CreateKomaObj(p2komaHohyou5, 5, 7);
+        CreateKomaObj(p2komaHohyou6, 6, 7);
+        CreateKomaObj(p2komaHohyou7, 7, 7);
+        CreateKomaObj(p2komaHohyou8, 8, 7);
+        CreateKomaObj(p2komaHohyou9, 9, 7);
+        #endregion
+    }
+
+    void CreateKomaObj(string name, int x, int y) //é§’ã‚’åˆæœŸé…ç½®ã«ç½®ãã€‚
+    {
+        float basex = -3.708f - 0.928f; //0ã«å½“ãŸã‚‹å ´æ‰€ã€‚ä»Šå›ã¯å·¦ç«¯ã®å€¤
+        float basey = -3.7146f - 0.928f; //0ã«å½“ãŸã‚‹å ´æ‰€ã€‚ä»Šå›ã¯ä¸‹ã®å€¤
+
+        Koma obj = GameObject.Find(name).GetComponent<Koma>();
+        obj.basex = basex;
+        obj.basey = basey;
+        Vector3 objPos = new Vector3(basex + 0.928f * x, basey + 0.928f * y, 2);
+        float posx = obj.transform.position.x;
+        float posy = obj.transform.position.y;
+        float roundx = (posx - basex) / 0.928f;
+        float roundy = (posy - basey) / 0.928f;
+        Vector2Int pos = new Vector2Int((int)roundx, (int)roundy);//ãƒã‚¸ã‚·ãƒ§ãƒ³æ­£è¦åŒ–
+        obj.positionInt = pos;
     }
 
     public Koma GetKoma(Vector2Int pos)
@@ -88,8 +150,6 @@ public class KomaManager : MonoBehaviour
         return null;
     }
 
-
-
     public void DeleteKoma(string deleteKoma)
     {
         foreach (var koma in komas)
@@ -108,7 +168,7 @@ public class KomaManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("‹î‚Å‚Í‚È‚¢‚à‚Ì‚ªDeleteKoma‚É‘—‚ç‚ê‚Ä‚¢‚Ü‚·");
+                    Debug.Log("é§’ã§ã¯ãªã„ã‚‚ã®ãŒDeleteKomaã«é€ã‚‰ã‚Œã¦ã„ã¾ã™");
                 }
 
                 break;
@@ -118,21 +178,20 @@ public class KomaManager : MonoBehaviour
 
     public void IncreaceGachaKoma(Koma gachaKoma ,string playerTag)
     {
-
-        gachaKoma.gameObject.tag = playerTag;//‹î‚Ìƒ^ƒO•ÏX
+        gachaKoma.gameObject.tag = playerTag;//é§’ã®ã‚¿ã‚°å¤‰æ›´
         Motikomas.Add(gachaKoma);
 
         if (playerTag == "P1Koma")
         {
             gachaKoma.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
             gachaKoma.transform.rotation = Quaternion.Euler(0, 0, 0);
-            if (p1KomaPosX < -6)
+            if (p1KomaPosX < -7.6)
             {
-                p1KomaPosX += 1;
+                p1KomaPosX += 0.9f;
             }
             else
             {
-                p1KomaPosX = -8.4f;
+                p1KomaPosX = 5.5f;
                 p1KomaPosY -= 1;
             }
         }
@@ -140,39 +199,36 @@ public class KomaManager : MonoBehaviour
         {
             gachaKoma.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
             gachaKoma.transform.rotation = Quaternion.Euler(0, 0, 180);
-            if (p2KomaPosX > 6)
+            if (p2KomaPosX > -8)
             {
-                p2KomaPosX -= 1;
+                p2KomaPosX -= 0.9f;
             }
             else
             {
-                p2KomaPosX = 8.4f;
-                p2KomaPosY -= 1;
+                p2KomaPosX = -5.3f;
+                p2KomaPosY += 1;
             }
         }
 
-        MotiKomaSet(gachaKoma);//èD‹î‚ÌêŠ‚Éƒ^ƒCƒ‹‚ğ¶¬‚µ‚Ä‹î‚ğæ“¾‚Å‚«‚é‚æ‚¤‚É‚µ‚Ä‚¨‚­
-        
+        MotiKomaSet(gachaKoma);//æ‰‹æœ­é§’ã®å ´æ‰€ã«ã‚¿ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¦é§’ã‚’å–å¾—ã§ãã‚‹ã‚ˆã†ã«ã—ã¦ãŠã
     }
 
     public void IncreaceP1Koma(Koma p2Koma)
     {
-        
-        p2Koma.tag = "P1Koma";//‹î‚Ìƒ^ƒO•ÏX
+        p2Koma.tag = "P1Koma";//é§’ã®ã‚¿ã‚°å¤‰æ›´
         p2Koma.gameObject.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
         p2Koma.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-        //èD‚Ìƒ|ƒWƒVƒ‡ƒ“‚ÉˆÚ“®
-        if (p1KomaPosX < -6)//Ÿ‚Ì‹î‚Ì¶¬ˆÊ’u‚ğ‚¸‚ç‚·B
+        //æ‰‹æœ­ã®ãƒã‚¸ã‚·ãƒ§ãƒ³ã«ç§»å‹•
+        if (p1KomaPosX < 7.6) //æ¬¡ã®é§’ã®ç”Ÿæˆä½ç½®ã‚’ãšã‚‰ã™ã€‚
         {
-            p1KomaPosX += 1;
+            p1KomaPosX += 0.9f;
         }
         else
         {
-            p1KomaPosX = -8.4f;
+            p1KomaPosX = 5.5f;
             p1KomaPosY -= 1;
         }
-        MotiKomaSet(p2Koma);//èD‹î‚ÌêŠ‚Éƒ^ƒCƒ‹‚ğ¶¬‚µ‚Ä‹î‚ğæ“¾‚Å‚«‚é‚æ‚¤‚É‚µ‚Ä‚¨‚­
-        
+        MotiKomaSet(p2Koma);//æ‰‹æœ­é§’ã®å ´æ‰€ã«ã‚¿ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¦é§’ã‚’å–å¾—ã§ãã‚‹ã‚ˆã†ã«ã—ã¦ãŠã
 
         if(p2Koma.name == "koma_9")
         {
@@ -201,7 +257,6 @@ public class KomaManager : MonoBehaviour
         if (p2Koma.name.Contains("koma_15"))
         {
             p2Koma.gameObject.name = "koma_7";
-            
         }
     }
 
@@ -210,17 +265,17 @@ public class KomaManager : MonoBehaviour
         p1Koma.tag = "P2Koma";
         p1Koma.gameObject.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
         p1Koma.gameObject.transform.rotation =  Quaternion.Euler(0, 0, 180);
-        if (p2KomaPosX > 6)
+        if (p2KomaPosX > -8)
         {
-            p2KomaPosX -= 1;
+            p2KomaPosX -= 0.9f;
         }
         else
         {
-            p2KomaPosX = 8.4f;
-            p2KomaPosY -= 1;
+            p2KomaPosX = -5.3f;
+            p2KomaPosY += 1;
         }
 
-        MotiKomaSet(p1Koma);//èD‹î‚ÌêŠ‚Éƒ^ƒCƒ‹‚ğ¶¬‚µ‚Ä‹î‚ğæ“¾‚Å‚«‚é‚æ‚¤‚É‚µ‚Ä‚¨‚­
+        MotiKomaSet(p1Koma);//æ‰‹æœ­é§’ã®å ´æ‰€ã«ã‚¿ã‚¤ãƒ«ã‚’ç”Ÿæˆã—ã¦é§’ã‚’å–å¾—ã§ãã‚‹ã‚ˆã†ã«ã—ã¦ãŠã
 
         if (p1Koma.name == "koma_1")
         {
@@ -249,17 +304,14 @@ public class KomaManager : MonoBehaviour
         if (p1Koma.name.Contains("koma_7"))
         {
             p1Koma.gameObject.name = "koma_15";
-
         }
-
-
     }
 
-    public void MotiKomaSet(Koma setKoma)//èDƒ^ƒCƒ‹‚Ì¶¬
+    public void MotiKomaSet(Koma setKoma)//æ‰‹æœ­ã‚¿ã‚¤ãƒ«ã®ç”Ÿæˆ
     {
-        GameObject tehudaTile = (GameObject)Resources.Load("MapTrout");//ƒŠƒ\[ƒX‚©‚çƒ^ƒCƒ‹‚ğ‚Á‚Ä‚­‚éB
+        GameObject tehudaTile = (GameObject)Resources.Load("MapTrout");//ãƒªã‚½ãƒ¼ã‚¹ã‹ã‚‰ã‚¿ã‚¤ãƒ«ã‚’æŒã£ã¦ãã‚‹ã€‚
         tehudaTile = Instantiate(tehudaTile, setKoma.gameObject.transform.position, Quaternion.identity);
-        tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos;//ƒ^ƒCƒ‹‚ª‚Âƒ}ƒX‚ÌˆÊ’uŠÇ—‚Ì’l‚ğ0,0(«Šû”Õ‚ÌŠO‚Ì’l)‚É‚·‚éB
+        tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos;//ã‚¿ã‚¤ãƒ«ãŒæŒã¤ãƒã‚¹ã®ä½ç½®ç®¡ç†ã®å€¤ã‚’0,0(å°†æ£‹ç›¤ã®å¤–ã®å€¤)ã«ã™ã‚‹ã€‚
         tehudaTile.name = "tehuda";
         tehudaTile.tag = "TehudaTile";
         tehudaTiles.Add(tehudaTile.GetComponent<TileObj>());
@@ -273,10 +325,7 @@ public class KomaManager : MonoBehaviour
             tehudaPos.x++;
             tehudaPos.y = 0;
         }
-
-                
     }
-
 
     public void DeleteTehudaTile(Vector2Int tilePosition)
     {
@@ -288,8 +337,6 @@ public class KomaManager : MonoBehaviour
                 Destroy(tile.gameObject);
                 break;
             }
-
         }
     }
-
 }
