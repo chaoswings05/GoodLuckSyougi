@@ -16,6 +16,8 @@ public class GManager : MonoBehaviour
         Player2MotiKomaMoveSelection,
         Player1Gacha,
         Player2Gacha,
+        Player1Narration,
+        Player2Narration,
         GameEnd,
     }
 
@@ -35,6 +37,9 @@ public class GManager : MonoBehaviour
     [SerializeField, Header("ガチャを引くためのボタンをアタッチしてください。")] private Button button;
     [SerializeField] private GameObject testGacha;
     [SerializeField] private NarrationBuild narration = null;
+    [SerializeField] private GachaSystem gachaSystem = null;
+
+    private bool IsKomadefeated = false;
 
     private bool isGachaed;
 
@@ -49,7 +54,7 @@ public class GManager : MonoBehaviour
 
     public void Gacha() //持ち駒選択時にガチャボタンが押されたら呼ばれる。
     {
-        GameObject gachaObj = null;
+        /*GameObject gachaObj = null;
         if (phase == Phase.Player1MotiKomaMoveSelection)
         {
             mapManager.ResetSetPanels(setTiles);
@@ -59,7 +64,7 @@ public class GManager : MonoBehaviour
             //ガチャを引いて引いた駒を取得する。
             if(gachaKoma != null)
             {
-                komaManager.IncreaceGachaKoma(gachaKoma, "P1Koma");//引いた駒を持ち駒にする。
+                komaManager.IncreaceGachaKoma(gachaKoma, "P1Koma"); //引いた駒を持ち駒にする。
                 phase = Phase.Player1KomaSelection;
                 isGachaed = true;
             }
@@ -86,7 +91,7 @@ public class GManager : MonoBehaviour
             {
                 Debug.Log("ガチャ駒に「Koma」スクリプトをアタッチしてください");
             }   
-        }
+        }*/
     }
 
     void Update()
@@ -94,6 +99,52 @@ public class GManager : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && phase != Phase.GameEnd)
         {
             PlayerClickAction();
+        }
+
+        switch(phase)
+        {
+            case Phase.Player1Narration:
+            if (!SoundManager.Instance.IsNarrationPlaying)
+            {
+                if (komaManager.defeatedKomas.Count > 0)
+                {
+                    phase = Phase.Player1Gacha;
+                    komaManager.gameObject.SetActive(false);
+                    gachaSystem.GachaStart();
+                }
+                else
+                {
+                    TurnPlayerUIMove(2);
+                    phase = Phase.Player2KomaSelection;
+                }
+            }
+            break;
+
+            case Phase.Player2Narration:
+            if (!SoundManager.Instance.IsNarrationPlaying)
+            {
+                if (komaManager.defeatedKomas.Count > 0)
+                {
+                    phase = Phase.Player2Gacha;
+                    komaManager.gameObject.SetActive(false);
+                    gachaSystem.GachaStart();
+                }
+                else
+                {
+                    TurnPlayerUIMove(1);
+                    phase = Phase.Player1KomaSelection;
+                }
+            }
+            break;
+
+            case Phase.Player1Gacha:
+            break;
+
+            case Phase.Player2Gacha:
+            break;
+
+            default:
+            break;
         }
     }
 
@@ -275,14 +326,15 @@ public class GManager : MonoBehaviour
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
+                phase = Phase.Player1Narration;
                 SoundManager.Instance.PlaySE(0);
                 narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
                 SoundManager.Instance.PlayNarration();
-                phase = Phase.Player2KomaSelection;
+                //phase = Phase.Player2KomaSelection;
                 mapManager.ResetSetPanels(setTiles);
                 selectedKoma = null;
                 isGachaed = false;
-                TurnPlayerUIMove(2);
+                //TurnPlayerUIMove(2);
             }
             else if(IsClickKoma1(clickTileObj))
             {
@@ -313,14 +365,15 @@ public class GManager : MonoBehaviour
                 komaManager.Motikomas.Remove(selectedKoma);
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
+                phase = Phase.Player2Narration;
                 SoundManager.Instance.PlaySE(0);
                 narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                 SoundManager.Instance.PlayNarration();
-                phase = Phase.Player1KomaSelection;
+                //phase = Phase.Player1KomaSelection;
                 mapManager.ResetSetPanels(setTiles);
                 selectedKoma = null;
                 isGachaed = false;
-                TurnPlayerUIMove(1);
+                //TurnPlayerUIMove(1);
             }
             else if (IsClickKoma2(clickTileObj))
             {
@@ -412,13 +465,14 @@ public class GManager : MonoBehaviour
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     mapManager.PosCursor(2);
-                    TurnPlayerUIMove(2);
+                    //TurnPlayerUIMove(2);
                     isGachaed = false;
                     selectedKoma.Move(clickTileObj.positionInt);
+                    phase = Phase.Player1Narration;
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
-                    phase = Phase.Player2KomaSelection;
+                    //phase = Phase.Player2KomaSelection;
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
@@ -474,13 +528,14 @@ public class GManager : MonoBehaviour
                         }
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
+                    phase = Phase.Player1Narration;
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
                     mapManager.PosCursor(2);
-                    TurnPlayerUIMove(2);
+                    //TurnPlayerUIMove(2);
                     isGachaed = false;
-                    phase = Phase.Player2KomaSelection;
+                    //phase = Phase.Player2KomaSelection;
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
@@ -564,13 +619,14 @@ public class GManager : MonoBehaviour
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     mapManager.PosCursor(2);
-                    TurnPlayerUIMove(1);
+                    //TurnPlayerUIMove(1);
                     isGachaed = false;
                     selectedKoma.Move(clickTileObj.positionInt);
+                    phase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
-                    phase = Phase.Player1KomaSelection;
+                    //phase = Phase.Player1KomaSelection;
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
@@ -626,13 +682,14 @@ public class GManager : MonoBehaviour
                         }
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
+                    phase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
                     mapManager.PosCursor(2);
-                    TurnPlayerUIMove(1);
+                    //TurnPlayerUIMove(1);
                     isGachaed = false;
-                    phase = Phase.Player1KomaSelection;
+                    //phase = Phase.Player1KomaSelection;
 
                 }
                 mapManager.ResetMovablePanels(movableTiles);
@@ -664,6 +721,31 @@ public class GManager : MonoBehaviour
         {
             P1TurnUI.SetActive(false);
             P2TurnUI.SetActive(true);
+        }
+    }
+
+    public void KomaChange(int num, Sprite image)
+    {
+        if(phase == Phase.Player1Gacha)
+        {
+            komaManager.IncreaceGachaKoma(komaManager.defeatedKomas[0], "P1Koma", num, image);
+        }
+        else if (phase == Phase.Player2Gacha)
+        {
+            komaManager.IncreaceGachaKoma(komaManager.defeatedKomas[0], "P2Koma", num, image);
+        }
+    }
+
+    public void GachaFinish()
+    {
+        komaManager.gameObject.SetActive(true);
+        if (phase == Phase.Player1Gacha)
+        {
+            phase = Phase.Player2KomaSelection;
+        }
+        else if (phase == Phase.Player2Gacha)
+        {
+            phase = Phase.Player1KomaSelection;
         }
     }
 }

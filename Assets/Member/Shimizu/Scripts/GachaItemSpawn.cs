@@ -8,6 +8,7 @@ public class GachaItemSpawn : MonoBehaviour
     PieceDataBase dataBase;  //スクリタブルのやつ
     [SerializeField]
     Gacha gacha;
+    [SerializeField] private GachaSystem gachaSystem = null;
 
     private List<GameObject> gachaItem = new List<GameObject>();
 
@@ -18,6 +19,7 @@ public class GachaItemSpawn : MonoBehaviour
         //レアリティだけ渡してここでランダムとか
         PieceChoice(gacha.GachaMethod());
     }
+
     public void PieceChoice(string rarity)
     {
         gachaItem.Clear();
@@ -29,11 +31,12 @@ public class GachaItemSpawn : MonoBehaviour
             }
         }
         Debug.Log(gachaItem.Count);
-        Instantiate(gachaItem[Random.Range(0, gachaItem.Count)],Vector3.zero,Quaternion.identity,this.transform);
+        gachaSystem.gachaItemUpdate(gachaItem[Random.Range(0, gachaItem.Count)].name);
+        //Instantiate(gachaItem[Random.Range(0, gachaItem.Count)],Vector3.zero,Quaternion.identity,this.transform);
         //Random.Range(0, gachaItem.Count + 1);
-
     }
 }
+
 public class GachaItemParameter
 {
     public GameObject obj = null;

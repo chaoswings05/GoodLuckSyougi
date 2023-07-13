@@ -61,7 +61,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip[] SE;
     // Narration
     public List<AudioClip> Narration = new List<AudioClip>();
-    private bool IsNarrationPlaying = false;
+    [HideInInspector] public bool IsNarrationPlaying = false;
     private int NarrationPlayingNum = 0;
     
     // 
@@ -114,7 +114,6 @@ public class SoundManager : MonoBehaviour
         {
             if (!NarrationSource.isPlaying)
             {
-                Debug.Log("End");
                 SwitchNextNarration();
             }
         }

@@ -676,6 +676,158 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478508715}
   m_CullTransparentMesh: 1
+--- !u!1001 &498173263
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4554487029402203809, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_Name
+      value: GachaCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203812, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 396328592}
+    - target: {fileID: 4554487029402203812, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203812, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203813, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029402203815, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487029917784289, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4554487030966916860, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 2055835355}
+    - target: {fileID: 4554487031170942069, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8562506937315050324, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+--- !u!114 &498173264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4554487030966916860, guid: 679e634a5e358c9409a190bc70132ce3, type: 3}
+  m_PrefabInstance: {fileID: 498173263}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6725cfeaa07fe144ba4b14905307702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &516149305
 GameObject:
   m_ObjectHideFlags: 0
@@ -1306,6 +1458,7 @@ MonoBehaviour:
   basex: 0
   basey: 0
   positionInt: {x: 0, y: 0}
+  gachaKomaNameObj: {fileID: 0}
 --- !u!1 &792009053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1612,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 834714330}
   m_CullTransparentMesh: 1
+--- !u!212 &861757368 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036348804957, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &863994896 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5908490264165887707, guid: da539cfd9b90ad644b07e8095ccb6b58, type: 3}
@@ -1470,6 +1628,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17589afd6ea43a40a29a8a4132cd8af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &884813553 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036281595476, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &953587446
 GameObject:
   m_ObjectHideFlags: 0
@@ -1949,6 +2112,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408567201}
   m_CullTransparentMesh: 1
+--- !u!212 &1449249157 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035619311627, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1502140185
 GameObject:
   m_ObjectHideFlags: 0
@@ -3022,6 +3190,42 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u89D2"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 861757368}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ec9b21ef10dba7144aaac60c4cddda0b, type: 3}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 36b5270b06d259c4abc80001de978ede, type: 3}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: a171be54f0b9cbf43b24d7afbcd791c3, type: 3}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f5abe789dd60b74b84934af60657c0d, type: 3}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e70c4d761d310a648a3d5a109a5da86f, type: 3}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 98564eb93b826fe418066e49e94eb3af, type: 3}
+    - target: {fileID: 5696046034549105320, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: d61a96071d419424ba4780f1f428c98a, type: 3}
     - target: {fileID: 5696046034610567809, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3034,6 +3238,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u53F3"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034610567809, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749651}
     - target: {fileID: 5696046034612404173, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3046,6 +3254,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u53F3"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034612404173, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749647}
     - target: {fileID: 5696046034674415243, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3054,6 +3266,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034674415243, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749642}
     - target: {fileID: 5696046034739400897, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3062,6 +3278,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u9280\u5C06"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034739400897, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749629}
     - target: {fileID: 5696046034795732744, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3070,6 +3290,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034795732744, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749621}
     - target: {fileID: 5696046034858979467, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: m_Name
       value: koma_1
@@ -3090,6 +3314,46 @@ PrefabInstance:
       propertyPath: positionInt.y
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 884813553}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ec9b21ef10dba7144aaac60c4cddda0b, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 36b5270b06d259c4abc80001de978ede, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: a171be54f0b9cbf43b24d7afbcd791c3, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f5abe789dd60b74b84934af60657c0d, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e70c4d761d310a648a3d5a109a5da86f, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 98564eb93b826fe418066e49e94eb3af, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 57c1c475db68d514da0904a3cca090c2, type: 3}
+    - target: {fileID: 5696046034858979478, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: d61a96071d419424ba4780f1f428c98a, type: 3}
     - target: {fileID: 5696046034896063277, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3098,6 +3362,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034896063277, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749643}
     - target: {fileID: 5696046034974174932, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3106,6 +3374,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034974174932, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749644}
     - target: {fileID: 5696046034977163250, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3114,6 +3386,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u91D1\u5C06"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034977163250, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749631}
     - target: {fileID: 5696046034989184972, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: m_Name
       value: koma_0
@@ -3126,6 +3402,46 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u7389\u5C06"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 1449249157}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: ec9b21ef10dba7144aaac60c4cddda0b, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 36b5270b06d259c4abc80001de978ede, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: a171be54f0b9cbf43b24d7afbcd791c3, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0f5abe789dd60b74b84934af60657c0d, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: e70c4d761d310a648a3d5a109a5da86f, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[5]
+      value: 
+      objectReference: {fileID: 21300000, guid: 98564eb93b826fe418066e49e94eb3af, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[6]
+      value: 
+      objectReference: {fileID: 21300000, guid: 57c1c475db68d514da0904a3cca090c2, type: 3}
+    - target: {fileID: 5696046034989184975, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameUI.Array.data[7]
+      value: 
+      objectReference: {fileID: 21300000, guid: d61a96071d419424ba4780f1f428c98a, type: 3}
     - target: {fileID: 5696046035002315450, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3134,6 +3450,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035002315450, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749641}
     - target: {fileID: 5696046035074172910, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3142,6 +3462,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u9999\u8ECA"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035074172910, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749626}
     - target: {fileID: 5696046035260677517, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3150,6 +3474,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035260677517, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749639}
     - target: {fileID: 5696046035282661247, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3158,6 +3486,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035282661247, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749617}
     - target: {fileID: 5696046035415102117, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3170,6 +3502,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u53F3"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035415102117, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749645}
     - target: {fileID: 5696046035542328734, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3178,6 +3514,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u89D2"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035542328734, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749633}
     - target: {fileID: 5696046035639900199, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3186,6 +3526,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6842\u99AC"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035639900199, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749628}
     - target: {fileID: 5696046035715412256, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3198,6 +3542,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u5DE6"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035715412256, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749646}
     - target: {fileID: 5696046035765902198, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3210,6 +3558,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u5DE6"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035765902198, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749652}
     - target: {fileID: 5696046035858150580, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3218,6 +3570,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u7389\u5C06"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035858150580, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749635}
     - target: {fileID: 5696046035861373937, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3226,6 +3582,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u9280\u5C06"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035861373937, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749630}
     - target: {fileID: 5696046035983705090, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3238,6 +3598,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u5DE6"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035983705090, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749649}
     - target: {fileID: 5696046035988392082, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3246,6 +3610,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u9999\u8ECA"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046035988392082, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749625}
     - target: {fileID: 5696046036019278634, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3254,6 +3622,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036019278634, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749616}
     - target: {fileID: 5696046036031323395, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3266,6 +3638,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u53F3"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036031323395, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749650}
     - target: {fileID: 5696046036128568059, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3274,6 +3650,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6842\u99AC"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036128568059, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749627}
     - target: {fileID: 5696046036162628242, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3282,6 +3662,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036162628242, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749622}
     - target: {fileID: 5696046036197365570, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3290,6 +3674,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036197365570, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749638}
     - target: {fileID: 5696046036199169572, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3298,6 +3686,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036199169572, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749618}
     - target: {fileID: 5696046036253132522, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3306,6 +3698,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036253132522, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749620}
     - target: {fileID: 5696046036340817377, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3314,6 +3710,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036340817377, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749619}
     - target: {fileID: 5696046036361616912, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3326,6 +3726,10 @@ PrefabInstance:
       propertyPath: spawnSide
       value: "\u5DE6"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036361616912, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749648}
     - target: {fileID: 5696046036364842015, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3334,9 +3738,17 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036364842015, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749624}
     - target: {fileID: 5696046036377858443, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: m_Name
       value: KomaManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5696046036377858443, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5696046036377858453, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: komas.Array.data[0]
@@ -3394,6 +3806,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u91D1\u5C06"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036379939258, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749632}
     - target: {fileID: 5696046036490300447, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3402,6 +3818,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036490300447, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749623}
     - target: {fileID: 5696046036517496579, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3410,6 +3830,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036517496579, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749637}
     - target: {fileID: 5696046036520123384, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: m_Name
       value: koma_7_9
@@ -3422,6 +3846,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036520123387, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749636}
     - target: {fileID: 5696046036542811917, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 1
@@ -3430,6 +3858,10 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u6B69"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036542811917, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749640}
     - target: {fileID: 5696046036606901357, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
       propertyPath: owner
       value: 2
@@ -3438,8 +3870,197 @@ PrefabInstance:
       propertyPath: PieceName
       value: "\u98DB\u8ECA"
       objectReference: {fileID: 0}
+    - target: {fileID: 5696046036606901357, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+      propertyPath: gachaKomaNameObj
+      value: 
+      objectReference: {fileID: 2106749634}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+--- !u!212 &2106749616 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034679796362, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749617 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035638515598, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749618 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035293005737, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749619 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035994180561, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749620 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034762228141, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749621 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036458754090, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749622 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035076423470, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749623 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036154923202, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749624 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036274388213, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749625 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034606812928, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749626 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034858927023, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749627 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034673294350, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749628 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034867293286, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749629 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035365147126, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749630 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036094464590, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749631 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035246417427, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749632 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035727015783, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749633 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036412986658, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749634 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036349951869, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749635 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036260426795, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749636 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035227498899, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749637 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035494904030, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749638 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035220281544, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749639 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036175931731, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749640 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036447351578, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749641 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036372186004, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749642 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036377332125, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749643 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036514143380, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749644 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034699080713, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749645 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035386289208, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749646 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035576584053, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749647 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036388417737, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749648 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046035728435548, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749649 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034638519933, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749650 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046034781204541, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749651 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036473946530, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2106749652 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5696046036320430980, guid: 2e39d198b2d44dc4bbcdcdd774779385, type: 3}
+  m_PrefabInstance: {fileID: 2106749615}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2933338719590840499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3580,6 +4201,10 @@ PrefabInstance:
       propertyPath: mapManager
       value: 
       objectReference: {fileID: 1266734137}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: gachaSystem
+      value: 
+      objectReference: {fileID: 498173264}
     - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
       propertyPath: komaManager
       value: 

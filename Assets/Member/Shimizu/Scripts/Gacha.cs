@@ -27,6 +27,7 @@ public class Gacha : MonoBehaviour
     private int srQuantity = 2;
     [SerializeField]
     private int rQuantity = 4;
+
     private void Start()
     {
         //個数チェック
@@ -79,6 +80,7 @@ public class Gacha : MonoBehaviour
         var result = Choose(item);
         //Debug.Log(result);
     }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
@@ -86,6 +88,7 @@ public class Gacha : MonoBehaviour
             gachaItemSpawn.GachaGacha();
         }
     }
+
     //ガチャを引くメソッド
     public string GachaMethod()
     {
@@ -158,7 +161,6 @@ public class Gacha : MonoBehaviour
     //抽選メソッド
     int Choose(int[] probs)
     {
-
         float total = 0;
 
         //配列の要素を代入して重みの計算
@@ -188,6 +190,7 @@ public class Gacha : MonoBehaviour
         //乱数が１の時、配列数の-１＝要素の最後の値をChoose配列に戻している
         return probs.Length - 1;
     }
+
     public int PieceQuantity()
     {
         return pieceQuantity;

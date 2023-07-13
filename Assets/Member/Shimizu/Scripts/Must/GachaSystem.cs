@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GachaSystem : MonoBehaviour
 {
@@ -13,6 +14,21 @@ public class GachaSystem : MonoBehaviour
     [SerializeField]
     AudioClip audioClip;
     AudioSource audioSource;
+    [SerializeField] private GachaItemSpawn gachaItemSpawn = null;
+    [SerializeField] private Image gachaKomaNameObj = null;
+    [SerializeField] private Sprite[] gachaKomaNameUI = null;
+    private Dictionary<string, int> gachaKomaNum = new Dictionary<string, int>()
+    {
+        {"SEI",0},
+        {"SINOBI",1},
+        {"KUKKYOU",2},
+        {"HIKYOU",3},
+        {"HUGOU",4},
+        {"HOU",5},
+        {"NIKU",6},
+        {"HAIYUU",7},
+    };
+    [SerializeField] private GManager gameManager = null;
 
     private bool once = true;
     // Start is called before the first frame update
@@ -24,24 +40,29 @@ public class GachaSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(1))
+
+        GachaStart();
     }
-    //ƒKƒ`ƒƒ‚ÌƒCƒ‰ƒXƒg‚ð•\Ž¦
+
+    //ï¿½Kï¿½`ï¿½ï¿½ï¿½ÌƒCï¿½ï¿½ï¿½Xï¿½gï¿½ï¿½\ï¿½ï¿½
     public void GachaStart()
     {
         GachaImage.SetActive(true);
     }
-    //ƒKƒ`ƒƒ‚Ìƒ{ƒ^ƒ“‚ð‰Ÿ‚·‚Æ‚«
+
+    //ï¿½Kï¿½`ï¿½ï¿½ï¿½Ìƒ{ï¿½^ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½
     public void GachaButtonDown()
     {
         if(once)
         {
             once = false;
             audioSource.PlayOneShot(audioClip);
+            gachaItemSpawn.GachaGacha();
             StartCoroutine(DelayEffect());
         }
-        
     }
+
     IEnumerator DelayEffect()
     {
         yield return new WaitForSeconds(1f);
@@ -50,7 +71,14 @@ public class GachaSystem : MonoBehaviour
         yield return new WaitForSeconds(2f);
         GachaImage.SetActive(false);
         gachaItem.SetActive(false);
-        once = false;
+        once = true;
+        gameManager.GachaFinish();
+    }
 
+    public void gachaItemUpdate(string name)
+    {
+        Debug.Log(name);
+        gachaKomaNameObj.sprite = gachaKomaNameUI[gachaKomaNum[name]];
+        gameManager.KomaChange(gachaKomaNum[name], gachaKomaNameUI[gachaKomaNum[name]]);
     }
 }

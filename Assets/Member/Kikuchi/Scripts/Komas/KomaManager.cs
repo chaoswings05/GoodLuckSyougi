@@ -10,6 +10,7 @@ public class KomaManager : KomaName
     public List<Koma> komas = new List<Koma>();
     //手持ちの駒を管理する。
     public List<Koma> Motikomas = new List<Koma>();
+    public List<Koma> defeatedKomas = new List<Koma>();
 
     public List<TileObj> tehudaTiles = new List<TileObj>();
 
@@ -157,29 +158,34 @@ public class KomaManager : KomaName
             if (koma.name == deleteKoma)
             {
                 komas.Remove(koma);
-                Motikomas.Add(koma);
-                if (koma.tag == "P1Koma")
-                {
-                    IncreaceP2Koma(koma);
-                }
-                else if (koma.tag == "P2Koma")
-                {
-                    IncreaceP1Koma(koma);
-                }
-                else
-                {
-                    Debug.Log("駒ではないものがDeleteKomaに送られています");
-                }
+                defeatedKomas.Add(koma);
+                koma.gameObject.SetActive(false);
+                //Motikomas.Add(koma);
+                //if (koma.tag == "P1Koma")
+                //{
+                    //IncreaceP2Koma(koma);
+                //}
+                //else if (koma.tag == "P2Koma")
+                //{
+                    //IncreaceP1Koma(koma);
+                //}
+                //else
+                //{
+                    //Debug.Log("駒ではないものがDeleteKomaに送られています");
+                //}
 
                 break;
             }
         }
     }
 
-    public void IncreaceGachaKoma(Koma gachaKoma ,string playerTag)
+    public void IncreaceGachaKoma(Koma gachaKoma ,string playerTag, int komaNum, Sprite image)
     {
+        gachaKoma.gameObject.SetActive(true);
         gachaKoma.gameObject.tag = playerTag;//駒のタグ変更
+        gachaKoma.UpdateKomaData(komaNum, image);
         Motikomas.Add(gachaKoma);
+        defeatedKomas.Remove(gachaKoma);
 
         if (playerTag == "P1Koma")
         {
