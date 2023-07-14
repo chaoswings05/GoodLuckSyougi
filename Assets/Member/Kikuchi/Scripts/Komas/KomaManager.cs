@@ -14,14 +14,13 @@ public class KomaManager : KomaName
 
     public List<TileObj> tehudaTiles = new List<TileObj>();
 
-    TileObj tehudaScript;
-
     float p1KomaPosX = 5.5f;
     float p1KomaPosY = -1.5f;
     float p2KomaPosX = -5.3f;
     float p2KomaPosY = 1.6f;
 
     public Vector2Int tehudaPos;
+
     void Start()
     {
         tehudaPos = new Vector2Int(10,0);
@@ -160,19 +159,6 @@ public class KomaManager : KomaName
                 komas.Remove(koma);
                 defeatedKomas.Add(koma);
                 koma.gameObject.SetActive(false);
-                //Motikomas.Add(koma);
-                //if (koma.tag == "P1Koma")
-                //{
-                    //IncreaceP2Koma(koma);
-                //}
-                //else if (koma.tag == "P2Koma")
-                //{
-                    //IncreaceP1Koma(koma);
-                //}
-                //else
-                //{
-                    //Debug.Log("駒ではないものがDeleteKomaに送られています");
-                //}
 
                 break;
             }
@@ -182,7 +168,7 @@ public class KomaManager : KomaName
     public void IncreaceGachaKoma(Koma gachaKoma ,string playerTag, int komaNum, Sprite image)
     {
         gachaKoma.gameObject.SetActive(true);
-        gachaKoma.gameObject.tag = playerTag;//駒のタグ変更
+        gachaKoma.gameObject.tag = playerTag; //駒のタグ変更
         gachaKoma.UpdateKomaData(komaNum, image);
         Motikomas.Add(gachaKoma);
         defeatedKomas.Remove(gachaKoma);
@@ -191,7 +177,7 @@ public class KomaManager : KomaName
         {
             gachaKoma.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
             gachaKoma.transform.rotation = Quaternion.Euler(0, 0, 0);
-            if (p1KomaPosX < -7.6)
+            if (p1KomaPosX < 7.6)
             {
                 p1KomaPosX += 0.9f;
             }
@@ -201,7 +187,7 @@ public class KomaManager : KomaName
                 p1KomaPosY -= 1;
             }
         }
-        if(playerTag == "P2Koma")
+        if (playerTag == "P2Koma")
         {
             gachaKoma.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
             gachaKoma.transform.rotation = Quaternion.Euler(0, 0, 180);
@@ -216,108 +202,62 @@ public class KomaManager : KomaName
             }
         }
 
-        MotiKomaSet(gachaKoma);//手札駒の場所にタイルを生成して駒を取得できるようにしておく
+        MotiKomaSet(gachaKoma); //手札駒の場所にタイルを生成して駒を取得できるようにしておく
     }
 
-    public void IncreaceP1Koma(Koma p2Koma)
+    public void RearrangeMotiKoma()
     {
-        p2Koma.tag = "P1Koma";//駒のタグ変更
-        p2Koma.gameObject.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
-        p2Koma.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
-        //手札のポジションに移動
-        if (p1KomaPosX < 7.6) //次の駒の生成位置をずらす。
-        {
-            p1KomaPosX += 0.9f;
-        }
-        else
-        {
-            p1KomaPosX = 5.5f;
-            p1KomaPosY -= 1;
-        }
-        MotiKomaSet(p2Koma);//手札駒の場所にタイルを生成して駒を取得できるようにしておく
+        p1KomaPosX = 5.5f;
+        p1KomaPosY = -1.5f;
+        p2KomaPosX = -5.3f;
+        p2KomaPosY = 1.6f;
 
-        if(p2Koma.name == "koma_9")
+        foreach (var tile in tehudaTiles)
         {
-            p2Koma.name = "koma_1";
-        }
-        if (p2Koma.name == "koma_10")
-        {
-            p2Koma.name = "koma_2";
-        }
-        if (p2Koma.name.Contains("koma_11"))
-        {
-            p2Koma.name = "koma_3";
-        }
-        if (p2Koma.name.Contains("koma_12"))
-        {
-            p2Koma.name = "koma_4";
-        }
-        if (p2Koma.name.Contains("koma_13"))
-        {
-            p2Koma.name = "koma_5";
-        }
-        if (p2Koma.name.Contains("koma_14"))
-        {
-            p2Koma.name = "koma_6";
-        }
-        if (p2Koma.name.Contains("koma_15"))
-        {
-            p2Koma.gameObject.name = "koma_7";
-        }
-    }
-
-    public void IncreaceP2Koma(Koma p1Koma)
-    {
-        p1Koma.tag = "P2Koma";
-        p1Koma.gameObject.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
-        p1Koma.gameObject.transform.rotation =  Quaternion.Euler(0, 0, 180);
-        if (p2KomaPosX > -8)
-        {
-            p2KomaPosX -= 0.9f;
-        }
-        else
-        {
-            p2KomaPosX = -5.3f;
-            p2KomaPosY += 1;
+            tehudaTiles.Remove(tile);
+            Destroy(tile.gameObject);
+            break;
         }
 
-        MotiKomaSet(p1Koma);//手札駒の場所にタイルを生成して駒を取得できるようにしておく
-
-        if (p1Koma.name == "koma_1")
+        foreach (Koma koma in Motikomas)
         {
-            p1Koma.name = "koma_9";
-        }
-        if (p1Koma.name == "koma_2")
-        {
-            p1Koma.name = "koma_10";
-        }
-        if (p1Koma.name.Contains("koma_3"))
-        {
-            p1Koma.name = "koma_11";
-        }
-        if (p1Koma.name.Contains("koma_4"))
-        {
-            p1Koma.name = "koma_12";
-        }
-        if (p1Koma.name.Contains("koma_5"))
-        {
-            p1Koma.name = "koma_13";
-        }
-        if (p1Koma.name.Contains("koma_6"))
-        {
-            p1Koma.name = "koma_14";
-        }
-        if (p1Koma.name.Contains("koma_7"))
-        {
-            p1Koma.gameObject.name = "koma_15";
+            if (koma.CompareTag("P1Koma"))
+            {
+                koma.transform.position = new Vector3(p1KomaPosX, p1KomaPosY, 2);
+                koma.transform.rotation = Quaternion.Euler(0, 0, 0);
+                if (p1KomaPosX < 7.6)
+                {
+                    p1KomaPosX += 0.9f;
+                }
+                else
+                {
+                    p1KomaPosX = 5.5f;
+                    p1KomaPosY -= 1;
+                }
+            }
+            if (koma.CompareTag("P2Koma"))
+            {
+                koma.transform.position = new Vector3(p2KomaPosX, p2KomaPosY, 2);
+                koma.transform.rotation = Quaternion.Euler(0, 0, 180);
+                if (p2KomaPosX > -8)
+                {
+                    p2KomaPosX -= 0.9f;
+                }
+                else
+                {
+                    p2KomaPosX = -5.3f;
+                    p2KomaPosY += 1;
+                }
+            }
+            MotiKomaSet(koma);
         }
     }
 
-    public void MotiKomaSet(Koma setKoma)//手札タイルの生成
+    public void MotiKomaSet(Koma setKoma) //手札タイルの生成
     {
-        GameObject tehudaTile = (GameObject)Resources.Load("MapTrout");//リソースからタイルを持ってくる。
+        GameObject tehudaTile = (GameObject)Resources.Load("MapTrout"); //リソースからタイルを持ってくる。
         tehudaTile = Instantiate(tehudaTile, setKoma.gameObject.transform.position, Quaternion.identity);
-        tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos;//タイルが持つマスの位置管理の値を0,0(将棋盤の外の値)にする。
+        tehudaTile.GetComponent<TileObj>().positionInt = tehudaPos; //タイルが持つマスの位置管理の値を0,0(将棋盤の外の値)にする。
         tehudaTile.name = "tehuda";
         tehudaTile.tag = "TehudaTile";
         tehudaTiles.Add(tehudaTile.GetComponent<TileObj>());

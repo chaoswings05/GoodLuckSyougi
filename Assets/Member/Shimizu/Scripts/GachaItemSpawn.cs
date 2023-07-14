@@ -32,8 +32,6 @@ public class GachaItemSpawn : MonoBehaviour
         }
         Debug.Log(gachaItem.Count);
         gachaSystem.gachaItemUpdate(gachaItem[Random.Range(0, gachaItem.Count)].name);
-        //Instantiate(gachaItem[Random.Range(0, gachaItem.Count)],Vector3.zero,Quaternion.identity,this.transform);
-        //Random.Range(0, gachaItem.Count + 1);
     }
 }
 

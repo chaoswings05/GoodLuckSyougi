@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Koma : MonoBehaviour
 {
-    public int owner = 0;
     public string PieceName = "";
     float per1xy = 0.928f; //1マスあたりの移動値 (駒が動く座標範囲の全体の大きさ/一コマの移動距離)
     [HideInInspector] public float basex;
@@ -46,30 +45,37 @@ public class Koma : MonoBehaviour
 
             case 1:
             PieceName = "忍者";
+            this.name = "Ninja";
             break;
 
             case 2:
             PieceName = "屈強";
+            this.name = "Kukkyou";
             break;
 
             case 3:
             PieceName = "卑怯";
+            this.name = "Hikyo";
             break;
 
             case 4:
             PieceName = "富豪";
+            this.name = "Fugo";
             break;
 
             case 5:
             PieceName = "砲台";
+            this.name = "Houdai";
             break;
 
             case 6:
             PieceName = "筋肉";
+            this.name = "Kinniku";
             break;
 
             case 7:
             PieceName = "俳優";
+            this.name = "Haiyu";
             break;
 
             default:

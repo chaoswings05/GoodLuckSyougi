@@ -29,25 +29,20 @@ public class GachaSystem : MonoBehaviour
         {"HAIYUU",7},
     };
     [SerializeField] private GManager gameManager = null;
+    public int gachaNum = 0;
 
     private bool once = true;
+
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-
-        GachaStart();
-    }
-
     //�K�`���̃C���X�g��\��
-    public void GachaStart()
+    public void GachaStart(int num)
     {
+        gachaNum = num;
         GachaImage.SetActive(true);
     }
 
@@ -57,20 +52,23 @@ public class GachaSystem : MonoBehaviour
         if(once)
         {
             once = false;
-            audioSource.PlayOneShot(audioClip);
-            gachaItemSpawn.GachaGacha();
             StartCoroutine(DelayEffect());
         }
     }
 
     IEnumerator DelayEffect()
     {
-        yield return new WaitForSeconds(1f);
-        gachaItem.SetActive(true);
-        particle.Play();
-        yield return new WaitForSeconds(2f);
+        for (int i = 0; i < gachaNum; i++)
+        {
+            audioSource.PlayOneShot(audioClip);
+            gachaItemSpawn.GachaGacha();
+            yield return new WaitForSeconds(1f);
+            gachaItem.SetActive(true);
+            particle.Play();
+            yield return new WaitForSeconds(2f);
+            gachaItem.SetActive(false);
+        }
         GachaImage.SetActive(false);
-        gachaItem.SetActive(false);
         once = true;
         gameManager.GachaFinish();
     }

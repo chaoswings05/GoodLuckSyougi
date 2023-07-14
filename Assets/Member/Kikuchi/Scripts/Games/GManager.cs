@@ -70,7 +70,7 @@ public class GManager : MonoBehaviour
                 {
                     phase = Phase.Player1Gacha;
                     komaManager.gameObject.SetActive(false);
-                    gachaSystem.GachaStart();
+                    gachaSystem.GachaStart(komaManager.defeatedKomas.Count);
                 }
                 else
                 {
@@ -91,7 +91,7 @@ public class GManager : MonoBehaviour
                 {
                     phase = Phase.Player2Gacha;
                     komaManager.gameObject.SetActive(false);
-                    gachaSystem.GachaStart();
+                    gachaSystem.GachaStart(komaManager.defeatedKomas.Count);
                 }
                 else
                 {
@@ -278,6 +278,7 @@ public class GManager : MonoBehaviour
             {
                 komaManager.Motikomas.Remove(selectedKoma);
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
+                komaManager.RearrangeMotiKoma();
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
                 phase = Phase.Player1Narration;
@@ -314,6 +315,7 @@ public class GManager : MonoBehaviour
             {
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
                 komaManager.Motikomas.Remove(selectedKoma);
+                komaManager.RearrangeMotiKoma();
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
                 phase = Phase.Player2Narration;
@@ -412,7 +414,6 @@ public class GManager : MonoBehaviour
                     {
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
-                    mapManager.PosCursor(2);
                     selectedKoma.Move(clickTileObj.positionInt);
                     phase = Phase.Player1Narration;
                     SoundManager.Instance.PlaySE(0);
@@ -477,7 +478,6 @@ public class GManager : MonoBehaviour
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
-                    mapManager.PosCursor(2);
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
@@ -560,7 +560,6 @@ public class GManager : MonoBehaviour
                     {
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
-                    mapManager.PosCursor(2);
                     selectedKoma.Move(clickTileObj.positionInt);
                     phase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
@@ -625,7 +624,6 @@ public class GManager : MonoBehaviour
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
-                    mapManager.PosCursor(2);
                 }
                 mapManager.ResetMovablePanels(movableTiles);
                 selectedKoma = null;
@@ -684,10 +682,12 @@ public class GManager : MonoBehaviour
         komaManager.gameObject.SetActive(true);
         if (phase == Phase.Player1Gacha)
         {
+            TurnPlayerUIMove(2);
             phase = Phase.Player2KomaSelection;
         }
         else if (phase == Phase.Player2Gacha)
         {
+            TurnPlayerUIMove(1);
             phase = Phase.Player1KomaSelection;
         }
     }
