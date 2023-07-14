@@ -19,6 +19,8 @@ public class Koma : MonoBehaviour
 
     [SerializeField] private SpriteRenderer gachaKomaNameObj = null;
 
+    [SerializeField] private GameObject effect = null;
+
     void Start()
     {
         posFix = new Vector3(0.06f, 0.05f, 0);
@@ -27,6 +29,7 @@ public class Koma : MonoBehaviour
     public void Move(Vector2Int newPos)
     {
         transform.position = new Vector3(basex + per1xy * newPos.x, basey + per1xy * newPos.y, 2) + posFix;
+        Instantiate(effect, transform);
         positionInt = newPos;
     }
 

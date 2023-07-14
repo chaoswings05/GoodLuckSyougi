@@ -38,20 +38,6 @@ public class NarrationBuild : MonoBehaviour
         {"筋肉",21},
     };
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            WordCombine(1,new Vector2Int(6,7),"と金",true);
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SoundManager.Instance.PlayNarration();
-        }
-    }
-
     public void WordCombine(int PlayerNum, Vector2Int movedPos, string Name, bool IsPieceTurn)
     {
         SoundManager.Instance.Narration.Add(Player[PlayerNum-1]);

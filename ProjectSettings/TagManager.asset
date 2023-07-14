@@ -9,6 +9,7 @@ TagManager:
   - p2Koma
   - TehudaTile
   - MapTile
+  - DeleteZone
   layers:
   - Default
   - TransparentFX
