@@ -1480,7 +1480,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 581486958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2055835355}
+        m_TargetAssemblyTypeName: GManager, Assembly-CSharp
+        m_MethodName: P1SkillButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &581486958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2663,7 +2675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1204173958}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2055835355}
+        m_TargetAssemblyTypeName: GManager, Assembly-CSharp
+        m_MethodName: P2SkillButtonPress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1204173958
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5712,6 +5736,14 @@ PrefabInstance:
       propertyPath: resultManager
       value: 
       objectReference: {fileID: 1525791049}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: P1PieceSkillButton
+      value: 
+      objectReference: {fileID: 581486955}
+    - target: {fileID: 4486424737506598317, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
+      propertyPath: P2PieceSkillButton
+      value: 
+      objectReference: {fileID: 1204173955}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf970c0b9a15bb1488329d34977aad3f, type: 3}
 --- !u!1001 &5423664071965479233

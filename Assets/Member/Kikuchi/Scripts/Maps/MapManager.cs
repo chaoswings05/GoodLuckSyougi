@@ -1057,6 +1057,46 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.left));
             }
+
+            onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up + Vector2Int.left);
+            if (onTileKoma == null)
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.left));
+            }
+            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.left));
+            }
+
+            onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up + Vector2Int.right);
+            if (onTileKoma == null)
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.right));
+            }
+            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.right));
+            }
+
+            onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.down + Vector2Int.right);
+            if (onTileKoma == null)
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.right));
+            }
+            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.right));
+            }
+
+            onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.down + Vector2Int.left);
+            if (onTileKoma == null)
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.left));
+            }
+            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            {
+                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.left));
+            }
         }
 
         if (koma.name.Contains("Haiyu"))
