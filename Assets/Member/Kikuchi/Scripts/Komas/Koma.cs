@@ -16,9 +16,10 @@ public class Koma : MonoBehaviour
 
     public Vector2Int Position { get => positionInt;}
 
-    [SerializeField] private SpriteRenderer gachaKomaNameObj = null;
+    public SpriteRenderer gachaKomaNameObj = null;
 
     [SerializeField] private GameObject effect = null;
+    [SerializeField] private GameObject HaiyuEffect = null;
 
     void Start()
     {
@@ -81,6 +82,14 @@ public class Koma : MonoBehaviour
             default:
             break;
         }
+    }
+
+    public void HaiyuChange(string pieceName, string objName, Sprite Image)
+    {
+        Instantiate(HaiyuEffect, transform);
+        gachaKomaNameObj.sprite = Image;
+        PieceName = pieceName;
+        this.name = objName;
     }
 }
 

@@ -36,7 +36,7 @@ public class ResultManager : MonoBehaviour
                 GiveUpUI.transform.localPosition = Vector3.one;
                 GiveUpUI.gameObject.SetActive(false);
                 IsGiveUpUIfade = false;
-                IsGameEndUIfade = true;
+                ShowGameEndUI();
             }
         }
 

@@ -152,6 +152,10 @@ public class KomaManager : KomaName
 
     public void DeleteKoma(string deleteKoma)
     {
+        if (deleteKoma == "Kukkyou")
+        {
+            return;
+        }
         foreach (var koma in komas)
         {
             if (koma.name == deleteKoma)
