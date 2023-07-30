@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
+//using static UnityEditor.PlayerSettings;
 
 public class KomaManager : KomaName
 {
@@ -20,6 +20,7 @@ public class KomaManager : KomaName
     float p2KomaPosY = 1.6f;
 
     public Vector2Int tehudaPos;
+    [SerializeField] private WindowManager windowManager = null;
 
     void Start()
     {
@@ -108,7 +109,33 @@ public class KomaManager : KomaName
         {
             if (koma != null && koma.Position == pos && koma.tag == "P1Koma")
             {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP1PieceEffectWindow(koma.name);
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
                 return koma;
+            }
+            else if (koma != null && koma.Position == pos && koma.tag == "P2Koma")
+            {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP2PieceEffectWindow(koma.name);
+                    windowManager.UnshowP1PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
+                return null;
             }
         }
         return null;
@@ -120,7 +147,33 @@ public class KomaManager : KomaName
         {
             if (koma != null && koma.Position == pos && koma.tag == "P2Koma")
             {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP2PieceEffectWindow(koma.name);
+                    windowManager.UnshowP1PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
                 return koma;
+            }
+            else if (koma != null && koma.Position == pos && koma.tag == "P1Koma")
+            {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP1PieceEffectWindow(koma.name);
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
+                return null;
             }
         }
         return null;
@@ -132,7 +185,33 @@ public class KomaManager : KomaName
         {
             if (koma != null && koma.Position == pos && koma.tag == "P1Koma")
             {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP1PieceEffectWindow(koma.name);
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
                 return koma;
+            }
+            else if (koma != null && koma.Position == pos && koma.tag == "P2Koma")
+            {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP2PieceEffectWindow(koma.name);
+                    windowManager.UnshowP1PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
+                return null;
             }
         }
         return null;
@@ -144,7 +223,33 @@ public class KomaManager : KomaName
         {
             if (koma != null && koma.Position == pos && koma.tag == "P2Koma")
             {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP2PieceEffectWindow(koma.name);
+                    windowManager.UnshowP1PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
                 return koma;
+            }
+            else if (koma != null && koma.Position == pos && koma.tag == "P1Koma")
+            {
+                if (koma.name == "Seiken" || koma.name == "Ninja" || koma.name == "Kukkyou" || koma.name == "Hikyo" || koma.name == "Fugo" || koma.name == "Houdai" || koma.name == "Kinniku" || koma.name == "Haiyu")
+                {
+                    windowManager.ShowP1PieceEffectWindow(koma.name);
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+                else
+                {
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                }
+
+                return null;
             }
         }
         return null;
@@ -152,10 +257,6 @@ public class KomaManager : KomaName
 
     public void DeleteKoma(string deleteKoma)
     {
-        if (deleteKoma == "Kukkyou")
-        {
-            return;
-        }
         foreach (var koma in komas)
         {
             if (koma.name == deleteKoma)

@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class GManager : MonoBehaviour
+public class GManager : SingletonMonoBehaviour<GManager>
 {
     // フェーズの管理
-    enum Phase
+    public enum Phase
     {
+        None,
         Player1KomaSelection, //P1駒選択
         Player1KomaMoveSelection, //P1駒移動
         Player2KomaSelection,
@@ -20,11 +21,13 @@ public class GManager : MonoBehaviour
         Player2Narration,
         Player1PieceSkill,
         Player2PieceSkill,
+        Player1WindowSelection,
+        Player2WindowSelection,
         GameEnd,
     }
 
     //選択したキャラの保持
-    Koma selectedKoma;
+    public Koma selectedKoma;
 
     //選択キャラの移動可能範囲の保持
     public List<TileObj> movableTiles = new List<TileObj>();
@@ -33,12 +36,13 @@ public class GManager : MonoBehaviour
     [SerializeField] private GameObject P1TurnUI;
     [SerializeField] private GameObject P2TurnUI;
 
-    [SerializeField] private Phase phase;
+    public Phase gamePhase = Phase.None;
     [SerializeField] private KomaManager komaManager;
     [SerializeField] private MapManager mapManager;
     [SerializeField] private NarrationBuild narration = null;
     [SerializeField] private GachaSystem gachaSystem = null;
     [SerializeField] private ResultManager resultManager = null;
+    [SerializeField] private WindowManager windowManager = null;
 
     [SerializeField] private GameObject P1PieceSkillButton = null;
     [SerializeField] private GameObject P2PieceSkillButton = null;
@@ -48,7 +52,7 @@ public class GManager : MonoBehaviour
     void Start()
     {
         SoundManager.Instance.PlayBGM(1);
-        phase = Phase.Player1KomaSelection;
+        gamePhase = Phase.Player1KomaSelection;
     }
 
     //キャラ選択
@@ -57,12 +61,12 @@ public class GManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && phase != Phase.GameEnd)
+        if (Input.GetMouseButtonDown(0) && gamePhase != Phase.GameEnd)
         {
             PlayerClickAction();
         }
 
-        switch(phase)
+        switch(gamePhase)
         {
             case Phase.Player1Narration:
             if (!SoundManager.Instance.IsNarrationPlaying)
@@ -73,14 +77,15 @@ public class GManager : MonoBehaviour
                 }
                 else if (komaManager.defeatedKomas.Count > 0)
                 {
-                    phase = Phase.Player1Gacha;
-                    komaManager.gameObject.SetActive(false);
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                    gamePhase = Phase.Player1Gacha;
                     gachaSystem.GachaStart(komaManager.defeatedKomas.Count);
                 }
                 else
                 {
                     TurnPlayerUIMove(2);
-                    phase = Phase.Player2KomaSelection;
+                    gamePhase = Phase.Player2KomaSelection;
                 }
             }
             break;
@@ -94,14 +99,15 @@ public class GManager : MonoBehaviour
                 }
                 else if (komaManager.defeatedKomas.Count > 0)
                 {
-                    phase = Phase.Player2Gacha;
-                    komaManager.gameObject.SetActive(false);
+                    windowManager.UnshowP1PieceEffectWindow();
+                    windowManager.UnshowP2PieceEffectWindow();
+                    gamePhase = Phase.Player2Gacha;
                     gachaSystem.GachaStart(komaManager.defeatedKomas.Count);
                 }
                 else
                 {
                     TurnPlayerUIMove(1);
-                    phase = Phase.Player1KomaSelection;
+                    gamePhase = Phase.Player1KomaSelection;
                 }
             }
             break;
@@ -113,7 +119,7 @@ public class GManager : MonoBehaviour
 
     void PlayerClickAction()
     {
-        switch (phase)
+        switch (gamePhase)
         {
             case Phase.Player1KomaSelection:
                 Player1KomaSelection();
@@ -140,11 +146,9 @@ public class GManager : MonoBehaviour
                 break;
 
             case Phase.Player1PieceSkill:
-                P1PieceSkillClick();
                 break;
 
             case Phase.Player2PieceSkill:
-                P2PieceSkillClick();
                 break;
         }
     }
@@ -156,12 +160,21 @@ public class GManager : MonoBehaviour
         koma = komaManager.GetP1Koma(clickTileObj.positionInt);
         if (koma != null)//駒があるなら
         {
+            if (koma.name == "Ninja" || koma.name == "Hikyo")
+            {
+                P1PieceSkillButton.SetActive(true);
+            }
+            else
+            {
+                P1PieceSkillButton.SetActive(false);
+            }
+
             selectedKoma = koma;
             mapManager.ResetSetPanels(setTiles);
             mapManager.ResetMovablePanels(movableTiles);
             //移動範囲を表示
             mapManager.ShowMovablePanels(selectedKoma, movableTiles);
-            phase = Phase.Player1KomaMoveSelection;
+            gamePhase = Phase.Player1KomaMoveSelection;
             return true;
         }
         return false;
@@ -174,12 +187,21 @@ public class GManager : MonoBehaviour
         koma = komaManager.GetP2Koma(clickTileObj.positionInt);
         if (koma != null)
         {
+            if (koma.name == "Ninja" || koma.name == "Hikyo")
+            {
+                P2PieceSkillButton.SetActive(true);
+            }
+            else
+            {
+                P2PieceSkillButton.SetActive(false);
+            }
+
             selectedKoma = koma;
             mapManager.ResetSetPanels(setTiles);
             mapManager.ResetMovablePanels(movableTiles);
             //移動範囲を表示
             mapManager.ShowMovablePanels(selectedKoma, movableTiles);
-            phase = Phase.Player2KomaMoveSelection;
+            gamePhase = Phase.Player2KomaMoveSelection;
             return true;
         }
         return false;
@@ -196,7 +218,7 @@ public class GManager : MonoBehaviour
             mapManager.ResetMovablePanels(movableTiles);
             mapManager.ResetSetPanels(setTiles);
             mapManager.ShowSetPanels(selectedKoma, setTiles);
-            phase = Phase.Player1MotiKomaMoveSelection;
+            gamePhase = Phase.Player1MotiKomaMoveSelection;
             return true;
         }
         return false;
@@ -213,7 +235,7 @@ public class GManager : MonoBehaviour
             mapManager.ResetMovablePanels(movableTiles);
             mapManager.ResetSetPanels(setTiles);
             mapManager.ShowSetPanels(selectedKoma, setTiles);
-            phase = Phase.Player2MotiKomaMoveSelection;
+            gamePhase = Phase.Player2MotiKomaMoveSelection;
             return true;
         }
         return false;
@@ -247,20 +269,16 @@ public class GManager : MonoBehaviour
     {
         //クリックしたタイルを取得
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        //その上に駒がいるなら
         if(clickTileObj != null)
         {
+            //その上に駒がいるなら
             if (IsClickP1MotiKoma(clickTileObj)) //持ち駒取得メソッドを作ってクリックしたタイルが手札タイルか調べる。
             {
-                phase = Phase.Player1MotiKomaMoveSelection;
+                gamePhase = Phase.Player1MotiKomaMoveSelection;
             }
             else if (IsClickKoma1(clickTileObj))
             {
-                /*if (clickTileObj.name == "Ninja" || clickTileObj.name == "Hikyo")
-                {
-                    P1PieceSkillButton.SetActive(true);
-                }*/
-                phase = Phase.Player1KomaMoveSelection;
+                gamePhase = Phase.Player1KomaMoveSelection;
             }
         }
     }
@@ -269,20 +287,16 @@ public class GManager : MonoBehaviour
     {
         //クリックしたタイルを取得
         TileObj clickTileObj = mapManager.GetClickTileObj();
-        //その上に駒がいるなら
         if (clickTileObj != null)
         {
+            //その上に駒がいるなら
             if (IsClickP2MotiKoma(clickTileObj)) //持ち駒取得メソッドを作ってクリックしたタイルが手札タイルか調べる。
             {
-                phase = Phase.Player2MotiKomaMoveSelection;
+                gamePhase = Phase.Player2MotiKomaMoveSelection;
             }
             else if (IsClickKoma2(clickTileObj))
             {
-                /*if (clickTileObj.name == "Ninja" || clickTileObj.name == "Hikyo")
-                {
-                    P2PieceSkillButton.SetActive(true);
-                }*/
-                phase = Phase.Player2KomaMoveSelection;
+                gamePhase = Phase.Player2KomaMoveSelection;
             }
         }
     }
@@ -302,7 +316,7 @@ public class GManager : MonoBehaviour
                 komaManager.RearrangeMotiKoma();
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
-                phase = Phase.Player1Narration;
+                gamePhase = Phase.Player1Narration;
                 SoundManager.Instance.PlaySE(0);
                 narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
                 SoundManager.Instance.PlayNarration();
@@ -311,12 +325,12 @@ public class GManager : MonoBehaviour
             }
             else if(IsClickKoma1(clickTileObj))
             {
-                phase = Phase.Player1KomaMoveSelection;
+                gamePhase = Phase.Player1KomaMoveSelection;
                 return;
             }
             else
             {
-                phase = Phase.Player1KomaSelection;
+                gamePhase = Phase.Player1KomaSelection;
                 mapManager.ResetSetPanels(setTiles);
                 return;
             }
@@ -339,7 +353,7 @@ public class GManager : MonoBehaviour
                 komaManager.RearrangeMotiKoma();
                 komaManager.komas.Add(selectedKoma);
                 selectedKoma.Move(clickTileObj.positionInt);
-                phase = Phase.Player2Narration;
+                gamePhase = Phase.Player2Narration;
                 SoundManager.Instance.PlaySE(0);
                 narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                 SoundManager.Instance.PlayNarration();
@@ -348,12 +362,12 @@ public class GManager : MonoBehaviour
             }
             else if (IsClickKoma2(clickTileObj))
             {
-                phase = Phase.Player2KomaMoveSelection;
+                gamePhase = Phase.Player2KomaMoveSelection;
                 return;
             }
             else
             {
-                phase = Phase.Player2KomaSelection;
+                gamePhase = Phase.Player2KomaSelection;
                 mapManager.ResetSetPanels(setTiles);
                 return;
             }
@@ -369,7 +383,8 @@ public class GManager : MonoBehaviour
             if (IsClickP1MotiKoma(clickTileObj)) //持ち駒なら持ち駒phaseに
             {
                 mapManager.ResetMovablePanels(movableTiles);
-                phase = Phase.Player1MotiKomaMoveSelection;
+                P1PieceSkillButton.SetActive(false);
+                gamePhase = Phase.Player1MotiKomaMoveSelection;
                 return;
             }
 
@@ -426,7 +441,7 @@ public class GManager : MonoBehaviour
                     }
                 }
                 selectedKoma.Move(clickTileObj.positionInt);
-                phase = Phase.Player1Narration;
+                gamePhase = Phase.Player1Narration;
                 SoundManager.Instance.PlaySE(0);
                 narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
                 SoundManager.Instance.PlayNarration();
@@ -441,9 +456,16 @@ public class GManager : MonoBehaviour
             {
                 if (movableTiles.Contains(clickTileObj)) //移動範囲内なら
                 {
-                    int firstPos = selectedKoma.Position.y;
-                    int lastPos = clickTileObj.positionInt.y;
-                    int moveLength = lastPos - firstPos;
+                    bool IsStartFromEnemyZone = false;
+                    if (selectedKoma.Position.y == 7 || selectedKoma.Position.y == 8 || selectedKoma.Position.y == 9)
+                    {
+                        IsStartFromEnemyZone = true;
+                    }
+                    bool IsEndOnEnemyZone = false;
+                    if (clickTileObj.positionInt.y == 7 || clickTileObj.positionInt.y == 8 || clickTileObj.positionInt.y == 9)
+                    {
+                        IsEndOnEnemyZone = true;
+                    }
                     Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt); //その座標の駒を取得
                     if (enemyKoma.name == "koma_8") //取得した敵駒が王ならプレイヤー１の勝ちにする。
                     {
@@ -456,37 +478,65 @@ public class GManager : MonoBehaviour
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
-                    phase = Phase.Player1Narration;
                     SoundManager.Instance.PlaySE(0);
-                    narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
-                    SoundManager.Instance.PlayNarration();
-                    if (selectedKoma.name == "Haiyu")
+                    if (selectedKoma.CanReverse && (IsStartFromEnemyZone || IsEndOnEnemyZone))
                     {
-                        selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.gachaKomaNameObj.sprite);
+                        gamePhase = Phase.Player1WindowSelection;
+                        windowManager.ShowReverseWindow();
                     }
-                    if (selectedKoma.name == "Fugo")
+                    else
                     {
-                        Koma newKoma = Instantiate(komaManager.defeatedKomas[0], komaManager.defeatedKomas[0].transform);
-                        komaManager.defeatedKomas.Add(newKoma);
+                        gamePhase = Phase.Player1Narration;
+                        narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                        SoundManager.Instance.PlayNarration();
+                        if (selectedKoma.name == "Haiyu")
+                        {
+                            selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj.text);
+                        }
+                        if (selectedKoma.name == "Fugo")
+                        {
+                            Koma newKoma = Instantiate(komaManager.defeatedKomas[0], komaManager.defeatedKomas[0].transform);
+                            newKoma.transform.SetParent(komaManager.transform);
+                            komaManager.defeatedKomas.Add(newKoma);
+                        }
+                        selectedKoma = null;
                     }
                 }
                 mapManager.ResetMovablePanels(movableTiles);
-                selectedKoma = null;
             }
             else//自分、相手の駒がない時
             {
+                P1PieceSkillButton.SetActive(false);
                 //クリックしたタイルが移動範囲に含まれるなら
                 if (movableTiles.Contains(clickTileObj))
                 {
+                    bool IsStartFromEnemyZone = false;
+                    if (selectedKoma.Position.y == 7 || selectedKoma.Position.y == 8 || selectedKoma.Position.y == 9)
+                    {
+                        IsStartFromEnemyZone = true;
+                    }
+                    bool IsEndOnEnemyZone = false;
+                    if (clickTileObj.positionInt.y == 7 || clickTileObj.positionInt.y == 8 || clickTileObj.positionInt.y == 9)
+                    {
+                        IsEndOnEnemyZone = true;
+                    }
                     //selectedKomaをタイルまで移動させる。
                     selectedKoma.Move(clickTileObj.positionInt);
-                    phase = Phase.Player1Narration;
                     SoundManager.Instance.PlaySE(0);
-                    narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
-                    SoundManager.Instance.PlayNarration();
+                    if (selectedKoma.CanReverse && (IsStartFromEnemyZone || IsEndOnEnemyZone))
+                    {
+                        gamePhase = Phase.Player1WindowSelection;
+                        windowManager.ShowReverseWindow();
+                    }
+                    else
+                    {
+                        gamePhase = Phase.Player1Narration;
+                        narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                        SoundManager.Instance.PlayNarration();
+                        selectedKoma = null;
+                    }
                 }
                 mapManager.ResetMovablePanels(movableTiles);
-                selectedKoma = null;
             }   
         }
     }
@@ -500,7 +550,8 @@ public class GManager : MonoBehaviour
             if (IsClickP2MotiKoma(clickTileObj))//持ち駒なら持ち駒phaseに
             {
                 mapManager.ResetMovablePanels(movableTiles);
-                phase = Phase.Player2MotiKomaMoveSelection;
+                P2PieceSkillButton.SetActive(false);
+                gamePhase = Phase.Player2MotiKomaMoveSelection;
                 return;
             }
 
@@ -557,7 +608,7 @@ public class GManager : MonoBehaviour
                     }
                 }
                 selectedKoma.Move(clickTileObj.positionInt);
-                phase = Phase.Player2Narration;
+                gamePhase = Phase.Player2Narration;
                 SoundManager.Instance.PlaySE(0);
                 narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                 SoundManager.Instance.PlayNarration();
@@ -584,17 +635,18 @@ public class GManager : MonoBehaviour
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
-                    phase = Phase.Player2Narration;
+                    gamePhase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
                     if (selectedKoma.name == "Haiyu")
                     {
-                        selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.gachaKomaNameObj.sprite);
+                        selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj.text);
                     }
                     if (selectedKoma.name == "Fugo")
                     {
                         Koma newKoma = Instantiate(komaManager.defeatedKomas[0], komaManager.defeatedKomas[0].transform);
+                        newKoma.transform.SetParent(komaManager.transform);
                         komaManager.defeatedKomas.Add(newKoma);
                     }
                 }
@@ -603,12 +655,13 @@ public class GManager : MonoBehaviour
             }
             else//自分、相手の駒がない時
             {
+                P2PieceSkillButton.SetActive(false);
                 //クリックしたタイルが移動範囲に含まれるなら
                 if (movableTiles.Contains(clickTileObj))
                 {
                     //selectedKomaをタイルまで移動させる。
                     selectedKoma.Move(clickTileObj.positionInt);
-                    phase = Phase.Player2Narration;
+                    gamePhase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
                     narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
                     SoundManager.Instance.PlayNarration();
@@ -622,7 +675,7 @@ public class GManager : MonoBehaviour
     private void Player1Win() //ここにプレイヤー１が勝った時の処理をお願いします。
     {
         SoundManager.Instance.StopBGM();
-        phase = Phase.GameEnd;
+        gamePhase = Phase.GameEnd;
         resultManager.winner = 1;
         Debug.Log("p1Win");
         resultManager.ShowGameEndUI();
@@ -631,7 +684,7 @@ public class GManager : MonoBehaviour
     private void Player2Win()
     {
         SoundManager.Instance.StopBGM();
-        phase = Phase.GameEnd;
+        gamePhase = Phase.GameEnd;
         resultManager.winner = 2;
         Debug.Log("p2Win");
         resultManager.ShowGameEndUI();
@@ -640,7 +693,7 @@ public class GManager : MonoBehaviour
     public void Player1GiveUp()
     {
         SoundManager.Instance.StopBGM();
-        phase = Phase.GameEnd;
+        gamePhase = Phase.GameEnd;
         resultManager.winner = 2;
         Debug.Log("p2Win");
         resultManager.ShowGiveUpUI();
@@ -649,7 +702,7 @@ public class GManager : MonoBehaviour
     public void Player2GiveUp()
     {
         SoundManager.Instance.StopBGM();
-        phase = Phase.GameEnd;
+        gamePhase = Phase.GameEnd;
         resultManager.winner = 1;
         Debug.Log("p1Win");
         resultManager.ShowGiveUpUI();
@@ -671,11 +724,11 @@ public class GManager : MonoBehaviour
 
     public void KomaChange(int num, Sprite image)
     {
-        if(phase == Phase.Player1Gacha)
+        if(gamePhase == Phase.Player1Gacha)
         {
             komaManager.IncreaceGachaKoma(komaManager.defeatedKomas[0], "P1Koma", num, image);
         }
-        else if (phase == Phase.Player2Gacha)
+        else if (gamePhase == Phase.Player2Gacha)
         {
             komaManager.IncreaceGachaKoma(komaManager.defeatedKomas[0], "P2Koma", num, image);
         }
@@ -683,34 +736,33 @@ public class GManager : MonoBehaviour
 
     public void GachaFinish()
     {
-        komaManager.gameObject.SetActive(true);
-        if (phase == Phase.Player1Gacha)
+        if (gamePhase == Phase.Player1Gacha)
         {
             TurnPlayerUIMove(2);
-            phase = Phase.Player2KomaSelection;
+            gamePhase = Phase.Player2KomaSelection;
         }
-        else if (phase == Phase.Player2Gacha)
+        else if (gamePhase == Phase.Player2Gacha)
         {
             TurnPlayerUIMove(1);
-            phase = Phase.Player1KomaSelection;
+            gamePhase = Phase.Player1KomaSelection;
         }
     }
 
     public void P1SkillButtonPress()
     {
-        if (phase == Phase.Player1KomaMoveSelection)
+        if (gamePhase == Phase.Player1KomaMoveSelection)
         {
             P1PieceSkillButton.SetActive(false);
-            phase = Phase.Player1PieceSkill;
+            gamePhase = Phase.Player1PieceSkill;
         }
     }
 
     public void P2SkillButtonPress()
     {
-        if (phase == Phase.Player2KomaMoveSelection)
+        if (gamePhase == Phase.Player2KomaMoveSelection)
         {
             P2PieceSkillButton.SetActive(false);
-            phase = Phase.Player2PieceSkill;
+            gamePhase = Phase.Player2PieceSkill;
         }
     }
 
@@ -718,11 +770,13 @@ public class GManager : MonoBehaviour
     {
         if (selectedKoma.name == "Ninja")
         {
-
+            windowManager.ShowNinjaWindow();
+            gamePhase = Phase.Player1WindowSelection;
         }
         else if (selectedKoma.name == "Hikyo")
         {
-
+            windowManager.ShowHikyoWindow();
+            gamePhase = Phase.Player1WindowSelection;
         }
     }
 
@@ -730,11 +784,13 @@ public class GManager : MonoBehaviour
     {
         if (selectedKoma.name == "Ninja")
         {
-
+            windowManager.ShowNinjaWindow();
+            gamePhase = Phase.Player2WindowSelection;
         }
         else if (selectedKoma.name == "Hikyo")
         {
-
+            windowManager.ShowHikyoWindow();
+            gamePhase = Phase.Player2WindowSelection;
         }
     }
 }

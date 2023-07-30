@@ -28,7 +28,6 @@ public class GachaSystem : MonoBehaviour
         {"NIKU",6},
         {"HAIYUU",7},
     };
-    [SerializeField] private GManager gameManager = null;
     public int gachaNum = 0;
 
     private bool once = true;
@@ -70,13 +69,13 @@ public class GachaSystem : MonoBehaviour
         }
         GachaImage.SetActive(false);
         once = true;
-        gameManager.GachaFinish();
+        GManager.Instance.GachaFinish();
     }
 
     public void gachaItemUpdate(string name)
     {
         Debug.Log(name);
         gachaKomaNameObj.sprite = gachaKomaNameUI[gachaKomaNum[name]];
-        gameManager.KomaChange(gachaKomaNum[name], gachaKomaNameUI[gachaKomaNum[name]]);
+        GManager.Instance.KomaChange(gachaKomaNum[name], gachaKomaNameUI[gachaKomaNum[name]]);
     }
 }

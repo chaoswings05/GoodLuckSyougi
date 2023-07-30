@@ -8,7 +8,6 @@ public class MapManager : MonoBehaviour
     public CursorController cursor;
     [SerializeField] BaseMap baseMap;
     [SerializeField] KomaManager komaManager;
-    [SerializeField] GManager gameManager;
 
     // ���������}�b�v���Ǘ�����B
     List<TileObj> tileObjs = new List<TileObj>();
@@ -114,7 +113,7 @@ public class MapManager : MonoBehaviour
     public void ShowMovablePanels(Koma koma , List<TileObj> movableTiles) //�ړ��͈͂�\������
     {
         //centerpos����㉺���E�̃^�C����T���B
-        if(koma.name.Contains("koma_7")) //p1�̕����̓���
+        if(koma.name.Contains("koma_7")) //P1歩
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -127,7 +126,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_15")) //p2�̕����̓���
+        if (koma.name.Contains("koma_15")) //P2歩
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.down);
             if (onTileKoma == null)
@@ -140,7 +139,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name == ("koma_0")|| koma.name == ("koma_8")) //���̓���
+        if (koma.name == ("koma_0")|| koma.name == ("koma_8")) //P1玉将P2玉将
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
 
@@ -224,7 +223,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name == "koma_1" || koma.name == "koma_9") //��Ԃ̓���
+        if (koma.name == "koma_1" || koma.name == "koma_9") //P1飛車P2飛車
         {
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
             {
@@ -234,9 +233,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag)
@@ -253,9 +255,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag)
@@ -272,9 +277,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag)
@@ -291,9 +299,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag)
@@ -303,7 +314,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name == ("koma_2") || koma.name == ("koma_10"))
+        if (koma.name == ("koma_2") || koma.name == ("koma_10")) //P1角P2角
         {
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
             {
@@ -313,9 +324,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, i)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
@@ -333,9 +347,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, i)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
@@ -353,9 +370,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, -i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, -i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, -i)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
@@ -374,9 +394,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, -i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, -i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, -i)));
+                    }
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
@@ -387,7 +410,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_3")) //p1�̋��̓���
+        if (koma.name.Contains("koma_3")) //P1金
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.down);
             if (onTileKoma == null)
@@ -450,7 +473,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_11")) //p2�̋��̓���
+        if (koma.name.Contains("koma_11")) //P2金
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -513,7 +536,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_4")) //p1�̋�̓���
+        if (koma.name.Contains("koma_4")) //P1銀
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -569,7 +592,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_12")) //p2�̋�̓���
+        if (koma.name.Contains("koma_12")) //P2銀
         {
             //��
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.down);
@@ -626,7 +649,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_5")) //p1�̌j�n�̓���
+        if (koma.name.Contains("koma_5")) //P1桂馬
         {
             onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(1, 2));
             if (onTileKoma == null)
@@ -649,7 +672,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_13")) //p2�̌j�n�̓���
+        if (koma.name.Contains("koma_13")) //P2桂馬
         {
             onTileKoma = komaManager.GetKoma(koma.Position + new Vector2Int(1, -2));
             if (onTileKoma == null)
@@ -672,7 +695,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("koma_6")) //p1�̍��Ԃ̓���
+        if (koma.name.Contains("koma_6")) //P1香車
         {
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
             {
@@ -682,16 +705,19 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                    }
                     break;
                 }
                 else break;
             }
         }
 
-        if (koma.name.Contains("koma_14")) //p2�̍��Ԃ̓���
+        if (koma.name.Contains("koma_14")) //P2香車
         {
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
             {
@@ -702,9 +728,12 @@ public class MapManager : MonoBehaviour
                 {
                     movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                 }
-                else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                else if (onTileKoma.tag != koma.tag)
                 {
-                    movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
+                    if (onTileKoma.name != "Kukkyou")
+                    {
+                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
+                    }
                     break;
                 }
                 else
@@ -714,7 +743,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("Seiken")) //�K�`������̓���
+        if (koma.name.Contains("Seiken")) //聖剣
         {
             Koma onTileKoma = null;
             onTileKoma = komaManager.GetKoma(new Vector2Int(koma.Position.x, 9));
@@ -729,7 +758,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("Ninja"))
+        if (koma.name.Contains("Ninja")) //忍者
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -772,7 +801,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("Kukkyou"))
+        if (koma.name.Contains("Kukkyou")) //屈強
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -815,7 +844,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("Hikyo"))
+        if (koma.name.Contains("Hikyo")) //卑怯
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -858,7 +887,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("Fugo"))
+        if (koma.name.Contains("Fugo")) //富豪
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
@@ -901,7 +930,7 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        if (koma.name.Contains("Houdai")) //�K�`������̓���
+        if (koma.name.Contains("Houdai")) //砲台
         {
             bool IsFirstKoma = false;
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��B
@@ -921,15 +950,18 @@ public class MapManager : MonoBehaviour
                     {
                         IsFirstKoma = true;
                     }
-                    else if (IsFirstKoma && onTileKoma.tag != koma.tag)
+                    else if (IsFirstKoma)
                     {
-                        if (onTileKoma.name == "Kukkyou")
+                        if (onTileKoma.tag != koma.tag)
                         {
+                            if (onTileKoma.name != "Kukkyou")
+                            {
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                            }
                             break;
                         }
                         else
                         {
-                            movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
                             break;
                         }
                     }
@@ -954,10 +986,20 @@ public class MapManager : MonoBehaviour
                     {
                         IsFirstKoma = true;
                     }
-                    else if (IsFirstKoma && onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                    else if (IsFirstKoma)
                     {
-                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
-                        break;
+                        if (onTileKoma.tag != koma.tag)
+                        {
+                            if (onTileKoma.name != "Kukkyou")
+                            {
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
                 else break;
@@ -980,10 +1022,20 @@ public class MapManager : MonoBehaviour
                     {
                         IsFirstKoma = true;
                     }
-                    else if (IsFirstKoma && onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                    else if (IsFirstKoma)
                     {
-                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
-                        break;
+                        if (onTileKoma.tag != koma.tag)
+                        {
+                            if (onTileKoma.name != "Kukkyou")
+                            {
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
                 else break;
@@ -1006,24 +1058,34 @@ public class MapManager : MonoBehaviour
                     {
                         IsFirstKoma = true;
                     }
-                    else if (IsFirstKoma && onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+                    else if (IsFirstKoma)
                     {
-                        movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
-                        break;
+                        if (onTileKoma.tag != koma.tag)
+                        {
+                            if (onTileKoma.name != "Kukkyou")
+                            {
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                            }
+                            break;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
                 else break;
             }
         }
 
-        if (koma.name.Contains("Kinniku"))
+        if (koma.name.Contains("Kinniku")) //筋肉
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up));
             }
@@ -1033,7 +1095,7 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down));
             }
@@ -1043,7 +1105,7 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.right));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.right));
             }
@@ -1053,7 +1115,7 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.left));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.left));
             }
@@ -1063,7 +1125,7 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.left));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.left));
             }
@@ -1073,7 +1135,7 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.right));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.up + Vector2Int.right));
             }
@@ -1083,7 +1145,7 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.right));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.right));
             }
@@ -1093,13 +1155,13 @@ public class MapManager : MonoBehaviour
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.left));
             }
-            else if (onTileKoma.tag != koma.tag && onTileKoma.name != "Kukkyou")
+            else if (onTileKoma.tag != koma.tag)
             {
                 movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + Vector2Int.down + Vector2Int.left));
             }
         }
 
-        if (koma.name.Contains("Haiyu"))
+        if (koma.name.Contains("Haiyu")) //俳優
         {
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
             if (onTileKoma == null)

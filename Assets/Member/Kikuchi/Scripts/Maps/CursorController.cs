@@ -17,7 +17,7 @@ public class CursorController : MonoBehaviour
         basex = -3.708f - per1xy;
         basey = -3.7146f - per1xy;
 
-        this.transform.position = new Vector2(0.076f,-3.64f);
+        this.transform.position = new Vector3(0.076f,-3.64f,5f);
     }
     public void SetPosition(Transform target)
     {
