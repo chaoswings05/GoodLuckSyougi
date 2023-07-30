@@ -623,6 +623,16 @@ public class GManager : SingletonMonoBehaviour<GManager>
             {
                 if (movableTiles.Contains(clickTileObj)) //移動範囲内なら
                 {
+                    bool IsStartFromEnemyZone = false;
+                    if (selectedKoma.Position.y == 1 || selectedKoma.Position.y == 2 || selectedKoma.Position.y == 3)
+                    {
+                        IsStartFromEnemyZone = true;
+                    }
+                    bool IsEndOnEnemyZone = false;
+                    if (clickTileObj.positionInt.y == 1 || clickTileObj.positionInt.y == 2 || clickTileObj.positionInt.y == 3)
+                    {
+                        IsEndOnEnemyZone = true;
+                    }
                     Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);//その座標の駒を取得
                     if (enemyKoma.name == "koma_0")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                     {
@@ -635,23 +645,31 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         komaManager.DeleteKoma(enemyKoma.name);
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
-                    gamePhase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
-                    narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
-                    SoundManager.Instance.PlayNarration();
-                    if (selectedKoma.name == "Haiyu")
+                    if (selectedKoma.CanReverse && (IsStartFromEnemyZone || IsEndOnEnemyZone))
                     {
-                        selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj.text);
+                        gamePhase = Phase.Player2WindowSelection;
+                        windowManager.ShowReverseWindow();
                     }
-                    if (selectedKoma.name == "Fugo")
+                    else
                     {
-                        Koma newKoma = Instantiate(komaManager.defeatedKomas[0], komaManager.defeatedKomas[0].transform);
-                        newKoma.transform.SetParent(komaManager.transform);
-                        komaManager.defeatedKomas.Add(newKoma);
+                        gamePhase = Phase.Player2Narration;
+                        narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                        SoundManager.Instance.PlayNarration();
+                        if (selectedKoma.name == "Haiyu")
+                        {
+                            selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj.text);
+                        }
+                        if (selectedKoma.name == "Fugo")
+                        {
+                            Koma newKoma = Instantiate(komaManager.defeatedKomas[0], komaManager.defeatedKomas[0].transform);
+                            newKoma.transform.SetParent(komaManager.transform);
+                            komaManager.defeatedKomas.Add(newKoma);
+                        }
+                        selectedKoma = null;
                     }
                 }
                 mapManager.ResetMovablePanels(movableTiles);
-                selectedKoma = null;
             }
             else//自分、相手の駒がない時
             {
@@ -659,15 +677,33 @@ public class GManager : SingletonMonoBehaviour<GManager>
                 //クリックしたタイルが移動範囲に含まれるなら
                 if (movableTiles.Contains(clickTileObj))
                 {
+                    bool IsStartFromEnemyZone = false;
+                    if (selectedKoma.Position.y == 1 || selectedKoma.Position.y == 2 || selectedKoma.Position.y == 3)
+                    {
+                        IsStartFromEnemyZone = true;
+                    }
+                    bool IsEndOnEnemyZone = false;
+                    if (clickTileObj.positionInt.y == 1 || clickTileObj.positionInt.y == 2 || clickTileObj.positionInt.y == 3)
+                    {
+                        IsEndOnEnemyZone = true;
+                    }
                     //selectedKomaをタイルまで移動させる。
                     selectedKoma.Move(clickTileObj.positionInt);
-                    gamePhase = Phase.Player2Narration;
                     SoundManager.Instance.PlaySE(0);
-                    narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
-                    SoundManager.Instance.PlayNarration();
+                    if (selectedKoma.CanReverse && (IsStartFromEnemyZone || IsEndOnEnemyZone))
+                    {
+                        gamePhase = Phase.Player2WindowSelection;
+                        windowManager.ShowReverseWindow();
+                    }
+                    else
+                    {
+                        gamePhase = Phase.Player2Narration;
+                        narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                        SoundManager.Instance.PlayNarration();
+                        selectedKoma = null;
+                    }
                 }
                 mapManager.ResetMovablePanels(movableTiles);
-                selectedKoma = null;
             }
         }
     }
