@@ -1,17 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEngine.WSA;
 
 public class BaseMap : MonoBehaviour
 {
     int mapWidth = 9;
     int mapHeight = 9;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
 
     public List<TileObj> CreateBaseMap() //駒を初期配置に置く。
     {
@@ -35,7 +29,6 @@ public class BaseMap : MonoBehaviour
                 tileObj = map.GetComponent<TileObj>();
                 tileObj.positionInt = tilePosFirst;
                 tileObjs.Add(tileObj);
-                //Debug.Log(tileObj);
             }
         }
         return tileObjs;

@@ -422,7 +422,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
                 int firstPos = selectedKoma.Position.y;
                 int lastPos = clickTileObj.positionInt.y;
                 int moveLength = lastPos - firstPos;
-                Debug.Log(moveLength);
                 if(moveLength > 0)
                 {
                     while(Mathf.Abs(moveLength) != 0)
@@ -597,7 +596,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
                 int firstPos = selectedKoma.Position.y;
                 int lastPos = clickTileObj.positionInt.y;
                 int moveLength = lastPos - firstPos;
-                Debug.Log(moveLength);
                 if(moveLength > 0)
                 {
                     while(Mathf.Abs(moveLength) != 0)
@@ -759,7 +757,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
         SoundManager.Instance.StopBGM();
         gamePhase = Phase.GameEnd;
         resultManager.winner = 1;
-        Debug.Log("p1Win");
         resultManager.ShowGameEndUI();
     }
 
@@ -768,7 +765,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
         SoundManager.Instance.StopBGM();
         gamePhase = Phase.GameEnd;
         resultManager.winner = 2;
-        Debug.Log("p2Win");
         resultManager.ShowGameEndUI();
     }
 
@@ -777,7 +773,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
         SoundManager.Instance.StopBGM();
         gamePhase = Phase.GameEnd;
         resultManager.winner = 2;
-        Debug.Log("p2Win");
         resultManager.ShowGiveUpUI();
     }
 
@@ -786,7 +781,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
         SoundManager.Instance.StopBGM();
         gamePhase = Phase.GameEnd;
         resultManager.winner = 1;
-        Debug.Log("p1Win");
         resultManager.ShowGiveUpUI();
     }
 

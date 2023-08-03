@@ -35,7 +35,6 @@ public class MapManager : MonoBehaviour
         {
             cursor.SetPosition(hit2D.transform);
             TileObj check = hit2D.collider.GetComponent<TileObj>();
-            Debug.Log(check.positionInt);
             return hit2D.collider.GetComponent<TileObj>();
         }
 
@@ -44,7 +43,6 @@ public class MapManager : MonoBehaviour
 
     public void ShowSetPanels(Koma koma ,List<TileObj> setTiles)
     {
-        Debug.Log(koma.name);
         Vector2Int onTilePos = new Vector2Int(1, 1);
         for (int x = 1; x <= mapWidth; x++)
         {
@@ -304,10 +302,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             for (int i = 1; i < 9; i++) //���̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
@@ -327,10 +321,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
@@ -350,11 +340,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
@@ -374,10 +359,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-                else
-                {
-                    Debug.Log("error");
-                }
             }
         }
 
@@ -860,10 +841,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             for (int i = 1; i < 9; i++) //���̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
@@ -883,10 +860,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
@@ -906,11 +879,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             for (int i = 1; i < 9; i++) //��̒l�ő�܂Ŏ��Bnull�Ώ���muvableTile�֐��ōs���B
@@ -930,10 +898,6 @@ public class MapManager : MonoBehaviour
                     break;
                 }
                 else if (onTileKoma.tag == koma.tag) break;
-                else
-                {
-                    Debug.Log("error");
-                }
             }
 
             onTileKoma = komaManager.GetKoma(koma.Position + Vector2Int.up);
@@ -1595,7 +1559,6 @@ public class MapManager : MonoBehaviour
 
     public void ShowHikyoSkillSetPanels(Koma koma ,List<TileObj> setTiles)
     {
-        Debug.Log(koma.name);
         Vector2Int onTilePos = new Vector2Int(1, 1);
         for (int x = 1; x <= mapWidth; x++)
         {

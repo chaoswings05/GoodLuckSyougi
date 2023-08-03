@@ -74,7 +74,6 @@ public class GachaSystem : MonoBehaviour
 
     public void gachaItemUpdate(string name)
     {
-        Debug.Log(name);
         gachaKomaNameObj.sprite = gachaKomaNameUI[gachaKomaNum[name]];
         GManager.Instance.KomaChange(gachaKomaNum[name], gachaKomaNameUI[gachaKomaNum[name]]);
     }
