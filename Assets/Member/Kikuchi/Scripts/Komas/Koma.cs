@@ -148,6 +148,7 @@ public class Koma : MonoBehaviour
 
     public void UpdateKomaData(int num, Sprite image)
     {
+        CanReverse = false;
         nameObj.color = Color.black;
         switch(num)
         {

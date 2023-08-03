@@ -1360,7 +1360,7 @@ public class MapManager : MonoBehaviour
                         {
                             if (onTileKoma.name != "Kukkyou")
                             {
-                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, -i)));
                             }
                             break;
                         }
@@ -1396,7 +1396,7 @@ public class MapManager : MonoBehaviour
                         {
                             if (onTileKoma.name != "Kukkyou")
                             {
-                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(i, 0)));
                             }
                             break;
                         }
@@ -1432,7 +1432,7 @@ public class MapManager : MonoBehaviour
                         {
                             if (onTileKoma.name != "Kukkyou")
                             {
-                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(0, i)));
+                                movableTiles.Add(tileObjs.Find(tile => tile.positionInt == koma.Position + new Vector2Int(-i, 0)));
                             }
                             break;
                         }
