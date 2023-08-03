@@ -60,35 +60,6 @@ public class MapManager : MonoBehaviour
             }
         }
 
-        for (int x = 1; x <= mapWidth; x++)
-        {
-            for (int y = 1; y <= mapHeight; y++)
-            {
-                onTilePos.x = x;
-                onTilePos.y = y;
-                onTileKoma = komaManager.GetKoma(onTilePos);
-                if (onTileKoma != null)
-                {
-                    if (koma.name.Contains("koma_7") && onTileKoma.name.Contains("koma_7"))
-                    {
-                        for (int i = 0; i < 9; i++)
-                        {
-                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y + i)));
-                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y - i)));
-                        }
-                    }
-                    else if (koma.name.Contains("koma_15") && onTileKoma.name.Contains("koma_15"))
-                    {
-                        for (int i = 0; i < 9; i++)
-                        {
-                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y + i)));
-                            setTiles.Remove(tileObjs.Find(tile => tile.positionInt == new Vector2Int(onTilePos.x, onTilePos.y - i)));
-                        }
-                    }
-                }
-            }
-        }
-
         foreach (var tile in setTiles)
         {
             if (tile != null)
@@ -1620,5 +1591,32 @@ public class MapManager : MonoBehaviour
             }
         }
         movableTiles.Clear();
+    }
+
+    public void ShowHikyoSkillSetPanels(Koma koma ,List<TileObj> setTiles)
+    {
+        Debug.Log(koma.name);
+        Vector2Int onTilePos = new Vector2Int(1, 1);
+        for (int x = 1; x <= mapWidth; x++)
+        {
+            for (int y = 1; y <= mapHeight; y++)
+            {
+                onTilePos.x = x;
+                onTilePos.y = y;
+                onTileKoma = komaManager.GetKoma(onTilePos);
+                if (onTileKoma != null && onTileKoma.tag == koma.tag)
+                {
+                    setTiles.Add(tileObjs.Find(tile => tile.positionInt == onTilePos));
+                }
+            }
+        }
+
+        foreach (var tile in setTiles)
+        {
+            if (tile != null)
+            {
+                tile.ShowMovablePanel(true);
+            }
+        }
     }
 }

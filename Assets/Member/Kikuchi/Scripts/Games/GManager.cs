@@ -44,10 +44,8 @@ public class GManager : SingletonMonoBehaviour<GManager>
     [SerializeField] private ResultManager resultManager = null;
     [SerializeField] private WindowManager windowManager = null;
 
-    [SerializeField] private GameObject P1PieceSkillButton = null;
-    [SerializeField] private GameObject P2PieceSkillButton = null;
-
     private bool IsGameFinished = false;
+    private bool IsKillSelf = false;
 
     void Start()
     {
@@ -71,9 +69,13 @@ public class GManager : SingletonMonoBehaviour<GManager>
             case Phase.Player1Narration:
             if (!SoundManager.Instance.IsNarrationPlaying)
             {
-                if (IsGameFinished)
+                if (IsGameFinished && !IsKillSelf)
                 {
                     Player1Win();
+                }
+                else if (IsGameFinished && IsKillSelf)
+                {
+                    Player2Win();
                 }
                 else if (komaManager.defeatedKomas.Count > 0)
                 {
@@ -93,9 +95,13 @@ public class GManager : SingletonMonoBehaviour<GManager>
             case Phase.Player2Narration:
             if (!SoundManager.Instance.IsNarrationPlaying)
             {
-                if (IsGameFinished)
+                if (IsGameFinished && !IsKillSelf)
                 {
                     Player2Win();
+                }
+                else if (IsGameFinished && IsKillSelf)
+                {
+                    Player1Win();
                 }
                 else if (komaManager.defeatedKomas.Count > 0)
                 {
@@ -146,9 +152,25 @@ public class GManager : SingletonMonoBehaviour<GManager>
                 break;
 
             case Phase.Player1PieceSkill:
+                if (selectedKoma.name == "Ninja")
+                {
+                    P1NinjaMoveSelection();
+                }
+                else if (selectedKoma.name == "Hikyo")
+                {
+                    P1HikyoMoveSelection();
+                }
                 break;
 
             case Phase.Player2PieceSkill:
+                if (selectedKoma.name == "Ninja")
+                {
+                    P2NinjaMoveSelection();
+                }
+                else if (selectedKoma.name == "Hikyo")
+                {
+                    P2HikyoMoveSelection();
+                }
                 break;
         }
     }
@@ -160,21 +182,25 @@ public class GManager : SingletonMonoBehaviour<GManager>
         koma = komaManager.GetP1Koma(clickTileObj.positionInt);
         if (koma != null)//駒があるなら
         {
-            if (koma.name == "Ninja" || koma.name == "Hikyo")
-            {
-                P1PieceSkillButton.SetActive(true);
-            }
-            else
-            {
-                P1PieceSkillButton.SetActive(false);
-            }
-
             selectedKoma = koma;
             mapManager.ResetSetPanels(setTiles);
             mapManager.ResetMovablePanels(movableTiles);
             //移動範囲を表示
             mapManager.ShowMovablePanels(selectedKoma, movableTiles);
-            gamePhase = Phase.Player1KomaMoveSelection;
+            if (koma.name == "Ninja")
+            {
+                gamePhase = Phase.Player1WindowSelection;
+                windowManager.ShowNinjaWindow();
+            }
+            else if (koma.name == "Hikyo")
+            {
+                gamePhase = Phase.Player1WindowSelection;
+                windowManager.ShowHikyoWindow();
+            }
+            else
+            {
+                gamePhase = Phase.Player1KomaMoveSelection;
+            }
             return true;
         }
         return false;
@@ -187,21 +213,25 @@ public class GManager : SingletonMonoBehaviour<GManager>
         koma = komaManager.GetP2Koma(clickTileObj.positionInt);
         if (koma != null)
         {
-            if (koma.name == "Ninja" || koma.name == "Hikyo")
-            {
-                P2PieceSkillButton.SetActive(true);
-            }
-            else
-            {
-                P2PieceSkillButton.SetActive(false);
-            }
-
             selectedKoma = koma;
             mapManager.ResetSetPanels(setTiles);
             mapManager.ResetMovablePanels(movableTiles);
             //移動範囲を表示
             mapManager.ShowMovablePanels(selectedKoma, movableTiles);
-            gamePhase = Phase.Player2KomaMoveSelection;
+            if (koma.name == "Ninja")
+            {
+                gamePhase = Phase.Player2WindowSelection;
+                windowManager.ShowNinjaWindow();
+            }
+            else if (koma.name == "Hikyo")
+            {
+                gamePhase = Phase.Player2WindowSelection;
+                windowManager.ShowHikyoWindow();
+            }
+            else
+            {
+                gamePhase = Phase.Player2KomaMoveSelection;
+            }
             return true;
         }
         return false;
@@ -276,7 +306,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
             {
                 gamePhase = Phase.Player1MotiKomaMoveSelection;
             }
-            else if (IsClickKoma1(clickTileObj))
+            else if (IsClickKoma1(clickTileObj) && selectedKoma.name != "Ninja" && selectedKoma.name != "Hikyo")
             {
                 gamePhase = Phase.Player1KomaMoveSelection;
             }
@@ -294,7 +324,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
             {
                 gamePhase = Phase.Player2MotiKomaMoveSelection;
             }
-            else if (IsClickKoma2(clickTileObj))
+            else if (IsClickKoma2(clickTileObj) && selectedKoma.name != "Ninja" && selectedKoma.name != "Hikyo")
             {
                 gamePhase = Phase.Player2KomaMoveSelection;
             }
@@ -309,7 +339,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
         TileObj clickTileObj = mapManager.GetClickTileObj();
         if (clickTileObj)
         {
-            if (clickTileObj.tag != "TehudaTile" && setTiles.Contains(clickTileObj)) //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
+            if (setTiles.Contains(clickTileObj)) //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
             {
                 komaManager.Motikomas.Remove(selectedKoma);
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
@@ -346,7 +376,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
         //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
         if (clickTileObj)
         {
-            if (clickTileObj.tag != "TehudaTile" && setTiles.Contains(clickTileObj))
+            if (setTiles.Contains(clickTileObj))
             {
                 komaManager.DeleteTehudaTile(selectedKoma.Position);
                 komaManager.Motikomas.Remove(selectedKoma);
@@ -383,7 +413,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
             if (IsClickP1MotiKoma(clickTileObj)) //持ち駒なら持ち駒phaseに
             {
                 mapManager.ResetMovablePanels(movableTiles);
-                P1PieceSkillButton.SetActive(false);
                 gamePhase = Phase.Player1MotiKomaMoveSelection;
                 return;
             }
@@ -413,6 +442,11 @@ public class GManager : SingletonMonoBehaviour<GManager>
                             {
                                 IsGameFinished = true;
                             }
+                            if (enemyKoma.name == "koma_0")
+                            {
+                                IsGameFinished = true;
+                                IsKillSelf = true;
+                            }
                         }
                         moveLength--;
                     }
@@ -435,6 +469,11 @@ public class GManager : SingletonMonoBehaviour<GManager>
                             if (enemyKoma.name == "koma_8")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                             {
                                 IsGameFinished = true;
+                            }
+                            if (enemyKoma.name == "koma_0")
+                            {
+                                IsGameFinished = true;
+                                IsKillSelf = true;
                             }
                         }
                         moveLength++;
@@ -506,7 +545,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
             }
             else//自分、相手の駒がない時
             {
-                P1PieceSkillButton.SetActive(false);
                 //クリックしたタイルが移動範囲に含まれるなら
                 if (movableTiles.Contains(clickTileObj))
                 {
@@ -550,7 +588,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
             if (IsClickP2MotiKoma(clickTileObj))//持ち駒なら持ち駒phaseに
             {
                 mapManager.ResetMovablePanels(movableTiles);
-                P2PieceSkillButton.SetActive(false);
                 gamePhase = Phase.Player2MotiKomaMoveSelection;
                 return;
             }
@@ -580,6 +617,11 @@ public class GManager : SingletonMonoBehaviour<GManager>
                             {
                                 IsGameFinished = true;
                             }
+                            if (enemyKoma.name == "koma_8")
+                            {
+                                IsGameFinished = true;
+                                IsKillSelf = true;
+                            }
                         }
                         moveLength--;
                     }
@@ -602,6 +644,11 @@ public class GManager : SingletonMonoBehaviour<GManager>
                             if (enemyKoma.name == "koma_0")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                             {
                                 IsGameFinished = true;
+                            }
+                            if (enemyKoma.name == "koma_8")
+                            {
+                                IsGameFinished = true;
+                                IsKillSelf = true;
                             }
                         }
                         moveLength++;
@@ -673,7 +720,6 @@ public class GManager : SingletonMonoBehaviour<GManager>
             }
             else//自分、相手の駒がない時
             {
-                P2PieceSkillButton.SetActive(false);
                 //クリックしたタイルが移動範囲に含まれるなら
                 if (movableTiles.Contains(clickTileObj))
                 {
@@ -784,49 +830,101 @@ public class GManager : SingletonMonoBehaviour<GManager>
         }
     }
 
-    public void P1SkillButtonPress()
+    public void SetNinjaEffectMoveTile()
     {
-        if (gamePhase == Phase.Player1KomaMoveSelection)
+        mapManager.ResetMovablePanels(movableTiles);
+        mapManager.ResetSetPanels(setTiles);
+        mapManager.ShowSetPanels(selectedKoma, setTiles);
+    }
+
+    public void SetHikyoEffectMoveTile()
+    {
+        mapManager.ResetMovablePanels(movableTiles);
+        mapManager.ResetSetPanels(setTiles);
+        mapManager.ShowHikyoSkillSetPanels(selectedKoma, setTiles);
+    }
+
+    private void P1NinjaMoveSelection()
+    {
+        //クリックしたタイルを取得
+        TileObj clickTileObj = mapManager.GetClickTileObj();
+        //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
+        if (clickTileObj)
         {
-            P1PieceSkillButton.SetActive(false);
-            gamePhase = Phase.Player1PieceSkill;
+            if (setTiles.Contains(clickTileObj))
+            {
+                selectedKoma.Move(clickTileObj.positionInt);
+                gamePhase = Phase.Player1Narration;
+                SoundManager.Instance.PlaySE(0);
+                narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                SoundManager.Instance.PlayNarration();
+                mapManager.ResetSetPanels(setTiles);
+                selectedKoma = null;
+            }
         }
     }
 
-    public void P2SkillButtonPress()
+    private void P1HikyoMoveSelection()
     {
-        if (gamePhase == Phase.Player2KomaMoveSelection)
+        //クリックしたタイルを取得
+        TileObj clickTileObj = mapManager.GetClickTileObj();
+        //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
+        if (clickTileObj)
         {
-            P2PieceSkillButton.SetActive(false);
-            gamePhase = Phase.Player2PieceSkill;
+            if (setTiles.Contains(clickTileObj))
+            {
+                Koma shiftKoma = komaManager.GetKoma(clickTileObj.positionInt);
+                shiftKoma.Move(selectedKoma.Position);
+                selectedKoma.Move(clickTileObj.positionInt);
+                gamePhase = Phase.Player1Narration;
+                SoundManager.Instance.PlaySE(0);
+                narration.WordCombine(1,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                SoundManager.Instance.PlayNarration();
+                mapManager.ResetSetPanels(setTiles);
+                selectedKoma = null;
+            }
         }
     }
 
-    private void P1PieceSkillClick()
+    private void P2NinjaMoveSelection()
     {
-        if (selectedKoma.name == "Ninja")
+        //クリックしたタイルを取得
+        TileObj clickTileObj = mapManager.GetClickTileObj();
+        //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
+        if (clickTileObj)
         {
-            windowManager.ShowNinjaWindow();
-            gamePhase = Phase.Player1WindowSelection;
-        }
-        else if (selectedKoma.name == "Hikyo")
-        {
-            windowManager.ShowHikyoWindow();
-            gamePhase = Phase.Player1WindowSelection;
+            if (setTiles.Contains(clickTileObj))
+            {
+                selectedKoma.Move(clickTileObj.positionInt);
+                gamePhase = Phase.Player2Narration;
+                SoundManager.Instance.PlaySE(0);
+                narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                SoundManager.Instance.PlayNarration();
+                mapManager.ResetSetPanels(setTiles);
+                selectedKoma = null;
+            }
         }
     }
 
-    private void P2PieceSkillClick()
+    private void P2HikyoMoveSelection()
     {
-        if (selectedKoma.name == "Ninja")
+        //クリックしたタイルを取得
+        TileObj clickTileObj = mapManager.GetClickTileObj();
+        //クリックしたタイルが手札タイルじゃないならクリックしたタイルと同じポジションの駒がいるかを駒のリストを使って参照
+        if (clickTileObj)
         {
-            windowManager.ShowNinjaWindow();
-            gamePhase = Phase.Player2WindowSelection;
-        }
-        else if (selectedKoma.name == "Hikyo")
-        {
-            windowManager.ShowHikyoWindow();
-            gamePhase = Phase.Player2WindowSelection;
+            if (setTiles.Contains(clickTileObj))
+            {
+                Koma shiftKoma = komaManager.GetKoma(clickTileObj.positionInt);
+                shiftKoma.Move(selectedKoma.Position);
+                selectedKoma.Move(clickTileObj.positionInt);
+                gamePhase = Phase.Player2Narration;
+                SoundManager.Instance.PlaySE(0);
+                narration.WordCombine(2,clickTileObj.positionInt,selectedKoma.PieceName,false);
+                SoundManager.Instance.PlayNarration();
+                mapManager.ResetSetPanels(setTiles);
+                selectedKoma = null;
+            }
         }
     }
 }

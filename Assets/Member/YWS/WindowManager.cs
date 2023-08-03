@@ -216,12 +216,32 @@ public class WindowManager : MonoBehaviour
 
     public void OnNinjaWindowYesButtonPress()
     {
-
+        IsNinjaEffectThinking = false;
+        UnshowNinjaWindow();
+        if (GManager.Instance.gamePhase == GManager.Phase.Player1WindowSelection)
+        {
+            GManager.Instance.SetNinjaEffectMoveTile();
+            GManager.Instance.gamePhase = GManager.Phase.Player1PieceSkill;
+        }
+        else if (GManager.Instance.gamePhase == GManager.Phase.Player2WindowSelection)
+        {
+            GManager.Instance.SetNinjaEffectMoveTile();
+            GManager.Instance.gamePhase = GManager.Phase.Player2PieceSkill;
+        }
     }
 
     public void OnNinjaWindowNoButtonPress()
     {
-
+        IsNinjaEffectThinking = false;
+        UnshowNinjaWindow();
+        if (GManager.Instance.gamePhase == GManager.Phase.Player1WindowSelection)
+        {
+            GManager.Instance.gamePhase = GManager.Phase.Player1KomaMoveSelection;
+        }
+        else if (GManager.Instance.gamePhase == GManager.Phase.Player2WindowSelection)
+        {
+            GManager.Instance.gamePhase = GManager.Phase.Player2KomaMoveSelection;
+        }
     }
 
     public void ShowHikyoWindow()
@@ -239,12 +259,32 @@ public class WindowManager : MonoBehaviour
 
     public void OnHikyoWindowYesButtonPress()
     {
-
+        IsHikyoEffectThinking = false;
+        UnshowHikyoWindow();
+        if (GManager.Instance.gamePhase == GManager.Phase.Player1WindowSelection)
+        {
+            GManager.Instance.SetHikyoEffectMoveTile();
+            GManager.Instance.gamePhase = GManager.Phase.Player1PieceSkill;
+        }
+        else if (GManager.Instance.gamePhase == GManager.Phase.Player2WindowSelection)
+        {
+            GManager.Instance.SetHikyoEffectMoveTile();
+            GManager.Instance.gamePhase = GManager.Phase.Player2PieceSkill;
+        }
     }
 
     public void OnHikyoWindowNoButtonPress()
     {
-        
+        IsHikyoEffectThinking = false;
+        UnshowHikyoWindow();
+        if (GManager.Instance.gamePhase == GManager.Phase.Player1WindowSelection)
+        {
+            GManager.Instance.gamePhase = GManager.Phase.Player1KomaMoveSelection;
+        }
+        else if (GManager.Instance.gamePhase == GManager.Phase.Player2WindowSelection)
+        {
+            GManager.Instance.gamePhase = GManager.Phase.Player2KomaMoveSelection;
+        }
     }
 
     public void ShowReverseWindow()
