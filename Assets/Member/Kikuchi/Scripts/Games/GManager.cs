@@ -11,19 +11,19 @@ public class GManager : SingletonMonoBehaviour<GManager>
         None,
         Player1KomaSelection, //P1駒選択
         Player1KomaMoveSelection, //P1駒移動
-        Player2KomaSelection,
-        Player2KomaMoveSelection,
-        Player1MotiKomaMoveSelection,
-        Player2MotiKomaMoveSelection,
-        Player1Gacha,
-        Player2Gacha,
-        Player1Narration,
-        Player2Narration,
-        Player1PieceSkill,
-        Player2PieceSkill,
-        Player1WindowSelection,
-        Player2WindowSelection,
-        GameEnd,
+        Player2KomaSelection, //P2駒選択
+        Player2KomaMoveSelection, //P2駒移動
+        Player1MotiKomaMoveSelection, //P1持ち駒移動選択
+        Player2MotiKomaMoveSelection, //P2持ち駒移動選択
+        Player1Gacha, //P1ガチャ
+        Player2Gacha, //P2ガチャ
+        Player1Narration, //P1棋譜読み上げ
+        Player2Narration, //P2棋譜読み上げ
+        Player1PieceSkill, //P1駒スキル移動選択
+        Player2PieceSkill, //P2駒スキル移動選択
+        Player1WindowSelection, //P1ウインドウ選択
+        Player2WindowSelection, //P2ウインドウ選択
+        GameEnd, //ゲーム終了
     }
 
     //選択したキャラの保持
@@ -47,9 +47,13 @@ public class GManager : SingletonMonoBehaviour<GManager>
     private bool IsGameFinished = false;
     private bool IsKillSelf = false;
 
+    [SerializeField] private Image P1TurnFade = null;
+    [SerializeField] private Image P2TurnFade = null;
+
     void Start()
     {
         SoundManager.Instance.PlayBGM(1);
+        TurnPlayerUIMove(1);
         gamePhase = Phase.Player1KomaSelection;
     }
 
@@ -288,7 +292,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
         //駒を取得して移動範囲を表示
         Koma koma = null;
         koma = komaManager.GetP2Koma(clickTileObj.positionInt);
-        if (koma != null )
+        if (koma != null)
         {
             return true;
         }
@@ -358,6 +362,10 @@ public class GManager : SingletonMonoBehaviour<GManager>
                 gamePhase = Phase.Player1KomaMoveSelection;
                 return;
             }
+            else if (IsClickP1MotiKoma(clickTileObj))
+            {
+                return;
+            }
             else
             {
                 gamePhase = Phase.Player1KomaSelection;
@@ -393,6 +401,10 @@ public class GManager : SingletonMonoBehaviour<GManager>
             else if (IsClickKoma2(clickTileObj))
             {
                 gamePhase = Phase.Player2KomaMoveSelection;
+                return;
+            }
+            else if (IsClickP2MotiKoma(clickTileObj))
+            {
                 return;
             }
             else
@@ -435,7 +447,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         {
                             if (enemyKoma.name != "Kukkyou")
                             {
-                                komaManager.DeleteKoma(enemyKoma.name);
+                                komaManager.DeleteKoma(enemyKoma);
                             }
                             if (enemyKoma.name == "koma_8") //取得した敵駒が王ならプレイヤー１の勝ちにする。
                             {
@@ -463,7 +475,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         {
                             if (enemyKoma.name != "Kukkyou")
                             {
-                                komaManager.DeleteKoma(enemyKoma.name);
+                                komaManager.DeleteKoma(enemyKoma);
                             }
                             if (enemyKoma.name == "koma_8")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                             {
@@ -494,26 +506,30 @@ public class GManager : SingletonMonoBehaviour<GManager>
             {
                 if (movableTiles.Contains(clickTileObj)) //移動範囲内なら
                 {
+                    //以下のどれかに当てはまる場合、駒の成が発生する
+                    //相手の陣地にある駒を動かした
                     bool IsStartFromEnemyZone = false;
                     if (selectedKoma.Position.y == 7 || selectedKoma.Position.y == 8 || selectedKoma.Position.y == 9)
                     {
                         IsStartFromEnemyZone = true;
                     }
+                    //相手の陣地に駒を動かした
                     bool IsEndOnEnemyZone = false;
                     if (clickTileObj.positionInt.y == 7 || clickTileObj.positionInt.y == 8 || clickTileObj.positionInt.y == 9)
                     {
                         IsEndOnEnemyZone = true;
                     }
+
                     Koma enemyKoma = komaManager.GetP2Koma(clickTileObj.positionInt); //その座標の駒を取得
                     if (enemyKoma.name == "koma_8") //取得した敵駒が王ならプレイヤー１の勝ちにする。
                     {
-                        komaManager.DeleteKoma(enemyKoma.name);
+                        komaManager.DeleteKoma(enemyKoma);
                         selectedKoma.Move(clickTileObj.positionInt);
                         IsGameFinished = true;
                     }
                     else//取得した駒が王以外なら移動してフェーズを変える。
                     {
-                        komaManager.DeleteKoma(enemyKoma.name);
+                        komaManager.DeleteKoma(enemyKoma);
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
                     SoundManager.Instance.PlaySE(0);
@@ -529,7 +545,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         SoundManager.Instance.PlayNarration();
                         if (selectedKoma.name == "Haiyu")
                         {
-                            selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj.text);
+                            selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj);
                         }
                         if (selectedKoma.name == "Fugo")
                         {
@@ -609,7 +625,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         {
                             if (enemyKoma.name != "Kukkyou")
                             {
-                                komaManager.DeleteKoma(enemyKoma.name);
+                                komaManager.DeleteKoma(enemyKoma);
                             }
                             if (enemyKoma.name == "koma_0")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                             {
@@ -637,7 +653,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         {
                             if (enemyKoma.name != "Kukkyou")
                             {
-                                komaManager.DeleteKoma(enemyKoma.name);
+                                komaManager.DeleteKoma(enemyKoma);
                             }
                             if (enemyKoma.name == "koma_0")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                             {
@@ -668,26 +684,30 @@ public class GManager : SingletonMonoBehaviour<GManager>
             {
                 if (movableTiles.Contains(clickTileObj)) //移動範囲内なら
                 {
+                    //以下のどれかに当てはまる場合、駒の成が発生する
+                    //相手の陣地にある駒を動かした
                     bool IsStartFromEnemyZone = false;
                     if (selectedKoma.Position.y == 1 || selectedKoma.Position.y == 2 || selectedKoma.Position.y == 3)
                     {
                         IsStartFromEnemyZone = true;
                     }
+                    //相手の陣地に駒を動かした
                     bool IsEndOnEnemyZone = false;
                     if (clickTileObj.positionInt.y == 1 || clickTileObj.positionInt.y == 2 || clickTileObj.positionInt.y == 3)
                     {
                         IsEndOnEnemyZone = true;
                     }
+                    
                     Koma enemyKoma = komaManager.GetP1Koma(clickTileObj.positionInt);//その座標の駒を取得
                     if (enemyKoma.name == "koma_0")//取得した敵駒が王ならプレイヤー１の勝ちにする。
                     {
-                        komaManager.DeleteKoma(enemyKoma.name);
+                        komaManager.DeleteKoma(enemyKoma);
                         selectedKoma.Move(clickTileObj.positionInt);
                         IsGameFinished = true;
                     }
                     else//取得した駒が王以外なら移動してフェーズを変える。
                     {
-                        komaManager.DeleteKoma(enemyKoma.name);
+                        komaManager.DeleteKoma(enemyKoma);
                     }
                     selectedKoma.Move(clickTileObj.positionInt);
                     SoundManager.Instance.PlaySE(0);
@@ -703,7 +723,7 @@ public class GManager : SingletonMonoBehaviour<GManager>
                         SoundManager.Instance.PlayNarration();
                         if (selectedKoma.name == "Haiyu")
                         {
-                            selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj.text);
+                            selectedKoma.HaiyuChange(enemyKoma.PieceName, enemyKoma.name, enemyKoma.nameObj);
                         }
                         if (selectedKoma.name == "Fugo")
                         {
@@ -790,11 +810,15 @@ public class GManager : SingletonMonoBehaviour<GManager>
         {
             P2TurnUI.SetActive(false);
             P1TurnUI.SetActive(true);
+            P1TurnFade.color = new Color(0,0,0,0);
+            P2TurnFade.color = new Color(0,0,0,0.5f);
         }
         else if (nextTurnPlayer == 2)
         {
             P1TurnUI.SetActive(false);
             P2TurnUI.SetActive(true);
+            P2TurnFade.color = new Color(0,0,0,0);
+            P1TurnFade.color = new Color(0,0,0,0.5f);
         }
     }
 

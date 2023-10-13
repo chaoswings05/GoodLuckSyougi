@@ -254,19 +254,11 @@ public class KomaManager : KomaName
         return null;
     }
 
-    public void DeleteKoma(string deleteKoma)
+    public void DeleteKoma(Koma koma)
     {
-        foreach (var koma in komas)
-        {
-            if (koma.name == deleteKoma)
-            {
-                komas.Remove(koma);
-                defeatedKomas.Add(koma);
-                koma.gameObject.SetActive(false);
-
-                break;
-            }
-        }
+        komas.Remove(koma);
+        defeatedKomas.Add(koma);
+        koma.gameObject.SetActive(false);
     }
 
     public void IncreaceGachaKoma(Koma gachaKoma ,string playerTag, int komaNum, Sprite image)

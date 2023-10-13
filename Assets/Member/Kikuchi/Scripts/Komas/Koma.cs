@@ -205,10 +205,11 @@ public class Koma : MonoBehaviour
         }
     }
 
-    public void HaiyuChange(string pieceName, string objName, string text)
+    public void HaiyuChange(string pieceName, string objName, TextMesh name)
     {
         Instantiate(HaiyuEffect, transform);
-        nameObj.text = text;
+        nameObj.text = name.text;
+        nameObj.color = name.color;
         PieceName = pieceName;
         this.name = objName;
     }

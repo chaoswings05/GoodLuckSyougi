@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class ResultManager : MonoBehaviour
 {
     [HideInInspector] public int winner = 0;
+    [SerializeField] private float fadeSpeed = 1f;
     [SerializeField] private TextMesh GiveUpUI = null;
     [SerializeField] private TextMesh GameEndUI = null;
     [SerializeField] private TextMesh P1WinUI = null;
@@ -29,9 +30,9 @@ public class ResultManager : MonoBehaviour
     {
         if (IsGiveUpUIfade)
         {
-            GiveUpUI.transform.localScale -= new Vector3(Time.deltaTime,Time.deltaTime,Time.deltaTime);
+            GiveUpUI.transform.localScale -= new Vector3(Time.deltaTime,Time.deltaTime,Time.deltaTime) * fadeSpeed;
 
-            if (GiveUpUI.transform.localScale.x <= 1)
+            if (GiveUpUI.transform.localScale.x <= 0.7f)
             {
                 GiveUpUI.transform.localPosition = Vector3.one;
                 GiveUpUI.gameObject.SetActive(false);
@@ -42,9 +43,9 @@ public class ResultManager : MonoBehaviour
 
         if (IsGameEndUIfade)
         {
-            GameEndUI.transform.localScale -= new Vector3(Time.deltaTime,Time.deltaTime,Time.deltaTime);
+            GameEndUI.transform.localScale -= new Vector3(Time.deltaTime,Time.deltaTime,Time.deltaTime) * fadeSpeed;
 
-            if (GameEndUI.transform.localScale.x <= 1)
+            if (GameEndUI.transform.localScale.x <= 0.7f)
             {
                 GameEndUI.transform.localPosition = Vector3.one;
                 GameEndUI.gameObject.SetActive(false);
